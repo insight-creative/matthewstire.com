@@ -1,0 +1,94 @@
+{{ "<!-- Header -->" | safeHTML }}
+<a class="screen-reader-skip-to-content" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="screen-reader-skip-to-content" href="#footer" tabindex="0">Skip to footer content</a>
+<header class="site-header" role="banner">
+  <div class="site-header__wrapper wrapper-lg">
+    <div class="site-header__logo">
+      <a class="brand-logo" href="{{ site.BaseURL }}">
+        {{ if .Site.Data.site_settings.logo }}
+          <img src="{{ .Site.Data.site_settings.logo | absURL }}" alt="{{ .Site.Data.site_settings.business_name }} logo" class="img-responsive dim" width="200" height="100">
+        {{ else }}
+          <h1>{{ site.Title }}</h1>
+        {{ end }}
+      </a>
+    </div>
+    <nav class="site-header__nav" role="navigation" aria-label="primary navigation">
+      <div class="site-header__top">
+        <div class="site-header__top-inner flex flex-justify-end">
+          <ul class="site-header__secondary-menu flex flex-center">
+            {{ with .Site.Menus.secondary }}
+            {{ range . }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+            {{ end }}
+            <li><a href="#" class="">Locations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-header__primary">
+        <ul class="nav-list" role="list">
+          {{ $url := .RelPermalink }}
+          {{ range .Site.Menus.main }}
+          
+          {{ $active := eq $url .URL }}
+          {{ $contact := eq "Contact Us" .Name }}
+            {{ if .HasChildren }}
+                <li class="nav-list__item has-sub-menu">
+                  <a {{if $active }}class="current nav-list__link" {{end}} class="nav-list__link" href="{{ .URL }}" aria-label="{{ .Name }}">
+                    {{ .Name }}
+                    <span class="sub-menu-indicator"></span>
+                  </a>
+                  <div class="nav-list__sub-menu sub-menu">
+                    <ul class="sub-menu__inner">
+                      {{ range sort .Children "value" "desc" }}
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Name }}{{ partialCached "svg-icons/chevron-right.svg" . }}</a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  </div>
+                </li>
+            {{ else }}
+            <li class="nav-list__item">
+              {{ if $contact }}
+              <a class="btn btn-primary" href="{{ .URL }}" aria-label="{{ .Name }}">
+                {{ .Name }}
+              </a>
+              {{ else }}
+              <a {{if $active }}class="current nav-list__link" {{end}} class="nav-list__link" href="{{ .URL }}" aria-label="{{ .Name }}">
+                  {{ .Name }}
+              </a>
+              {{ end }}
+            </li>
+            {{ end }}    
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+    <div class="site-header__mobile-nav">
+      <div class="site-header__mobile-nav-inner">
+        <ul  class="site-header__mobile-nav-menu">
+          {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL }}" aria-label="{{ .Name }}">
+                {{ .Name }}
+            </a>
+          </li>  
+          {{ end }}
+          {{ with .Site.Menus.secondary }}
+          {{ range . }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+          {{ end }}
+          <li><a href="https://app.clientpay.com/home/payment/#/paymentPage/546944a9-2d58-4669-9671-08293d6c6e3f" class="" target="_blank" rel="noopener noreferrer">Make a Payment</a></li>
+        </ul>
+        {{ partialCached "social-media" . }}
+      </div>
+    </div>
+    <button class="hamburger hamburger--slider" type="button" aria-label="open mobile menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+</header>

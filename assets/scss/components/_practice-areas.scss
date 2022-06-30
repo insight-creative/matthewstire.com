@@ -1,0 +1,45 @@
+.coj-practice-areas {
+  margin-top: -100px;
+  position: relative;
+  z-index: 2;
+  padding: $ic-300;
+
+  &__inner {
+    border: 1px solid rgba($light-gray, 0.2);
+  }
+
+  &__list {
+    padding: $ic-300;
+    max-width: 100%;
+    list-style: none;
+
+    @include breakpoint(sm) {
+      columns: 2;
+    }
+
+    @include breakpoint(md) {
+      columns: 3;
+    }
+
+    a {
+      color: $light-gray;
+      text-decoration: none;
+
+      svg {
+        fill: $light-gray;
+        position: relative;
+        top: 6px;
+      }
+
+      &:hover {
+        color: $secondary-color;
+        text-decoration-style: dashed;
+        text-decoration-color: $secondary-color;
+
+        svg {
+          fill: $secondary-color;
+        }
+      }
+    }
+  }
+}

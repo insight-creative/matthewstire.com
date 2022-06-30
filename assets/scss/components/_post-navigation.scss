@@ -1,0 +1,91 @@
+.post-navigation {
+  padding: 2rem 0 0 0;
+  display: none;
+
+  svg {
+    will-change: auto;
+  }
+
+  @include breakpoint(sm) {
+    display: flex;
+  }
+
+  &__next a,
+  &__prev a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__next {
+    svg {
+      margin-left: $ic-100;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  &__prev {
+    svg {
+      margin-right: 1rem;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        transform: translateX(-5px);
+      }
+    }
+  }
+
+  svg {
+    width: 20px;
+    fill: $white;
+    transition: 0.3s ease;
+  }
+}
+
+.post-navigation--staff {
+  border-top: none;
+  padding: 0;
+
+  .post-navigation__next a,
+  .post-navigation__prev a {
+    background-color: $secondary-color;
+    padding: $ic-200;
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: $white;
+      }
+    }
+  }
+
+  .post-navigation__next {
+    &:hover,
+    &:focus {
+      svg {
+        transform: translateX(-5px);
+      }
+    }
+  }
+
+  .post-navigation__prev {
+    &:hover,
+    &:focus {
+      svg {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  svg {
+    width: 30px;
+    fill: $white;
+  }
+}

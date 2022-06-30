@@ -1,0 +1,18 @@
+logo: /uploads/matthews-logo.svg
+footer_logo: /uploads/conway-olejniczak-jerry-gold-logo-long.svg
+business_name: Law Firm of Conway, Olejniczak & Jerry, S.C.
+phone: 920-437-0476
+fax: 920-437-2868
+email: ""
+address:
+  city: "Green Bay"
+  state: "WI"
+  street: "231 South Adams Street"
+  zip: "54301"
+social_media:
+  - title: Facebook
+    link: https://www.facebook.com/matthewstire
+  - title: Instagram
+    link: https://www.instagram.com/matthews_tire/
+  - title: YouTube
+    link: https://www.youtube.com/user/MatthewsTireAndAuto

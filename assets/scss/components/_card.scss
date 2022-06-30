@@ -1,0 +1,94 @@
+.card {
+  background-color: $white;
+  padding: $ic-300;
+  transition: 0.3s ease-out;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link,
+  &__content {
+    height: 100%;
+  }
+
+  &__author-image {
+    max-width: $ic-800;
+    max-height: $ic-800;
+    margin-right: $ic-200;
+    border: 2px solid $secondary-color;
+    border-radius: 50%;
+    background-color: $white;
+  }
+
+  &__title {
+    color: $black;
+  }
+
+  &__read-more {
+    font-size: $ic-100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: $secondary-font;
+
+    svg {
+      width: $ic-200;
+      height: $ic-200;
+      fill: $primary-color;
+      transition: 0.3s ease-out;
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-image: url("/uploads/coj-logomark-watermark.svg");
+    box-shadow: 0 5px 8px rgba($primary-color, 0.1);
+
+    .card__title {
+      color: $black;
+    }
+
+    .card__read-more {
+      svg {
+        fill: $secondary-color;
+        transform: translateX(5px);
+      }
+    }
+  }
+}
+
+.card--event,
+.card--press-release {
+  background-color: $light-gray;
+}
+
+.card--event {
+  margin-top: $ic-400;
+
+  .card__read-more {
+    margin-top: $ic-300;
+  }
+
+  &__month,
+  &__year {
+    text-transform: uppercase;
+    font-size: $ic--100;
+    letter-spacing: 2px;
+  }
+
+  &__day {
+    font-size: $ic-500;
+    line-height: 1;
+  }
+}
+
+.card--press-release {
+  &__content {
+    margin-bottom: $ic-400;
+  }
+}

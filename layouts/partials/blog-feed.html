@@ -1,0 +1,21 @@
+<div class="coj-blog-feed bg-concrete">
+    <div class="wrapper-lg blog-container">
+        <div class="block">
+            <div class="coj-blog-feed__intro wrapper-sm text-center flow">
+                <h2>Recent Legal Resources</h3>
+                <div class="coj-divider"></div>
+                <p class="w-100">Our attorneys provide practical, real-world answers to today's legal issues. Find the information that matters to you.</p>
+            </div>
+            <div class="grid-3 mt-6 mb-6">
+                {{ $pages := .Site.RegularPages }}
+                {{ $recentPosts := where $pages "Type" "legal-resources" }}
+                {{ range first 3 $recentPosts }}
+                {{ .Render "blog-card" }}
+                {{ end }}
+            </div>
+            <div class="text-center">
+                <a href="/legal-resources/" class="btn btn-primary">View more legal resources</a>
+            </div>
+        </div>
+    </div>
+</div>

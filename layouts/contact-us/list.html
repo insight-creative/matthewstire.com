@@ -1,0 +1,71 @@
+{{ define "main" }}
+{{ partial "hero" (dict "Page" . "image" .Params.hero.hero_image.image "alt" .Params.hero.hero_image.image_alt "heading" .Params.hero.heading "body" .Params.hero.body ) }}
+<div class="wrapper-lg">
+  <div class="block">
+    <div class="flex flex-column flex-row-m">
+      <div class="w-100 w-60-m">
+        <div class="contact-form bg-gray">
+          <div class="contact-form__inner flow">
+            <h2 class="no-margin">Every Relationship Starts with an Introduction</h2>
+            <p>Confidential and ethical representation is the cornerstone of our value structure. In order to foster the highest quality relationship with our clients and best possible solutions, we believe in frequent communication.</p>
+
+            <p>However, before we commit to representing a client we perform a thorough analysis of possible conflicts of interest. <strong>To initiate a possible representation and begin the conflict-of-interest analysis process, please call our experienced team at <a href="tel:{{ .Site.Data.site_settings.phone }}">{{ .Site.Data.site_settings.phone }}</a>.</strong></p>
+          
+            <p><small>Fields marked with an * are required</small></p>
+            <div class="contact-form__wrapper">
+              <form name="contact" netlify netlify-honeypot="bot-field" action="/thank-you">
+                  <div hidden>
+                      <label>
+                        Don’t fill this out if you're human: 
+                        <input name="bot-field" />
+                      </label>
+                  </div>
+                  <div class="contact-form__form-group flex">
+                      <label for="first_name">First Name*</label>
+                      <input id="first_name" name="first_name" type="text" class="contact-form__form-control" required>
+                  </div>
+                  <div class="contact-form__form-group flex">
+                      <label for="last_name">Last Name*</label>
+                      <input id="last_name" name="last_name" type="text" class="contact-form__form-control" required>
+                  </div>
+                  <div class="contact-form__form-group flex">
+                      <label for="company">Company</label>
+                      <input id="company" name="company" type="text" class="contact-form__form-control">
+                  </div>
+                  <div class="contact-form__form-group flex">
+                      <label for="email">Email*</label>
+                      <input id="email" name="_replyto" type="email" class="contact-form__form-control" required>
+                  </div>
+                  <div class="contact-form__form-group flex">
+                      <label for="phone">Phone*</label>
+                      <input id="phone" name="phone" type="tel" class="contact-form__form-control" required>
+                  </div>
+                  <div class="contact-form__form-group flex">
+                      <label for="message">Message*</label>
+                      <textarea id="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
+                  </div>
+                  <div style="margin-bottom: 1em;" netlify-recaptcha></div>
+                  <div class="contact-form__form-group flex">
+                    <label></label>
+                    <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send Message</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 w-40-m">
+        {{ partial "contact-info" . }}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper-lg">
+  <div class="mb-4 flow">
+    <h3>Pre-client Communication Notice & Disclaimer</h3>
+    <p>Please note, while we would like to hear from you, we cannot represent you until we know that doing so will not create a conflict of interest. Accordingly, please do not send us any information about any matter that may involve you until you receive an "engagement letter" — a written statement from us that we can represent you.</p>
+    <h3>Privacy Policy</h3>
+    <p>The Law Firm of Conway, Olejniczak and Jerry, S.C. respects the privacy of all visitors to its website. For this reason, personal information provided by you on our website is never given or sold to any other parties. While visiting our website, we may ask you to register and/or provide information that personally identifies you ("personal information") for purposes of interacting with our site. Learn more by reading our full <a href="/privacy-policy/">privacy policy</a>.</p>
+  </div>
+</div>
+{{ end }}

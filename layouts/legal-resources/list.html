@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ partial "hero" (dict "Page" . "image" .Params.hero.hero_image.image "alt" .Params.hero.hero_image.image_alt "heading" .Params.hero.heading "body" .Params.hero.body ) }}
+<div class="block bg-gray">
+    <div class="flex flex-column flex-row-m wrapper-lg">
+        <div class="w-100 w-70-m">
+            {{ $pages := .Site.RegularPages }}
+            {{ $posts := where $pages "Type" "legal-resources" }}
+            {{ $postCount := len $posts }}
+            <a href="/legal-resources/" class="post-count">{{ $postCount }} Resources</a>
+            <div class="grid-2">
+                {{ $paginator := .Paginate ( where .Data.Pages "Type" "legal-resources" ) }}
+                {{ range $paginator.Pages }}
+                {{ .Render "blog-card" }}
+                {{ end }}
+            </div>
+        </div>
+        <aside class="blog-sidebar w-100 w-30-m">
+            <div class="blog-sidebar__categories">
+                <h3>Categories</h3>
+                {{- if isset site.Taxonomies "categories" }}
+                {{- if not (eq (len site.Taxonomies.categories) 0) }}
+                <ul class="blog-sidebar__categories-list">
+                  {{- range .Site.Taxonomies.categories }}
+                  <li class="blog-sidebar__categories-list-item"><a href="{{ .Page.Permalink }}" class="blog-sidebar__categories-link">{{ .Page.Title }}<span class="ml-2"> ({{ .Count }})</span></a></li>
+                  {{- end }}
+                  <li class="blog-sidebar__categories-list-item"><a href="/legal-resources/" class="blog-sidebar__categories-link">All Resources<span class="ml-2"> ({{ $postCount }})</span></a></li>
+                </ul>
+                {{- end }}
+                {{- end }}
+            </div>
+        </aside>
+    </div>
+    <div class="wrapper-lg">
+        {{ partial "blog/custom-pagination.html" . }}
+    </div>
+</div>
+{{ partialCached "cta" . }}
+{{ end }}

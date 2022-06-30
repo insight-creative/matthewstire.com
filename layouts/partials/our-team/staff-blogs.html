@@ -1,0 +1,20 @@
+{{ $pages := .Site.RegularPages }}
+{{ $resources := where $pages "Type" "legal-resources" }}
+{{ $author_collection := where $resources ".Params.author" (.Title) }}
+{{ if $author_collection }}
+<div class="block bg-concrete">
+    <div class="wrapper-lg blog-container">
+        <div class="coj-blog-feed__intro text-center flow">
+            <h2>Legal Resources by {{ .Title }}</h3>
+        </div>
+        <div class="grid-3 mt-6 mb-6">
+            {{ range first 3 $author_collection }}
+            {{ .Render "blog-card" }}
+            {{ end }}
+        </div>
+        <div class="text-center">
+            <a href="/legal-resources/" class="btn btn-primary">View more legal resources</a>
+        </div>
+    </div>
+</div>
+{{ end }}

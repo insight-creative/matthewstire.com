@@ -1,0 +1,24 @@
+// .divider {
+//   background: $secondary-color;
+//   height: 3px;
+//   width: $ic-500;
+//   position: relative;
+//   // left: 50%;
+//   // transform: translateX(-50%);
+// }
+
+.divider {
+  background: $secondary-color;
+  height: 3px;
+  width: $ic-1000;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: $secondary-color;
+    height: 2px;
+    width: $ic-800;
+    position: absolute;
+    bottom: -6px;
+  }
+}

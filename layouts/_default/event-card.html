@@ -1,0 +1,30 @@
+<article class="card card--event fade-up max-width-none">
+	<a href="{{ .Permalink }}" class="card__link">
+		<div class="flex flex-column flex-row-m">
+			<div class="w-100 w-20-m">
+				<div class="card--event__date flex flex-column flex-justify-center">
+					<div class="card--event__month text-center">
+						{{ dateFormat "Jan" .Params.event.date }}
+					</div>
+					<div class="card--event__day text-center">
+						{{ dateFormat " 2 " .Params.event.date }}
+					</div>
+					<div class="card--event__year text-center">
+						{{ dateFormat " 2006 " .Params.event.date }}
+					</div>
+				</div>
+			</div>
+			<div class="w-100 w-80-m">
+				<div class="card__content flex flex-column flex-justify-between">
+					<div class="flow">
+						<h3 class="card__title h5">{{ .Title }}</h3>
+						<p class="text-black">{{ .Params.event.summary }}</p>
+					</div>
+					<span class="card__read-more flex flex-center">
+							View Full Event Details {{ partialCached "svg-icons/double-chevron-right.svg" . }}
+					</span>
+				</div>
+			</div>
+		</div>
+	</a>
+</article>

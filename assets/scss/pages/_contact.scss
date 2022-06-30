@@ -1,0 +1,85 @@
+.contact-us {
+  .w-60-m + .w-40-m {
+    margin-top: $ic-900;
+
+    @include breakpoint(md) {
+      margin-top: 0;
+      margin-left: $ic-900;
+    }
+  }
+}
+
+.contact-form {
+  padding: $ic-200;
+
+  &__inner {
+    border: 1px solid $white;
+    padding: $ic-200;
+  }
+
+  &__wrapper {
+    padding-top: $ic-900;
+    border-top: 1px solid $gray;
+  }
+
+  &__netlify-bot-field {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    margin: 0;
+  }
+
+  &__form-group label {
+    flex: 0 0 25%;
+  }
+
+  .contact-form__form-group input,
+  .contact-form__form-group textarea,
+  .contact-form__form-group select {
+    box-shadow: inset 4px 4px 8px 0 rgba($black, 0.1);
+    width: 100%;
+    padding: $ic-400 $ic-200;
+    margin-bottom: $ic-200;
+    flex: 1 1 75%;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__form-group input {
+    height: $ic-700;
+  }
+
+  .radio {
+    align-items: center;
+
+    input {
+      width: auto;
+      margin-bottom: 0;
+      margin-right: $ic-200;
+    }
+  }
+
+  .date-wrapper {
+    .contact-form__form-group + .contact-form__form-group {
+      margin-left: $ic-200;
+    }
+  }
+
+  &__form-group textarea {
+    height: 10rem;
+  }
+}
+
+.contact-sidebar {
+  iframe {
+    height: 350px;
+  }
+
+  .contact-info {
+    margin-top: $ic-300;
+  }
+}
+
+.attorney-cta {
+  border-top: 1px solid $light-gray;
+}

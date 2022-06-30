@@ -1,0 +1,97 @@
+.footer {
+  background-color: $black;
+  background-image: url("/uploads/coj-logomark-footer-watermark.svg");
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  color: $light-gray;
+  font-family: $secondary-font;
+  font-size: $ic-200;
+  margin-top: -$ic-900;
+  padding-top: $ic-900;
+  position: relative;
+  z-index: 1;
+
+  &__logo {
+    max-width: 300px;
+  }
+
+  &__contact {
+    .phone a {
+      margin-left: 5px;
+    }
+  }
+
+  .footer-nav {
+    display: block;
+    padding: 0;
+    background: transparent;
+    width: auto;
+
+    &__item {
+      padding: $ic-100 0;
+
+      @include breakpoint(md) {
+        padding: $ic-100;
+      }
+    }
+
+    &__link {
+      color: $light-gray;
+      font-family: $secondary-font;
+
+      &::after {
+        background: $secondary-color;
+      }
+
+      @include breakpoint(md) {
+        &:hover,
+        &:focus {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .footer__contact a,
+  .copyright a {
+    color: $white;
+    text-decoration: none;
+    display: block;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__bottom-wrapper {
+    border-top: 1px solid rgba($light-gray, 0.2);
+  }
+
+  .copyright {
+    font-size: 14px;
+    padding: $ic-100 0;
+
+    p {
+      margin: 0;
+    }
+
+    &__nav {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__list-item {
+      list-style-type: none;
+      margin: 0 $ic-100;
+    }
+  }
+}
+
+.bio + .footer,
+.contact-us + .footer,
+.categories-single + .footer {
+  padding-top: 0;
+  margin-top: 0;
+}

@@ -1,0 +1,10 @@
+.coj-blog-feed {
+  padding-top: $ic-900;
+  margin-top: -$ic-900;
+
+  &__intro {
+    p {
+      max-width: none;
+    }
+  }
+}

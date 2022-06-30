@@ -1,0 +1,13 @@
+.bg-black {
+  background-color: $black;
+}
+
+.bg-gray {
+  background-color: $light-gray;
+}
+
+.bg-concrete {
+  background-image: url("/uploads/rocky-wall.png");
+  background-repeat: repeat;
+  background-color: $light-gray;
+}

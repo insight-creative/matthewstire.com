@@ -1,0 +1,32 @@
+.post-count {
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: $ic-300 0;
+  display: block;
+}
+
+.legal-resources .post-count {
+  margin: 0 0 $ic-300 0;
+}
+
+.post-content {
+  padding: $ic-300;
+  margin-top: -200px;
+  background: $white;
+  box-shadow: 0px 2px 30px rgba($primary-color, 0.1);
+  position: relative;
+  z-index: 2;
+
+  &__inner {
+    border: 1px solid $light-gray;
+    padding: $ic-300;
+
+    p,
+    ol,
+    ul,
+    blockquote {
+      max-width: 100%;
+    }
+  }
+}

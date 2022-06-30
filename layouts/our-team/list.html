@@ -1,0 +1,54 @@
+{{ define "main" }}
+{{ partial "hero" (dict "Page" . "image" .Params.hero.hero_image.image "alt" .Params.hero.hero_image.image_alt "heading" .Params.hero.heading "body" .Params.hero.body ) }}
+<section class="bg-gray">
+  <div class="wrapper-lg">
+    <div class="block flow">
+      <div>
+        <h2 class="no-margin">Our Dedicated Team of Attorneys</h2>
+        <div class="divider"></div>
+      </div>
+      <p>You can expect outstanding customer service and comprehensive legal advice from our team. Our attorneys know that flexibility is needed to solve real-world problems and get you back to business. This client-centered approach ensures efficient, cost-effective, innovative solutions. Get to know each of our attorneys below.</p>
+      <ul class="staff-list grid-4 max-width-none">
+      {{ range .Pages }}
+      {{ if .Params.is_attorney }}
+        <li class="staff">
+          <a href="{{ .URL }}">
+            <div class="staff__image-wrapper">
+              <div class="staff__image-overlay"></div>
+              <picture>
+                <source srcset="https://lcojlaw.imgix.net/uploads/{{ .Params.image }}?w=300&h=400&crop=faces&fit=crop&fm=avif" type="image/avif">
+                <source srcset="https://lcojlaw.imgix.net/uploads/{{ .Params.image }}?w=300&h=400&crop=faces&fit=crop&fm=webp" type="image/webp">
+                <img src="https://lcojlaw.imgix.net/uploads/{{ .Params.image }}?w=300&h=400&crop=faces&fit=crop" class="staff__image" alt="Photo of {{ .Title }}" width="300" height="400">
+              </picture>
+            </div>
+            <h2 class="staff__name h6 text-center">{{ .Title }}</h2>
+          </a>
+        </li>
+      {{ end }}
+      {{ end }}
+      </ul>
+      <div>
+        <h2 class="no-margin">Our Committed Team of Paralegals</h2>
+        <div class="divider"></div>
+      </div>
+      <p>Our attorneys do not work alone. The team includes keen, creative paralegals committed to working with clients and attorneys to provide excellent customer service while working towards innovative legal solutions. Our paralegals collaborate with our attorneys to help manage cases and provide efficient and cost-effective client services.</p>
+      <ul class="staff-list grid-4 max-width-none">
+        {{ range .Pages }}
+        {{ if .Params.is_paralegal }}
+          <li class="staff">
+            <a href="{{ .URL }}">
+              <div class="staff__image-wrapper">
+                <div class="staff__image-overlay"></div>
+                <img src="https://lcojlaw.imgix.net/uploads/{{ .Params.image }}?w=300&h=400&crop=faces&fit=crop&fm=webp" class="staff__image" alt="Photo of {{ .Title }}" width="300" height="400"> 
+              </div>
+              <h2 class="staff__name h5 text-center">{{ .Title }}</h2>
+            </a>
+          </li>
+        {{ end }}
+        {{ end }}
+        </ul>
+    </div>
+  </div>
+</section>
+{{ partialCached "cta" . }}
+{{ end }}

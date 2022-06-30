@@ -1,0 +1,25 @@
+a {
+  color: $primary-color;
+  transition: 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    outline-color: $secondary-color;
+  }
+}
+
+.decorated-link {
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: $secondary-color;
+    height: 2px;
+  }
+}

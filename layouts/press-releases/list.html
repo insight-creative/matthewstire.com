@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ partial "hero" (dict "Page" . "image" .Params.hero.hero_image.image "alt" .Params.hero.hero_image.image_alt "heading" .Params.hero.heading "body" .Params.hero.body ) }}
+<div class="block">
+    <div class="flex flex-column flex-row-m wrapper-lg">
+        <div class="w-100 w-70-m">
+            {{ $pages := .Site.RegularPages }}
+            {{ $posts := where $pages "Type" "press-releases" }}
+            {{ $postCount := len $posts }}
+            <a href="/press-releases/" class="post-count">{{ $postCount }} Press Releases</a>
+            <div class="grid-2">
+                {{ $paginator := .Paginate ( where .Data.Pages "Type" "press-releases" ) }}
+                {{ range $paginator.Pages }}
+                {{ .Render "press-release-card" }}
+                {{ end }}
+            </div>
+        </div>
+        <aside class="w-100 w-30-m">
+            {{ partial "sidebar-cta" . }}
+        </aside>
+    </div>
+</div>
+{{ partialCached "cta" . }}
+{{ end }}

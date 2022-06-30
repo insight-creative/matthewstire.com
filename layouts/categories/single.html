@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <div class="wrapper flow">
+        <div class="block">
+            {{ .Content  }}
+            {{ partial "blog/post-navigation" . }}
+        </div>
+    </div>
+    {{ partialCached "cta" . }}
+{{ end }}

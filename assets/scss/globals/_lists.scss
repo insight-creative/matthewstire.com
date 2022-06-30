@@ -1,0 +1,49 @@
+.list {
+  list-style-type: none;
+}
+
+ul li + li,
+ol li + li {
+  margin-top: 0.5em;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+.bio,
+.practice-areas__content {
+  ul li {
+    position: relative;
+    list-style-type: none;
+    break-inside: avoid;
+    font-size: $ic-100;
+
+    &::before {
+      background-image: url("/uploads/checkbox.svg");
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      display: block;
+      height: 12px;
+      width: 12px;
+      left: -$ic-300;
+      position: absolute;
+      top: 6px;
+    }
+  }
+}
+
+.practice-areas__content {
+  ul li {
+    font-size: $ic-200;
+
+    &::before {
+      top: 8px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.coj-divider {
+  background-image: url("/uploads/conway-logomark.svg");
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: $secondary-color;
+    top: 30%;
+
+    @include breakpoint(sm) {
+      width: 100px;
+    }
+  }
+
+  &::before {
+    left: -75px;
+
+    @include breakpoint(sm) {
+      left: -150px
+    }
+  }
+
+  &::after {
+    right: -75px;
+
+    @include breakpoint(sm) {
+      right: -150px
+    }
+  }
+}

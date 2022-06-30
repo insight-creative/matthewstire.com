@@ -1,0 +1,24 @@
+<div class="contact-sidebar">
+  <iframe title="Google map location for the Law firm of Conway, Olejniczak, & Jerry in Green Bay, WI" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.1789156082305!2d-88.0175091844742!3d44.51148857910119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802faca33feca61%3A0x7ecb2ef64c0770d7!2sLaw%20Firm%20of%20Conway%2C%20Olejniczak%20%26%20Jerry%2C%20S.C.!5e0!3m2!1sen!2sus!4v1639628129131!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="contact-info flow">
+    <div class="contact-info__contact">
+      <h3 class="h5">{{ .Site.Data.site_settings.business_name }}</h3>
+      <p>
+        {{ .Site.Data.site_settings.address.street }}
+        <br>
+        {{ .Site.Data.site_settings.address.city }}, {{ .Site.Data.site_settings.address.state }} {{ .Site.Data.site_settings.address.zip }}
+      </p>
+      <a href="https://goo.gl/maps/Gbke7Mx9e9oQmqag9" class="decorated-link" rel="noopener noreferrer" target="_blank">View on Google Maps</a>
+    </div>
+    <div>
+      <small>Phone</small><br><a href="tel:{{ .Site.Data.site_settings.phone }}" class="decorated-link">{{ .Site.Data.site_settings.phone }}</a>
+    </div>
+    <div><small>Fax</small><br>{{ .Site.Data.site_settings.fax }}</div>
+    <div>{{ partialCached "social-media" . }}</div>
+  </div>
+  <div class="attorney-cta flow mt-4 pt-4">
+    <h3 class="h5">Looking for a specific attorney?</h3>
+    <p>Browse our dedicated Northeast Wisconsin attorneys to find individual contact information.</p>
+    <a href="/our-team/" class="btn btn-primary">Find your attorney</a>
+  </div>
+</div>

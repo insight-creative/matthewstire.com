@@ -1,0 +1,10 @@
+[context.production.environment]
+  HUGO_VERSION = "0.83.1"
+
+[build]
+  command = "hugo"
+  publish = "public"
+
+[[redirects]]
+  from = "/practice_areas/business-finance-formation-restructuring/"
+  to = "/practice-areas/business-finance-formation-restructuring/"
