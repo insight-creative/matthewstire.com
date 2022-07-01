@@ -9,6 +9,22 @@ gsap.registerPlugin(ScrollTrigger);
 const mobileMenu = document.querySelector(".site-header__mobile-nav");
 const hamburger = document.querySelector(".hamburger");
 const siteHeader = document.querySelector('.site-header');
+const linkHasSubMenu = document.querySelectorAll('.has-sub-menu');
+
+linkHasSubMenu.forEach((link) => {
+    link.addEventListener('mouseover', function() {
+        link.classList.add('active')
+        const activeLink = document.querySelector('.active')
+        const activeSubMenu = activeLink.querySelector('.sub-menu')
+        const activeSubMenuContainer = activeSubMenu.querySelector('.sub-menu__inner').getBoundingClientRect().height
+        activeSubMenu.style.height = activeSubMenuContainer + 'px'
+    })
+    link.addEventListener('mouseout', function() {
+        link.classList.remove('active')
+        const subMenuToHide = link.querySelector('.sub-menu')
+        subMenuToHide.removeAttribute('style')
+    })
+})
 
 const mobileMenuHeight = mobileMenu.getBoundingClientRect().height
 

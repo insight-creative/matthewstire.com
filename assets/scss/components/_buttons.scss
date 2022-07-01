@@ -3,30 +3,27 @@
   z-index: 1;
   display: inline-block;
   font-size: $ic-100;
-  font-family: $secondary-font;
-  padding: 0.875rem 2rem;
+  font-weight: 700;
+  padding: $ic-100 $ic-400;
   text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 5px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  outline: 1px solid $primary-color;
-  border: 1px solid $primary-color;
-  outline-offset: -2px;
-  transition: 0.3s ease;
+  transition: 0.3s ease-out;
+  background-size: 400% 100%;
+
+  &:hover,
+  &:focus {
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+    color: $white;
+  }
 }
 
 .btn-primary {
   color: $white;
-  background-color: $primary-color;
+  background-image: $primary-gradient;
 
   &:hover,
   &:focus {
     color: $white;
-    background-color: $secondary-color;
-    border: 1px solid $secondary-color;
-    outline: 1px solid $white;
-    outline-offset: -6px;
   }
 }
 

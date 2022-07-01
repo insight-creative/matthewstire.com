@@ -100,12 +100,20 @@ $white-overlay: rgba(255, 255, 255, 0.9);
 
 $blue-shadow: rgba(43, 59, 147, 0.2);
 
+$primary-gradient: linear-gradient(
+  to right,
+  $primary-color 0%,
+  $primary-color-alt-2 15%,
+  $primary-color-alt-2 85%,
+  $primary-color 100%
+);
+
 // Fonts
 $primary-font: 'Montserrat', serif;
 $secondary-font: 'Montserrat', serif;
 
-$mobile-header: 104px;
-$desktop-header: 149px;
+$mobile-header: 75px;
+$desktop-header: 106px;
 
 // Scale and rhythm based on a major third
 $scale: 1.25;
