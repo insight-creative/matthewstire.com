@@ -4,18 +4,21 @@ const purgecss = require('@fullhuman/postcss-purgecss')
 module.exports = {
   plugins: [
     autoprefixer(),
-    // purgecss({
-    //   content: [
-    //     './layouts/**/*.html',
-    //     './layouts/**/*.svg',
-    //     './content/**/*.md',
-    //   ],
-    //   safelist: [
-    //     'is-active',
-    //     'nav-open',
-    //     'collapse',
-    //     'expand',
-    //   ],
-    // }),
+    purgecss({
+      content: [
+        './layouts/**/*.html',
+        './layouts/**/*.svg',
+        './content/**/*.md',
+      ],
+      safelist: [
+        'is-active',
+        'nav-open',
+        'collapse',
+        'expand',
+        'has-open-modal',
+        'show-locations',
+        'home-hero',
+      ],
+    }),
   ],
 }

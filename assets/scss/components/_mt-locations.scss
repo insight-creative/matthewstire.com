@@ -1,20 +1,24 @@
 .mt-locations {
-    position: absolute;
-    top: $mobile-header;
+    position: fixed;
+    top: 0;
     left: 0;
     z-index: 8;
     background-color: $white;
-    border-top: 2px solid $accent-color;
     box-shadow: 0 10px 20px rgba($primary-color, .15);
+    padding-top: $mobile-header;
     opacity: 0;
     pointer-events: none;
     transition: opacity .3s ease-out;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
 
     @include breakpoint(md) {
-        top: $desktop-header;
+        padding-top: $desktop-header;
     }
 
     &__header {
+        border-top: 2px solid $accent-color;
         padding: $ic--200 0;
         position: relative;
     }
@@ -47,6 +51,14 @@
 
     .schedule {
         display: block;
+
+        svg {
+            width: $ic-100;
+            height: auto;
+            position: relative;
+            top: 3px;
+            right: 8px;
+        }
 
         @include breakpoint(md) {
             display: none;
@@ -130,6 +142,12 @@
         padding: $ic--200 $ic-100;
         line-height: 1;
     }
+}
+
+.has-open-modal {
+    height: 100vh;
+    overflow: hidden;
+    padding-right: 17px;
 }
 
 .show-locations {

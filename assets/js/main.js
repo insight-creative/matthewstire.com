@@ -95,8 +95,10 @@ function toggleLocations() {
         this.setAttribute('aria-expanded', 'false')
         this.setAttribute('aria-label', 'open locations search tool')
         locations.classList.remove('show-locations')
+        document.body.classList.remove('has-open-modal')
     } else {
         locations.classList.add('show-locations')
+        document.body.classList.add('has-open-modal')
         this.setAttribute('aria-expanded','true')
         this.setAttribute('aria-label', 'close locations search tool')
     }
