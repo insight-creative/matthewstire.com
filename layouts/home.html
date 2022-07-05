@@ -1,3 +1,26 @@
 {{ define "main" }}
-{{ partialCached "home-hero" . }}
+{{ partialCached "home/hero" . }}
+{{ partialCached "home/intro" . }}
+<section aria-labelledby="tire-section-heading" class="block">
+    <div class="wrapper-md flex flex-column flex-row-m flex-center">
+        <div class="w-100 w-50-m flow">
+            {{ with .Params.tires_block }}
+            {{ if .heading }}
+            <h2 id="tire-section-heading" class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            {{ .body | markdownify }}
+            {{ end }}
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="w-100 w-50-m">
+            <img src="{{ .Params.tires_block.image_url }}" alt="{{ .Params.tires_block.image_alt }}">
+        </div>
+    </div>
+</section>
 {{ end }}

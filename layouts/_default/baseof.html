@@ -6,12 +6,13 @@
 
 <body class="{{ anchorize $mainClass }} {{ .Params.page_class }}" data-instant-intensity="viewport">
   <div class="site-wrap">
-    {{ block "header" . }}{{ partial "header" . }}{{end}}
+    {{ block "header" . }}{{ partialCached "header" . }}{{end}}
     <main id="main-content" class="site-main">
       {{ partial "breadcrumbs" . }}
       {{ block "main" . }}{{ end }}
     </main>
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+    {{ block "locations" . }}{{ partialCached "locations" . }}{{ end }}
+    {{ block "footer" . }}{{ partialCached "footer" . }}{{end}}
   </div>
 </body>
 

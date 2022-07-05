@@ -33,12 +33,12 @@ h1,
 
 h2,
 .h2 {
-  font-size: clamp($ic-300, 4vw, $ic-600);
+  font-size: clamp($ic-300, 4vw, $ic-500);
 }
 
 h3,
 .h3 {
-  font-size: clamp($ic-300, 4vw, $ic-500);
+  font-size: clamp($ic-300, 4vw, $ic-400);
 }
 
 h4,

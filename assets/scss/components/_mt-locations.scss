@@ -1,0 +1,138 @@
+.mt-locations {
+    position: absolute;
+    top: $mobile-header;
+    left: 0;
+    z-index: 8;
+    background-color: $white;
+    border-top: 2px solid $accent-color;
+    box-shadow: 0 10px 20px rgba($primary-color, .15);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-out;
+
+    @include breakpoint(md) {
+        top: $desktop-header;
+    }
+
+    &__header {
+        padding: $ic--200 0;
+        position: relative;
+    }
+
+    &__close {
+        position: absolute;
+        right: $ic-100;
+        top: $ic--200;
+        background: none;
+        border: none;
+
+        svg {
+            fill: $white;
+            height: $ic-200;
+            width: $ic-200;
+        }
+    }
+
+    .flow > * + * {
+        margin-top: $ic-100;
+      }
+
+    .directions {
+        display: none;
+
+        @include breakpoint(md) {
+            display: block;
+        }
+    }
+
+    .schedule {
+        display: block;
+
+        @include breakpoint(md) {
+            display: none;
+        }
+    }
+
+    .call {
+        margin-top: $ic-100;
+
+        @include breakpoint(md) {
+            margin-top: 0;
+            margin-left: $ic--200;
+        }
+    }
+}
+
+.location-card {
+    font-size: .9rem; 
+
+    .cover-image {
+        height: 125px;
+    }
+
+    &__location-url {
+        text-decoration: none;
+
+        h2 {
+            transition: color .3s ease-out;
+        }
+
+        &:hover, 
+        &:focus {
+            h2 {
+                color: $secondary-color;
+            }
+
+            svg {
+                transform: translateX($ic--100);
+                fill: $secondary-color;
+            }
+        }
+
+        svg {
+            height: 16px; 
+            width: auto;
+            fill: $primary-color;
+            margin-left: $ic-400;
+            transition: transform .3s ease-out;
+        }
+    }
+
+    &__contact-info {
+        svg {
+            height: 14px;
+            width: auto;
+            fill: $primary-color;
+            margin-right: $ic-100;
+        }
+
+        span:nth-of-type(2) {
+            svg {
+                height: 12px;
+            }
+        }
+
+        span + span {
+            margin-top: 4px;
+        }
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    .buttons {
+        margin-bottom: $ic-300;
+    }
+
+    .btn {
+        font-size: $ic--100;
+        padding: $ic--200 $ic-100;
+        line-height: 1;
+    }
+}
+
+.show-locations {
+    opacity: 1;
+    pointer-events: all;
+}

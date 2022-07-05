@@ -1,0 +1,51 @@
+<div class="mt-locations w-100">
+    <header class="mt-locations__header bg-primary text-center">
+        <div class="wrapper-lg">
+            <h2 class="text-white h5 no-margin max-width-none">Find a Matthews Tire Location</h2>
+            <button class="mt-locations__close">{{ partialCached "svg-icons/close.svg" . }}</button>
+        </div>
+    </header>
+    <div class="block-sm">
+        <div class="wrapper-lg auto-grid">
+            {{ range .Site.Data.locations }}
+            <div class="location-card flow border-bottom-gray">
+                <a href="{{ .location_url }}" class="location-card__location-url">
+                    <div class="cover-image">
+                        <picture>
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=avif&q=75&width=600&height=300&fit=crop" type="image/avif">
+                        
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=webp&q=75&width=600&height=300&fit=crop" type="image/webp">
+                        
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=jpg&q=75&width=600&height=300&fit=crop" type="image/jpg">
+
+                            <img src="https://matthewstire.imgix.net{{ .image_url }}" width="400" height="125" alt="{{ .image_alt }}">   
+                        </picture>                    
+                    </div>
+                </a>
+                <a href="{{ .location_url }}" class="location-card__location-url flex flex-center"><h2 class="text-primary h5">{{ .name }}</h2>{{ partialCached "svg-icons/chevron-right.svg" . }}</a>
+                <div class="location-card__contact-info">
+                    <span class="flex flex-center">
+                        {{ partialCached "svg-icons/locations-icon.svg" . }}
+                        <a href="{{ .googlemaps }}"><address>{{ .street }} {{ .city }}, {{ .state }}</address></a>
+                    </span>
+                    <span class="flex flex-center">
+                        {{ partialCached "svg-icons/phone.svg" . }}
+                        <a href="tel:{{ .phone }}">{{ .phone }}</a>
+                    </span>
+                    <span class="flex flex-center">
+                        {{ partialCached "svg-icons/clock.svg" . }}
+                        {{ range .hours }}
+                            {{ .day }} {{ .time }}
+                        {{ end }}
+                    </span>
+                </div>
+                <div class="buttons flex flex-column flex-row-m">
+                    <a href="/schedule-appointment/" class="schedule btn btn-primary">Schedule Appointment</a>
+                    <a href="{{ .googlemaps }}" target="_blank" rel="noopener noferrer" class="directions btn btn-primary">Get Directions</a>
+                    <a href="tel:{{ .phone }}" target="_blank" rel="noopener noferrer" class="call btn btn-secondary">Call Today: {{ .phone }}</a>
+                </div>
+            </div>
+            {{ end }}            
+        </div>
+    </div>
+</div>

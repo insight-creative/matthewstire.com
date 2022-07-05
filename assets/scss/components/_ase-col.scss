@@ -1,0 +1,29 @@
+.ase-col {
+    padding: $ic-900 $ic-300;
+    position: relative;
+
+    &__body {
+        position: relative;
+        top: -150px;
+        margin-bottom: -150px;
+    }
+
+    .cover-image {
+        height: 300px;
+    }
+
+    .ase-badge {
+        position: absolute;
+        overflow: hidden;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    svg {
+        position: absolute; 
+        bottom: -65px;
+        right: -35px;
+    }
+}

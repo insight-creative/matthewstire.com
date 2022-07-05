@@ -50,6 +50,14 @@
     }
   }
 
+  &__locations {
+    background: none;
+    border: none;
+    font-size: $ic-100;
+    font-weight: 500;
+    transition: color .3s ease-out;
+  }
+
   &__wrapper {
     position: relative;
 

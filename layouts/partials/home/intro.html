@@ -1,0 +1,46 @@
+<section aria-labelledby="home-intro-heading" class="intro home-intro block">
+    <div class="intro-content wrapper-lg flex flex-column flex-row-m fade-up">
+        <div class="w-100 w-50-m flow">
+            {{ with .Params.intro }}
+            {{ if .heading }}
+            <h2 id="home-intro-heading" class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            {{ .body | markdownify }}
+            {{ end }}
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="w-100 w-50-m">
+            {{ with .Params.ase }}
+            <div class="ase-col bg-primary">
+                <div class="ase-col__body text-white flow">
+                    <div class="cover-image">
+                        {{ if .image_url }}
+                        <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+                        {{ end }}
+                    </div>
+                    {{ if .heading }}
+                    <h3>
+                        {{ .heading | markdownify }}
+                    </h3>
+                    {{ end }}
+                    {{ if .body }}
+                    {{ .body | markdownify }}
+                    {{ end }}
+                    {{ if .button }}
+                    <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+                    {{ end }}                  
+                </div>
+                <div class="ase-badge">
+                    {{ partialCached "svg-icons/ase-certified.svg" . }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

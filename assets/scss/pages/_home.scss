@@ -1,3 +1,26 @@
+.home-intro {
+  position: relative;
+  background-image: url("/uploads/matthews-tire-appleton-west-location.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($white, .9);
+    z-index: 1;
+  }
+
+  .intro-content {
+    position: relative; 
+    z-index: 2;
+  }
+}
+
 .home {
   .breadcrumbs {
     display: none;

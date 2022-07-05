@@ -1,0 +1,98 @@
+- name: Appleton East
+  image_url: /uploads/matthews-tire-appleton-east-location.jpg
+  image_alt: Matthews Tire Appleton East Location
+  phone: 920-730-2199
+  street: W3092 Van Roy Rd.
+  city: Appleton
+  state: WI
+  googlemaps: https://g.page/Matthews-Tire-Appleton-East?share
+  shopcritics: "https://www.theshopcritics.com/info/MatthewsTireAppletonEast"
+  hours:
+    - day: Monday - Friday
+      time: 6:30am - 6:00pm
+  location_url: /locations/appleton-east/
+
+- name: Appleton West
+  image_url: /uploads/matthews-tire-appleton-west-location.jpg
+  image_alt: Matthews Tire Appleton West Location
+  phone: 920-734-5701
+  street: 2930 W. College Ave.
+  city: Appleton
+  state: WI
+  googlemaps: https://g.page/matthews-tire-appleton-West?sharedata=!4m2!3m1!1s0x0:0xb42df95f333dd8a9
+  shopcritics: "https://www.theshopcritics.com/info/MatthewsTireAppletonWest"
+  hours:
+    - day: Monday - Friday
+      time: 6:30am - 6:00pm
+  location_url: /locations/appleton-west/
+
+- name: Commercial
+  image_url: /uploads/matthews-tire-commercial-location.jpg
+  image_alt: Matthews Tire Commercial Location
+  phone: 920-735-0162
+  street: 600 N. Bluemound Dr.
+  city: Appleton
+  state: WI
+  googlemaps: https://goo.gl/maps/62F4Fn9BKY4eiBDH7
+  hours:
+    - day: Monday - Friday
+      time: 7:00am - 5:00pm
+  location_url: /locations/commercial/
+
+- name: Fond du Lac
+  image_url: /uploads/matthews-tire-fond-du-lac-location.jpg
+  image_alt: Matthews Tire Fond du Lac Location
+  phone: 920-921-6261
+  street: 562 W. Johnson St.
+  city: Fond du Lac
+  state: WI
+  googlemaps: https://g.page/matthews-tire-fond-du-lac?share
+  shopcritics: "https://www.theshopcritics.com/info/MatthewsTireFondDuLac"
+  hours:
+    - day: Monday - Friday
+      time: 7:00am - 6:00pm
+  location_url: /locations/fond-du-lac/
+
+- name: Green Bay
+  image_url: /uploads/matthews-tire-green-bay-location.jpg
+  image_alt: Matthews Tire Green Bay Location
+  phone: 920-498-1458
+  street: 2717 S. Oneida St.
+  city: Green Bay
+  state: WI
+  googlemaps: https://g.page/matthews-tire-green-bay?share
+  shopcritics: "https://www.theshopcritics.com/info/MatthewsTireGreenBay"
+  hours:
+    - day: Monday - Friday
+      time: 7:00am - 6:00pm
+  location_url: /locations/green-bay/
+
+- name: Menasha
+  image_url: /uploads/matthews-tire-menasha-location.jpg
+  image_alt: Matthews Tire Menasha Location
+  phone: 920-727-9901
+  street: 1690 Appleton Rd.
+  city: Menasha
+  state: WI
+  note: Zero clearance facility to accomodate low ground cars.
+  googlemaps: https://g.page/matthews-tire-menasha?share
+  shopcritics: "https://www.theshopcritics.com/info/MatthewsTireMenasha"
+  hours:
+    - day: Monday - Friday
+      time: 7:00am - 6:00pm
+  location_url: /locations/menasha/
+
+- name: Waupaca
+  image_url: /uploads/matthews-tire-waupaca-location.jpg
+  image_alt: Matthews Tire Waupaca Location
+  phone: 715-258-0288
+  street: 111 W. Union St.
+  city: Waupaca
+  state: WI
+  note: Zero clearance facility to accomodate low ground cars.
+  googlemaps: https://g.page/Matthews-Tire-Waupaca?share
+  shopcritics: "https://www.theshopcritics.com/info/MatthewsTireWaupaca"
+  hours:
+    - day: Monday - Friday
+      time: 7:00am - 6:00pm
+  location_url: /locations/waupaca/
