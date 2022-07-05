@@ -3,22 +3,22 @@ title: Wheels
 seo:
   page_title: Wheels
   meta_description: >-
-    
-  featured_image: 
-  featured_image_alt: 
+
+  featured_image:
+  featured_image_alt:
 hero:
-  heading: 
+  heading:
   subheading:
-  image: 
+  image:
   image_alt:
 intro:
-  heading: 
+  heading:
   subheading: >-
-    
-  body: 
+
+  body:
 menu:
   main:
     weight: 4
-  footer:
+  quick_links:
     weight: 4
 ---

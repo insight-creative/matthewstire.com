@@ -3,22 +3,22 @@ title: Commercial
 seo:
   page_title: Commercial
   meta_description: >-
-    
-  featured_image: 
-  featured_image_alt: 
+
+  featured_image:
+  featured_image_alt:
 hero:
-  heading: 
+  heading:
   subheading:
-  image: 
+  image:
   image_alt:
 intro:
-  heading: 
+  heading:
   subheading: >-
-    
-  body: 
+
+  body:
 menu:
   main:
     weight: 6
-  footer:
-    weight: 6
+  quick_links:
+    weight: 5
 ---

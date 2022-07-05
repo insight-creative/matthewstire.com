@@ -8,6 +8,8 @@
   text-decoration: none;
   transition: 0.3s ease-out;
   background-size: 400% 100%;
+  border-radius: 5px;
+  text-align: center;
 
   &:hover,
   &:focus {
@@ -20,22 +22,17 @@
 .btn-primary {
   color: $white;
   background-image: $primary-gradient;
+  box-shadow: 6px 6px 6px rgba($primary-color, .15);
+}
+
+.btn-secondary {
+  color: $primary-color;
+  background-image: $secondary-gradient;
+  box-shadow: 6px 6px 6px rgba($accent-color, .15);
 
   &:hover,
   &:focus {
     color: $white;
-  }
-}
-
-.btn-secondary {
-  color: $white;
-  background-color: $secondary-color;
-  border: 2px solid $secondary-color;
-
-  &:hover,
-  &:focus {
-    background-color: $white;
-    color: $secondary-color;
   }
 }
 

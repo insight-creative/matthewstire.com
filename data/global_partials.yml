@@ -1,0 +1,16 @@
+associations:
+  - image_url: /uploads/tire-and-service-network.jpg
+    image_alt: Tire and Service Network Logo
+  - image_url: /uploads/ase-certified.svg
+    image_alt: ASE Certified Logo
+  - image_url: /uploads/be-car-care-aware.jpg
+    image_alt: Be Car Care Aware Logo
+  - image_url: /uploads/motorist-assurance-program.jpg
+    image_alt: Motorist Assurance Program Logo
+  - image_url: /uploads/tire-industry-assosiation.jpg
+    image_alt: Tire Industry Association Logo
+  - image_url: /uploads/better-business-bureau.jpg
+    image_alt: Better Business Bureau Logo
+footer_cta:
+  heading: We keep you rolling!
+  body: Providing top-quality, high-value car maintenance and auto repair services in Appleton, Menasha, Waupaca, Fond du Lac and Green Bay.

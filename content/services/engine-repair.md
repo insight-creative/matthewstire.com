@@ -19,4 +19,5 @@ intro:
 menu:
   main:
     parent: "Services"
+  services:
 ---

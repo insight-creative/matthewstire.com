@@ -1,5 +1,2 @@
 {{ define "main" }}
-{{ partialCached "home/home-hero" (dict "Page" . "image" .Params.hero.hero_image.image "alt" .Params.hero.hero_image.image_alt "heading" .Params.hero.heading "body" .Params.hero.body "button_url" .Params.hero.button.button_url "button_text" .Params.hero.button.button_text ) }}
-{{ partial "blog-feed" . }}
-{{ partialCached "cta" . }}
 {{ end }}

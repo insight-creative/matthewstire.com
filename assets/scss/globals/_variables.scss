@@ -108,6 +108,14 @@ $primary-gradient: linear-gradient(
   $primary-color 100%
 );
 
+$secondary-gradient: linear-gradient(
+  to right,
+  $accent-color 0%,
+  $accent-color-alt-2 15%,
+  $accent-color-alt-2 85%,
+  $accent-color 100%
+);
+
 // Fonts
 $primary-font: 'Montserrat', serif;
 $secondary-font: 'Montserrat', serif;

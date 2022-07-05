@@ -1,97 +1,121 @@
+.pre-footer .associations {
+  margin-top: 200px;
+
+  display: grid;
+  gap: $ic-400;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  img {
+    max-height: 70px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
 .footer {
   background-color: $black;
-  background-image: url("/uploads/coj-logomark-footer-watermark.svg");
-  background-size: auto;
-  background-position: center bottom;
+  background-image: url("/uploads/blue-generic-swoosh-background.svg");
+  background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
-  color: $light-gray;
-  font-family: $secondary-font;
-  font-size: $ic-200;
-  margin-top: -$ic-900;
-  padding-top: $ic-900;
-  position: relative;
-  z-index: 1;
+  color: $white;
+  font-size: $ic-100;
 
-  &__logo {
-    max-width: 300px;
+  &__columns {
+    gap: $ic-300;
   }
 
-  &__contact {
-    .phone a {
-      margin-left: 5px;
+  &__col {
+    flex: 1 1 45%;
+
+    @include breakpoint(md) {
+     flex: 1;
     }
   }
 
-  .footer-nav {
-    display: block;
-    padding: 0;
-    background: transparent;
-    width: auto;
+  &__col:first-of-type {
+    flex: 1 1 100%;
 
-    &__item {
-      padding: $ic-100 0;
+    @include breakpoint(md) {
+      flex: 1;
+     }
+  }
 
-      @include breakpoint(md) {
-        padding: $ic-100;
+  .footer__col + .footer__col {
+    @include breakpoint(md) {
+      margin-left: $ic-300;
+    }
+  }
+
+  &__body,
+  &__bottom {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: $ic-300 0;
+
+      li + li {
+        margin-top: .5rem;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none; 
       }
     }
+  }
 
-    &__link {
-      color: $light-gray;
-      font-family: $secondary-font;
-
-      &::after {
-        background: $secondary-color;
-      }
+  &__bottom {
+    ul {
+      margin: $ic-100 0;
 
       @include breakpoint(md) {
-        &:hover,
-        &:focus {
-          color: $secondary-color;
+        margin: 0;
+      }
+
+     li {
+      @include breakpoint(md) {
+        margin-left: .5rem;
+      }
+     }
+
+      li + li {
+        margin-top: 0;
+        margin-left: .5rem;
+
+        @include breakpoint(md) {
+          margin-top: 0;
         }
       }
     }
   }
 
-  .footer__contact a,
-  .copyright a {
-    color: $white;
-    text-decoration: none;
-    display: block;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
-
-  &__bottom-wrapper {
-    border-top: 1px solid rgba($light-gray, 0.2);
-  }
-
   .copyright {
     font-size: 14px;
     padding: $ic-100 0;
+    width: 100%;
 
     p {
       margin: 0;
     }
+  }
 
-    &__nav {
-      margin: 0;
-      padding: 0;
+  .credits {
+    @include breakpoint(md) {
+      margin-left: auto; 
     }
 
-    &__list-item {
-      list-style-type: none;
-      margin: 0 $ic-100;
+    a {
+      color: $white;
+      text-decoration: none; 
     }
   }
-}
-
-.bio + .footer,
-.contact-us + .footer,
-.categories-single + .footer {
-  padding-top: 0;
-  margin-top: 0;
 }

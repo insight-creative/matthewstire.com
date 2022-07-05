@@ -3,20 +3,22 @@ title: Contact Us
 seo:
   page_title: Contact Us
   meta_description: >-
-    
-  featured_image: 
-  featured_image_alt: 
+
+  featured_image:
+  featured_image_alt:
 hero:
-  heading: 
+  heading:
   subheading:
-  image: 
+  image:
   image_alt:
 intro:
-  heading: 
+  heading:
   subheading: >-
-    
-  body: 
+
+  body:
 menu:
   secondary:
     weight: 3
+  company:
+    weight: 7
 ---

@@ -1,7 +1,7 @@
 ---
-title: About
+title: History
 seo:
-  page_title: About
+  page_title: History
   meta_description: >-
 
   featured_image:
@@ -18,7 +18,7 @@ intro:
   body:
 menu:
   main:
-    weight: 5
+    parent: "About"
   company:
-    weight: 1
+    weight: 2
 ---

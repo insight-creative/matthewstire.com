@@ -1,57 +1,77 @@
+<div class="pre-footer">
+  <div class="wrapper-lg">
+    <div class="associations block-sm border-top-gray">
+      {{ range .Site.Data.global_partials.associations }}
+      <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+      {{ end }}
+    </div>
+  </div>
+</div>
 <footer id="footer" class="footer">
-  <div class="footer__top block">
+  <div class="footer__top">
     <div class="wrapper-lg">
-      <div class="flex flex-column flex-row-m">
-        <div class="w-100 w-30-m">
-          <a class="footer__logo" href="{{ site.BaseURL }}">
-            {{ if .Site.Data.site_settings.footer_logo }}
-              <img src="{{ .Site.Data.site_settings.footer_logo | absURL }}" alt="{{ .Site.Data.site_settings.business_name }} logo" class="img-responsive dim" width="200" height="100">
-            {{ else }}
-              <h1>{{ site.Title }}</h1>
-            {{ end }}
-          </a>
-          <div class="footer__contact">
-            <span>
-              {{ .Site.Data.site_settings.address.street }}, {{ .Site.Data.site_settings.address.city }}, {{ .Site.Data.site_settings.address.state }}<br>
-              <div>
-                <span class="flex phone">Phone: <a href="{{ .Site.Data.site_settings.phone }}">{{ .Site.Data.site_settings.phone }}</a></span>
-                <span class="flex phone">Fax: {{ .Site.Data.site_settings.fax }}</span>
-              </div>
-            </span>
+      <div class="block-sm flex flex-justify-between border-bottom-gray">
+        <a class="brand-logo" href="{{ site.BaseURL }}">
+          {{ if .Site.Data.site_settings.logo }}
+          <img src="{{ .Site.Data.site_settings.logo | absURL }}" alt="{{ .Site.Data.site_settings.business_name }} logo" class="img-responsive dim" width="275" height="125">
+          {{ else }}
+            <h2>{{ site.Title }}</h2>
+          {{ end }}
+        </a>
+        {{ partialCached "social-media" . }}
+      </div>
+    </div>
+  </div>
+  <div class="footer__body">
+    <div class="block-sm">
+      <div class="wrapper-lg">
+        <div class="footer__columns flex flex-wrap fade-staggered">
+          <div class="footer__col flow">
+            <h2 class="h5">{{ .Site.Data.global_partials.footer_cta.heading }}</h2>
+            <p>{{ .Site.Data.global_partials.footer_cta.body }}</p>
+            <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>
           </div>
-        </div>
-        <div class="w-100 w-70-m flex flex-justify-end-m">
-          <ul class="footer-nav" role="list">
-            {{ range .Site.Menus.footer }}
-            {{ $contact := eq "Contact Us" .Name }}
-            <li class="footer-nav__item">
-              {{ if $contact }}
-              <a class="btn btn-primary" href="{{ .URL }}" aria-label="{{ .Name }}">
-                {{ .Name }}
-              </a>
-              {{ else }}
-              <a class="footer-nav__link" href="{{ .URL }}" aria-label="{{ .Name }}">
-                  {{ .Name }}
-              </a>
+          <div class="footer__col fade-staggered">
+            <h2 class="h6">Services</h3>
+            <ul>
+              {{ range sort .Site.Menus.services "value" "desc" }}
+              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
               {{ end }}
-            </li>  
-            {{ end }}
-          </ul>
+            </ul>
+          </div>
+          <div class="footer__col fade-staggered">
+            <h2 class="h6">Company</h3>
+            <ul>
+              {{ range .Site.Menus.company }}
+              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="footer__col w-100 w-25-m fade-staggered">
+            <h2 class="h6">Quick Links</h3>
+            <ul>
+              {{ range .Site.Menus.quick_links}}
+              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+              <li><a href="https://www.thegoodyearcreditcard.com/index.html?gyID=90931" target="_blank" rel="noopener noferrer">Goodyear Credit Card</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="footer__bottom wrapper-lg">
-    <div class="footer__bottom-wrapper flex flex-column flex-row-m flex-justify-between flex-center">
+    <div class="footer__bottom-wrapper border-top-gray flex flex-column flex-row-m flex-justify-between flex-center">
       <div class="copyright flex flex-column flex-row-m">
-        <p>© {{ dateFormat "2006" now }} {{ .Site.Data.site_settings.business_name }}</p>
-        <ul class="copyright__nav flex">
-          <li class="copyright__list-item"><a href="/privacy-policy/" class="copyright__nav-item">Privacy Policy</a></li>
-          <li class="copyright__list-item"><a href="/sitemap/" class="copyright__nav-item">Sitemap</a></li>
-          <li class="copyright__list-item"><a href="/contact/" class="copyright__nav-item">Contact Us</a></li>
+        <p class="copyright__date">© {{ dateFormat "2006" now }} {{ .Site.Data.site_settings.business_name }}. All Rights Reserved.</p>
+        <ul class="flex">
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/sitemap/">Sitemap</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/ase-certified/">ASE Certified</a></li>
         </ul>
+        <div class="credits"><a href="https://insightcreative.com" target="_blank">Website by Insight Creative, Inc.</a></div>
       </div>
-      {{ partialCached "social-media" . }}
     </div>
   </div>
 </footer>

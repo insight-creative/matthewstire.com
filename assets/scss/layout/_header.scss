@@ -24,10 +24,6 @@
     }
   }
 
-  &__top-inner {
-    width: 100%;
-  }
-
   &__secondary-menu {
     margin: 0;
 
@@ -60,21 +56,10 @@
 
     @include breakpoint(md) {
       overflow: visible;
-      padding-left: $ic-300;
     }
-  }
 
-  &__logo {
-
-    .brand-logo {
-      img {
-        width: 100%;
-        max-width: 170px;
-
-        @include breakpoint(md) {
-          max-width: 275px;
-        }
-      }
+    @include breakpoint(lg) {
+      padding-left: $ic-300;
     }
   }
 
@@ -122,26 +107,6 @@
     }
   }
 
-  &__social {
-    display: flex;
-    align-items: center;
-
-    li {
-      list-style-type: none;
-      margin: 0;
-
-      a {
-        padding: $ic-100;
-      }
-    }
-
-    svg {
-      width: $ic-300;
-      height: $ic-300;
-      fill: $primary-color;
-    }
-  }
-
   &__cta {
     display: none;
 
@@ -152,8 +117,8 @@
       color: $white;
       text-decoration: none;
       font-size: $ic-100;
-      padding: $ic-100 $ic-300; 
-      margin-left: $ic-500;
+      padding: $ic-100; 
+      margin-left: $ic-200;
 
       svg {
         fill: $white;
@@ -161,6 +126,11 @@
         height: 100%;
         margin-bottom: 1rem;
       }
+    }
+
+    @include breakpoint(lg) {
+      padding: $ic-100 $ic-300; 
+      margin-left: $ic-500;
     }
   }
 
@@ -177,6 +147,21 @@
       width: 30px;
       height: 100%;
       margin-bottom: 1rem;
+    }
+  }
+}
+
+.brand-logo {
+  img {
+    width: 100%;
+    max-width: 170px;
+
+    @include breakpoint(md) {
+      max-width: 210px;
+    }
+
+    @include breakpoint(lg) {
+      max-width: 275px;
     }
   }
 }
@@ -212,41 +197,29 @@
 .nav-list,
 .footer-nav {
   display: none;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  // transform: translateX(120%);
-  transition: 0.3s ease-in-out;
-  background-color: $white;
-  padding: 0;
-  // opacity: 0;
-  margin: 0;
-  padding: $ic-300;
 
   @include breakpoint(md) {
-    //   display: flex;
-    //   flex-direction: row;
-    //   align-items: center;
-    //   justify-content: space-evenly;
-    //   background-color: transparent;
-    //   width: auto;
-    //   position: relative;
-    //   top: 0;
-    //   left: 0;
-    //   transform: translateX(0);
-    //   opacity: 1;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    background-color: $white;
+    margin: 0;
     display: block;
     position: static;
     padding: 0;
   }
 
   &__item {
-    list-style-type: none;
-    margin-top: 0;
-    padding: .5rem $ic-100 .5rem $ic-100;
-
     @include breakpoint(md) {
+      list-style-type: none;
+      margin-top: 0;
+      padding: .5rem;
       display: inline-block;
+    }
+
+    @include breakpoint(lg) {
+      padding: .5rem $ic-100;
     }
   }
 
@@ -254,16 +227,15 @@
     padding: .5rem 0 .5rem $ic-100;
   }
 
-  &__link {
-    text-decoration: none;
-    color: $black;
-    font-family: $secondary-font;
-    font-size: $ic-100;
-    font-weight: 700;
-    transition: 0.3s ease-out;
-   
-
+  &__link { 
     @include breakpoint(md) {
+      text-decoration: none;
+      color: $black;
+      font-family: $secondary-font;
+      font-size: clamp($ic--100, 1vw, 18px);
+      font-weight: 700;
+      transition: 0.3s ease-out;
+      
       &:hover,
       &:focus {
         color: $primary-color;
@@ -357,11 +329,6 @@
     }
   }
 }
-
-// .active .sub-menu {
-//   display: block;
-//   height: 100%;
-// }
 
 .collapse {
   @include breakpoint(md) {

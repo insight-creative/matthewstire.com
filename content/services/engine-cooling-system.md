@@ -1,7 +1,7 @@
 ---
-title: About
+title: Engine Cooling System
 seo:
-  page_title: About
+  page_title: Engine Cooling System
   meta_description: >-
 
   featured_image:
@@ -18,7 +18,6 @@ intro:
   body:
 menu:
   main:
-    weight: 5
-  company:
-    weight: 1
+    parent: "Services"
+  services:
 ---
