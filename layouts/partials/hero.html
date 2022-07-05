@@ -1,29 +1,14 @@
 {{ $heroClass := lower .Page.Title }}
 <div class="hero {{ anchorize $heroClass }}-hero">
-  {{ $heroimage := (.Resources.GetMatch (index .image)) }}
-  <div class="hero__overlay"></div>
-  <picture>
-    <source sizes="100vw" srcset="https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=avif&q=80&height=600&width=400&fit=crop 600w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=avif&q=80&height=400&width=800&fit=crop 800w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=avif&q=80&height=500&width=1000&fit=crop 1000w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=avif&q=80&height=700&width=1400&fit=crop 1400w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=avif&q=80&height=900&width=1800&fit=crop 1800w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=avif&q=80&height=1000&width=2500&fit=crop 2500w" type="image/avif">
-
-    <source sizes="100vw" srcset="https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=webp&q=80&height=600&width=400&fit=crop 600w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=webp&q=80&height=400&width=800&fit=crop 800w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=webp&q=80&height=500&width=1000&fit=crop 1000w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=webp&q=80&height=700&width=1400&fit=crop 1400w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=webp&q=80&height=900&width=1800&fit=crop 1800w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=webp&q=80&height=1000&width=2500&fit=crop 2500w" type="image/webp">
-
-    <source sizes="100vw" srcset="https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=jpg&q=80&height=600&width=400&fit=crop 600w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=jpg&q=80&height=400&width=800&fit=crop 800w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=jpg&q=80&height=500&width=1000&fit=crop 1000w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=jpg&q=80&height=700&width=1400&fit=crop 1400w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=jpg&q=80&height=900&width=1800&fit=crop 1800w, https://lcojlaw.imgix.net/uploads/{{ .image }}?fm=jpg&q=80&height=1000&width=2500&fit=crop 2500w" type="image/jpg">
-    <img sizes="100vw" src="https://lcojlaw.imgix.net/uploads/{{ .image }}" width="1500" height="600" alt="">
-  </picture>
-  <div class="hero__inner">
-   <div class="wrapper-lg">
-    <div class="hero__content">
-      <h1 class="hero__title text-white no-margin">
-        {{ .heading | markdownify }}
-      </h1>
-      {{ if .body }}
-      <h2 class="h5 text-white ">{{ .body }}</h2>
-      {{ end }}
-      <div class="divider"></div>
+  {{ partial "hero-image" . }}
+  <div class="hero__overlay flex flex-justify-center flex-end">
+    <div class="wrapper-lg">
+      <div class="hero__content text-center">
+        <h1 class="text-primary no-margin max-width-none shift-up letter-sp-1">{{ .Params.hero.heading | markdownify }}</h1>
+        {{ if .Params.hero.subheading }}
+        <h2 class="h4 text-white fw-5 max-width-none">{{ .Params.hero.subheading | markdownify }}</h2>
+        {{ end }}
+      </div>
     </div>
-   </div>
-  </div>
-  <div class="coj-watermark">
-    {{ partialCached "svg-icons/COJ-logomark-watermark.svg" . }}
   </div>
 </div>

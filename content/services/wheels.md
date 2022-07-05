@@ -18,6 +18,4 @@ intro:
   body:
 menu:
   main:
-    parent: "Services"
-  services:
 ---

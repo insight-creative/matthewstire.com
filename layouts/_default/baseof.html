@@ -4,10 +4,10 @@
 {{ $namespace := lower .Page.Title }}
 {{ $mainClass := lower .Page.Title }}
 
-<body>
+<body class="{{ anchorize $mainClass }} {{ .Params.page_class }}" data-instant-intensity="viewport">
   <div class="site-wrap">
     {{ block "header" . }}{{ partial "header" . }}{{end}}
-    <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main">
+    <main id="main-content" class="site-main">
       {{ partial "breadcrumbs" . }}
       {{ block "main" . }}{{ end }}
     </main>

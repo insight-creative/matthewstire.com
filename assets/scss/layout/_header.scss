@@ -296,9 +296,12 @@
 
   &__inner {
     width: 100%;
-    max-width: 100%;
-    columns: 4;
-    padding: $ic-1000 $ic-200;
+    padding: $ic-600 $ic-200;
+
+    ul {
+      padding: $ic-300 0;
+      columns: 3;
+    }
   }
 
   &__item {
@@ -316,16 +319,15 @@
 
   &__link {
     font-size: $ic-100;
+    font-weight: 700;
     text-decoration: none;
     padding: 0.3rem;
     display: block;
+    color: $black;
 
     &:hover,
     &:focus {
-      svg {
-        fill: $secondary-color;
-        transform: translateX(3px);
-      }
+      transform: translateX(8px);
     }
   }
 }

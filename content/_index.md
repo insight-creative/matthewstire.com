@@ -7,12 +7,8 @@ seo:
     image: machining.jpg
     image_alt: machined part
 hero:
-  heading: Comprehensive <span class="text-secondary">Legal Guidance</span> in <span class="text-secondary">Northeast Wisconsin</span> Since 1976
-  body: When you work with any of our attorneys, you'll benefit from the combined expertise of the whole firm.
-  hero_image:
-    image: green-bay-wi-coj-watermark-overlay.jpg
-    image_alt:
-  button:
-    button_url: /our-team/
-    button_text: Meet our team
+  heading: Your Trusted Tire and Auto Repair Specialists
+  body: Matthews Tire is your one-stop shop for the best service and value on high-quality tires, oil changes, general car maintenance and auto repair services, serving Northeast Wisconsin as a locally owned auto shop since 1952.
+  image_url: /uploads/matthews-summer-roads-background.jpg
+  image_alt: An empty country road
 ---
