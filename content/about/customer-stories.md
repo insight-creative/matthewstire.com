@@ -20,5 +20,4 @@ menu:
   main:
     parent: "About"
   company:
-    weight: 4
 ---

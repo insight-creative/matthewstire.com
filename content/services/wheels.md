@@ -16,6 +16,4 @@ intro:
   subheading: >-
 
   body:
-menu:
-  main:
 ---

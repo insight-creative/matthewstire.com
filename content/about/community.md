@@ -1,7 +1,7 @@
 ---
-title: Leadership
+title: Community
 seo:
-  page_title: Our Team
+  page_title: Community
   meta_description: >-
 
   featured_image:
@@ -20,5 +20,4 @@ menu:
   main:
     parent: "About"
   company:
-    weight: 6
 ---

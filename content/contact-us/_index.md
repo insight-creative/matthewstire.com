@@ -20,5 +20,4 @@ menu:
   secondary:
     weight: 3
   company:
-    weight: 7
 ---

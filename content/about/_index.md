@@ -20,5 +20,4 @@ menu:
   main:
     weight: 5
   company:
-    weight: 1
 ---
