@@ -1,13 +1,15 @@
 {{ $heroClass := lower .Page.Title }}
 <div class="{{ anchorize $heroClass }}-hero">
   {{ partial "hero-image" . }}
-  <div class="home-hero__overlay flex flex-center">
+  <div class="home-hero__overlay flex flex-center flex-justify-center">
     <div class="wrapper-lg">
-      <div class="home-hero__content text-center">
-        <h1 class="text-primary max-width-none shift-up letter-sp-1">{{ .Params.hero.heading }}</h1>
-        <p>{{ .Params.hero.body }}</p>
-        <a href="/promotions/" class="btn btn-secondary">Current Promotions</a>
-        <a href="/tires/" class="btn btn-secondary">Find Your Tires</a>
+      <div class="home-hero__content text-center flow">
+        <h1 class="text-white text-shadow max-width-none">{{ .Params.hero.heading }}</h1>
+        <p class="text-white text-shadow fw-500">{{ .Params.hero.body }}</p>
+        <div class="hero-buttons flex flex-column flex-row-s flex-justify-center">
+          <a href="/promotions/" class="btn btn-secondary">Current Promotions</a>
+          <a href="/tires/" class="btn btn-secondary">Find Your Tires</a>
+        </div>
       </div>
     </div>
   </div>
