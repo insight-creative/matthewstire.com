@@ -26,3 +26,18 @@
     display: none;
   }
 }
+
+.home-popular-services {
+  position: relative;
+}
+
+.mt-yellow-swoosh-bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-image: url("/uploads/yellow-generic-swoosh-background.svg.svg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 500px;
+}

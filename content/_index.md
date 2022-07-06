@@ -45,4 +45,32 @@ tires_block:
   button_text: Find Your Tires
   image_url: /uploads/matthews-tire-tire-service-network.jpg
   image_alt:
+services_block:
+  heading: Matthews Tire Auto Services
+  body: >-
+    No matter what services your vehicle needs, Matthews Tire has a solution. View our popular maintenance and auto repair services to learn more.
+  popular_services:
+    - heading: Oil Changes
+      body: Keep your car running smoothly with a Matthews Tire oil change, recommended every 3,000 miles.
+      image_url: /uploads/oil-change-services.jpg
+      image_alt: Oil being poured into engine during an oil change service
+      url: /services/oil-changes/
+    - heading: Alignments
+      body: Maintain your suspension with a Matthews Tire alignment, improving the longevity of your tires and the quality of your ride.
+      image_url: /uploads/alignment-services.jpg
+      image_alt: Alignment equipment on wheel during an alignment service
+      url: /services/alignments/
+    - heading: Brakes
+      body: Stay safe on the road and ensure your brakes are in the best shape possible with Matthews Tire brake inspections, repairs and replacements.
+      image_url: /uploads/brake-repair-services.jpg
+      image_alt: Brake rotor and brake pads on vehicle while in for a brake repair service
+      url: /services/brake-repair/
+    - heading: Tire Rotations
+      body: Prevent uneven tire wear with a Matthews Tire rotation. Plus, get FREE lifetime tire rotations with a purchase of any set of four new tires!
+      image_url: /uploads/tire-rotation-services.jpg
+      image_alt: Person torquing down lug nuts while performing a tire rotation service
+      url: /services/tire-rotations/
+  button: true
+  button_url: /services/
+  button_text: View All Services
 ---

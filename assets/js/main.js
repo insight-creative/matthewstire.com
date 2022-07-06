@@ -13,6 +13,14 @@ const locationsButton = document.querySelector('.site-header__locations')
 const mobileLocationsButton = document.querySelector('.site-header__locations--mobile')
 const closeLocationsButton = document.querySelector('.mt-locations__close')
 const locations = document.querySelector('.mt-locations')
+const locationSelectTrigger = document.querySelector('.location-select__trigger')
+const locationSelect = document.querySelector('.location-select')
+
+hamburger.addEventListener('click', toggleMobileMenu)
+locationsButton.addEventListener('click', toggleLocations)
+mobileLocationsButton.addEventListener('click', toggleLocations)
+closeLocationsButton.addEventListener('click', toggleLocations)
+locationSelectTrigger.addEventListener('click', openLocationsList)
 
 linkHasSubMenu.forEach((link) => {
     link.addEventListener('mouseover', function() {
@@ -63,8 +71,6 @@ window.addEventListener("scroll", function() {
   scrollDetect(collapseNav, expandNav);
 });
 
-hamburger.addEventListener('click', toggleMobileMenu)
-
 function toggleMobileMenu() {
     const mobileMenuWrapper = document.querySelector('.site-header__mobile-nav-inner')
     const mobileMenuWrapperHeight = mobileMenuWrapper.getBoundingClientRect().height
@@ -86,10 +92,6 @@ function toggleMobileMenu() {
     }
 }
 
-locationsButton.addEventListener('click', toggleLocations)
-mobileLocationsButton.addEventListener('click', toggleLocations)
-closeLocationsButton.addEventListener('click', toggleLocations)
-
 function toggleLocations() {
     if(locations.classList.contains('show-locations')) {
         this.setAttribute('aria-expanded', 'false')
@@ -101,6 +103,18 @@ function toggleLocations() {
         document.body.classList.add('has-open-modal')
         this.setAttribute('aria-expanded','true')
         this.setAttribute('aria-label', 'close locations search tool')
+    }
+}
+
+function openLocationsList() {
+    if(locationSelect.classList.contains('locations-list-open')) {
+        this.setAttribute('aria-expanded', 'false')
+        this.setAttribute('aria-label', 'open locations select tool')
+        locationSelect.classList.remove('locations-list-open')
+    } else {
+        locationSelect.classList.add('locations-list-open')
+        this.setAttribute('aria-expanded','true')
+        this.setAttribute('aria-label', 'close locations select tool')
     }
 }
 

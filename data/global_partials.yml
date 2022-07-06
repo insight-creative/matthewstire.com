@@ -1,3 +1,9 @@
+locations_served_block:
+  heading: Cities we Serve
+  body: No matter where you're located in Northeast Wisconsin, there's a Matthews Tire location that can help keep you rolling. You can find our auto shops in East Appleton, West Appleton, Menasha, Waupaca, Fond du Lac and Green Bay.
+  button: true
+  button_url: /locations/
+  button_text: See All Locations
 associations:
   - image_url: /uploads/tire-and-service-network.jpg
     image_alt: Tire and Service Network Logo

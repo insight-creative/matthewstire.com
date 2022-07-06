@@ -1,0 +1,47 @@
+.location-select {
+    position: relative;
+    background-color: $white;
+    box-shadow: 0 6px 15px rgba($primary-color, .15);
+    padding: $ic-100;
+
+    &__header svg {
+        height: $ic-100;
+        width: $ic-100;
+        fill: $primary-color;
+        margin-right: $ic-100;
+    }
+
+    &__trigger {
+        background-color: $white;
+        border: 1px solid $light-gray;
+        text-align: left;
+        padding: $ic--200;
+
+        .sub-menu-indicator {
+            position: relative;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        z-index: 8;
+        padding: 1rem;
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 6px 15px rgba($primary-color, .15);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform .3s ease-out;
+    }
+}
+
+.locations-list-open ul {
+    transform: scaleY(1);
+}

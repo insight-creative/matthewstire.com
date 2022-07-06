@@ -18,6 +18,7 @@ module.exports = {
         'has-open-modal',
         'show-locations',
         'home-hero',
+        'locations-list-open',
       ],
     }),
   ],

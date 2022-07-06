@@ -1,0 +1,26 @@
+<a href="{{ .url }}" class="card flow no-decoration">
+    <div class="cover-image">
+        <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+        <div class="card__icon-group">
+            {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
+            <div class="card__icon bg-primary">
+                {{ if eq .heading "Oil Changes" }}
+                {{ partialCached "svg-icons/oil-changes.svg" . }}
+                {{ else if eq .heading "Alignments" }}
+                {{ partialCached "svg-icons/alignments.svg" . }}
+                {{ else if eq .heading "Brakes" }}
+                {{ partialCached "svg-icons/brakes.svg" . }}
+                {{ else if eq .heading "Tire Rotations" }}
+                {{ partialCached "svg-icons/tire-rotations.svg" . }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="card__body flow">
+        <h3 class="text-primary">{{ .heading }}</h3>
+        <p>{{ .body | markdownify }}</p>
+    </div>
+    <div class="card__arrow bg-primary">
+        {{ partialCached "svg-icons/double-chevron-right.svg" . }}
+    </div>
+</a>

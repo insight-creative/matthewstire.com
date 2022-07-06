@@ -1,94 +1,71 @@
 .card {
+  position: relative;
   background-color: $white;
-  padding: $ic-300;
-  transition: 0.3s ease-out;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  box-shadow: 6px 6px 6px rgba($primary-color, .15);
+  font-size: $ic-100;
 
-  &__link {
-    text-decoration: none;
+  .cover-image {
+    height: 250px;
+    position: relative;
+  }  
+
+  &__icon-group {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    overflow: hidden;
+    padding: $ic-100 0 $ic--100 0;
+
+    .mt-swoosh {
+      width: 105%;
+      height: auto;
+      position: relative;
+      left: -5px;
+    }
   }
 
-  &__link,
-  &__content {
-    height: 100%;
-  }
-
-  &__author-image {
-    max-width: $ic-800;
-    max-height: $ic-800;
-    margin-right: $ic-200;
-    border: 2px solid $secondary-color;
+  &__icon {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: $ic-800;
+    width: $ic-800;
     border-radius: 50%;
-    background-color: $white;
-  }
-
-  &__title {
-    color: $black;
-  }
-
-  &__read-more {
-    font-size: $ic-100;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: $secondary-font;
+    box-shadow: 0 5px 15px rgba($primary-color, .5);
 
     svg {
-      width: $ic-200;
-      height: $ic-200;
-      fill: $primary-color;
-      transition: 0.3s ease-out;
-      position: relative;
-      top: -1px;
+      height: $ic-600;
+      width: $ic-600;
+    }
+  }
+
+  &__body {
+    padding: 0 $ic-200;
+    margin-bottom: $ic-600;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: $ic-600;
+    width: $ic-600;
+    display: grid;
+    place-items: center;
+
+    svg {
+      fill: $accent-color;
+      height: $ic-400;
+      width: $ic-400;
     }
   }
 
   &:hover,
   &:focus {
-    background-image: url("/uploads/coj-logomark-watermark.svg");
-    box-shadow: 0 5px 8px rgba($primary-color, 0.1);
-
-    .card__title {
-      color: $black;
-    }
-
-    .card__read-more {
-      svg {
-        fill: $secondary-color;
-        transform: translateX(5px);
-      }
-    }
-  }
-}
-
-.card--event,
-.card--press-release {
-  background-color: $light-gray;
-}
-
-.card--event {
-  margin-top: $ic-400;
-
-  .card__read-more {
-    margin-top: $ic-300;
-  }
-
-  &__month,
-  &__year {
-    text-transform: uppercase;
-    font-size: $ic--100;
-    letter-spacing: 2px;
-  }
-
-  &__day {
-    font-size: $ic-500;
-    line-height: 1;
-  }
-}
-
-.card--press-release {
-  &__content {
-    margin-bottom: $ic-400;
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 6px rgba($primary-color, .35);
   }
 }
