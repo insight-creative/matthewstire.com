@@ -39,6 +39,10 @@
         transform: scaleY(0);
         transform-origin: top;
         transition: transform .3s ease-out;
+
+        a {
+            font-size: $ic-100;
+        }
     }
 }
 

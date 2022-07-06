@@ -47,10 +47,10 @@
     <div class="wrapper-lg">
         <div class="grid-4 pt-6">
             {{ range .popular_services }}
-            <a href="{{ .url }}" class="card flow no-decoration">
+            <a href="{{ .url }}" class="card flow no-decoration shadow-1 fs-100">
                 <div class="cover-image">
                     <img src="{{ .image_url }}" alt="{{ .image_alt }}">
-                    <div class="card__icon-group">
+                    <div class="card__icon-group w-100">
                         {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
                         <div class="card__icon bg-primary">
                             {{ if eq .heading "Oil Changes" }}
@@ -84,8 +84,8 @@
     </div>
 </section>
 <section aria-labelledby="locations-served-section-heading" class="block">
-    <div class="wrapper-md flex flex-column flex-row-m flex-center">
-        <div class="w-100 w-50-m flow">
+    <div class="wrapper-lg flex flex-column flex-row-m flex-center">
+        <div class="w-100 w-40-m flow">
             {{ with .Site.Data.global_partials.locations_served_block }}
             {{ if .heading }}
             <h2 id="locations-served-section-heading" class="text-primary">
@@ -101,7 +101,7 @@
                 <button class="location-select__trigger w-100 mt-2 flex flex-center flex-justify-between" aria-label="open locations select tool" aria-expanded="false">Select a Location <span class="sub-menu-indicator"></span></button>
                 <ul class="location-select__list">
                     {{ range .Site.Data.locations }}
-                    <li class="border-bottom-gray"><a href="{{ .location_url }}" class="no-decoration">{{ .name }}</a></li>
+                    <li class="border-bottom-gray"><a href="{{ .location_url }}" class="no-decoration fw-700">{{ .name }}</a></li>
                     {{ end }}
                 </ul>
             </div>
@@ -111,8 +111,34 @@
             {{ end }}
             {{ end }}
         </div>
-        <div class="w-100 w-50-m">
-            {{ partialCached "svg-icons/wi.svg" . }}
+        <div class="mt-locations-map w-100 w-60-m">
+            <img src="/uploads/map-screenshot-ne.jpg" alt="">
+            {{ partialCached "svg-icons/wi-yellow.svg" . }}
+            <!-- {{ partialCached "svg-icons/wi-blue.svg" . }}
+            {{ partialCached "svg-icons/wi.svg" . }} -->
+            {{ range .Site.Data.locations }}
+            <div class="mt-location mt-location--{{ .name | lower | urlize }}">
+                <button class="mt-location__btn"></button>
+                <div class="mt-location__content bg-primary shadow-1">
+                    <a href="{{ .location_url }}" class="flex flex-center fs-100 fw-700 no-decoration">{{ .name }} {{ partialCached "svg-icons/double-chevron-right.svg" . }}</a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<section aria-labelledby="home-blog-feed" class="home-blog-feed block bg-gray">
+    <div class="wrapper text-center">
+        <h2 id="home-blog-feed" class="text-primary">Latest News and Resources</h2>
+        <p>Stay up to date on the latest industry news and tips covered by the auto experts at Matthews Tire.</p>
+    </div>
+    <div class="wrapper-lg">
+        <div class="grid-3 block-sm">
+            {{ $pages := .Site.RegularPages }}
+            {{ $recentPosts := where $pages "Type" "resources" }}
+            {{ range first 3 $recentPosts }}
+            {{ .Render "blog-card" }}
+            {{ end }}
         </div>
     </div>
 </section>

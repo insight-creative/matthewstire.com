@@ -1,19 +1,20 @@
-<article class="card fade-up">
-	<a href="{{ .Permalink }}" class="card__link">
-		<div class="card__content flex flex-column flex-justify-between">
-			<div>
-				{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
-				{{- if $author -}}
-				<div class="card__author flex flex-center">
-					<img src="https://lcojlaw.imgix.net/uploads/{{ $author.image }}?w=100&h=100&mask=ellipse&crop=faces&fit=crop&fm=webp" class="card__author-image" alt="Photo of {{ $author.name }}" width="50" height="50"> 
-					<h3 class="card__name h6 no-margin">{{ $author.name }}</h3>
+<article class="card flow no-decoration shadow-1 fs-100">
+	<a href="{{ .Permalink }}" class="no-decoration">
+		<div class="cover-image">
+			<img src="{{ .Permalink }}{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}">
+			<div class="card__icon-group w-100">
+				{{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
+				<div class="card__icon bg-primary">
+					{{ partialCached "svg-icons/oil-changes.svg" . }}
 				</div>
-				{{ end }}
-				<h3 class="card__title h5">{{ .Title }}</h3>
 			</div>
-			<span class="card__read-more flex flex-center">
-					Read Article {{ partialCached "svg-icons/double-chevron-right.svg" . }}
-			</span>
+		</div>
+		<div class="card__body flow">
+			<h3 class="text-primary">{{ .Title }}</h3>
+			<p>{{ .Params.meta_description | markdownify }}</p>
+		</div>
+		<div class="card__arrow bg-primary">
+			{{ partialCached "svg-icons/double-chevron-right.svg" . }}
 		</div>
 	</a>
 </article>

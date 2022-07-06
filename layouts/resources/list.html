@@ -1,3 +1,16 @@
 {{ define "main" }}
-
+<div class="block">
+    <div class="wrapper-lg">
+        {{ $pages := .Site.RegularPages }}
+        {{ $posts := where $pages "Type" "resources" }}
+        {{ $postCount := len $posts }}
+        <a href="/legal-resources/" class="post-count">{{ $postCount }} Resources</a>
+        <div class="grid-2">
+            {{ $paginator := .Paginate ( where .Data.Pages "Type" "resources" ) }}
+            {{ range $paginator.Pages }}
+            {{ .Render "blog-card" }}
+            {{ end }}
+        </div>
+    </div>
+</div>
 {{ end }}

@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const mobileMenu = document.querySelector('.site-header__mobile-nav')
 const hamburger = document.querySelector('.hamburger')
 const siteHeader = document.querySelector('.site-header')
-const linkHasSubMenu = document.querySelectorAll('.has-sub-menu')
+const hasSubMenu = document.querySelectorAll('.has-sub-menu')
 const locationsButton = document.querySelector('.site-header__locations')
 const mobileLocationsButton = document.querySelector('.site-header__locations--mobile')
 const closeLocationsButton = document.querySelector('.mt-locations__close')
@@ -20,9 +20,12 @@ hamburger.addEventListener('click', toggleMobileMenu)
 locationsButton.addEventListener('click', toggleLocations)
 mobileLocationsButton.addEventListener('click', toggleLocations)
 closeLocationsButton.addEventListener('click', toggleLocations)
-locationSelectTrigger.addEventListener('click', openLocationsList)
+if(document.body.contains(locationSelectTrigger)) {
+    locationSelectTrigger.addEventListener('click', openLocationsList)
+}
 
-linkHasSubMenu.forEach((link) => {
+
+hasSubMenu.forEach((link) => {
     link.addEventListener('mouseover', function() {
         link.classList.add('active')
         const activeLink = document.querySelector('.active')

@@ -1,8 +1,7 @@
 .card {
   position: relative;
   background-color: $white;
-  box-shadow: 6px 6px 6px rgba($primary-color, .15);
-  font-size: $ic-100;
+  transition: .3s ease-out;
 
   .cover-image {
     height: 250px;
