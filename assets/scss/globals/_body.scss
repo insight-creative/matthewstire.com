@@ -33,6 +33,7 @@ main:focus {
 
 .site-main {
   position: relative;
+  margin-top: $mobile-header;
 
   @include breakpoint(md) {
     margin-top: $desktop-header;

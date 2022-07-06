@@ -2,7 +2,7 @@
     <div class="mt-locations__wrapper">
         <header class="mt-locations__header bg-primary text-center">
             <div class="wrapper-lg">
-                <h2 class="text-white h5 no-margin max-width-none">Find a Matthews Tire Location</h2>
+                <h2 class="text-white no-margin max-width-none">Find a Matthews Tire Location</h2>
                 <button class="mt-locations__close">{{ partialCached "svg-icons/close.svg" . }}</button>
             </div>
         </header>
@@ -27,7 +27,7 @@
                     <div class="location-card__contact-info">
                         <span class="flex flex-center">
                             {{ partialCached "svg-icons/locations-icon.svg" . }}
-                            <a href="{{ .googlemaps }}"><address>{{ .street }} {{ .city }}, {{ .state }}</address></a>
+                            <a href="{{ .googlemaps }}" target="_blank" rel="noopener noreferrer"><address>{{ .street }} {{ .city }}, {{ .state }}</address></a>
                         </span>
                         <span class="flex flex-center">
                             {{ partialCached "svg-icons/phone.svg" . }}

@@ -43,6 +43,6 @@ tires_block:
   button: true
   button_url: /tires/
   button_text: Find Your Tires
-  image_url: /uploads/matthews-tire-tire-service-network.png
+  image_url: /uploads/matthews-tire-tire-service-network.jpg
   image_alt:
 ---

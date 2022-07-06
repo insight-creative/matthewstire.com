@@ -21,14 +21,24 @@
         border-top: 2px solid $accent-color;
         padding: $ic--200 0;
         position: relative;
+
+        h2 {
+            font-size: clamp($ic-100, 4vw, $ic-300);
+        }
     }
 
     &__close {
+        display: grid;
+        place-items: center;
         position: absolute;
         right: $ic-100;
-        top: $ic--200;
+        top: 9px;
         background: none;
         border: none;
+
+        @include breakpoint(md) {
+            top: 14px;
+        }
 
         svg {
             fill: $white;
@@ -145,7 +155,7 @@
 }
 
 .has-open-modal {
-    height: 100vh;
+    // height: 100vh;
     overflow: hidden;
     padding-right: 17px;
 }
