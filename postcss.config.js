@@ -27,6 +27,7 @@ module.exports = {
         'mt-location--menasha',
         'mt-location--waupaca',
         'mt-swoosh',
+        'marker-active',
       ],
     }),
   ],

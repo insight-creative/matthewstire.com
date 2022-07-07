@@ -18,13 +18,19 @@
 
 .mt-location {
     position: absolute;
+    height: 18px;
+    width: 18px;
 
     &__btn {
-        background-color: $accent-color;
-        border: 5px solid $primary-color;
+        // background-color: $accent-color;
+        // border: 5px solid $primary-color;
+        border: 3px solid $white;
+        background-color: $primary-color;
+        outline: 2px solid $primary-color;
         border-radius: 50%;
-        height: $ic-300;
-        width: $ic-300;
+        height: 18px;
+        width: 18px;
+        position: absolute;
     }
 
     &__content {
@@ -35,6 +41,7 @@
         transform: translateX(-50%);
         display: none;
         width: max-content;
+        z-index: 8;
 
         &::after {
             position: absolute;
@@ -96,36 +103,40 @@
 // }
 
 .mt-location--appleton-east {
-    top: 67%;
-    right: 48%;
+    top: 58%;
+    right: 32%;
 }
 
 .mt-location--appleton-west {
-    top: 67%;
-    left: 45%;
+    top: 58%;
+    right: 35%;
 }
 
 .mt-location--commercial {
-    top: 64%;
-    right: 50%;
+    top: 55%;
+    right: 33.5%;
 }
 
 .mt-location--fond-du-lac {
-    bottom: 7%;
-    left: 47%;
+    bottom: 26%;
+    left: 64.5%;
 }
 
 .mt-location--green-bay {
-    top: 59%;
-    right: 42%;
+    top: 52%;
+    right: 30%;
 }
 
 .mt-location--menasha {
-    top: 69%;
-    right: 50%;
+    top: 58%;
+    right: 33.5%;
 }
 
 .mt-location--waupaca {
-    bottom: 23%;
-    left: 29%;
+    top: 54%;
+    left: 54%;
+}
+
+.marker-active + .mt-location__content {
+    display: block;
 }

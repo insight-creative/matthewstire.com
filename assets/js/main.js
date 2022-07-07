@@ -15,25 +15,40 @@ const closeLocationsButton = document.querySelector('.mt-locations__close')
 const locations = document.querySelector('.mt-locations')
 const locationSelectTrigger = document.querySelector('.location-select__trigger')
 const locationSelect = document.querySelector('.location-select')
+const mapMarkers = document.querySelectorAll('.mt-location')
+const mapMarker = document.querySelector('.mt-location__btn')
+
+
+if(document.body.contains(mapMarker)) {
+    mapMarkers.forEach((marker) => {
+        marker.addEventListener('mouseover', () => {
+            markerButton = marker.querySelector('.mt-location__btn')
+            markerButton.classList.add('marker-active')
+        })
+        marker.addEventListener('mouseout', () => {
+            markerButton.classList.remove('marker-active')
+        })
+    })
+}
 
 hamburger.addEventListener('click', toggleMobileMenu)
 locationsButton.addEventListener('click', toggleLocations)
 mobileLocationsButton.addEventListener('click', toggleLocations)
 closeLocationsButton.addEventListener('click', toggleLocations)
+
 if(document.body.contains(locationSelectTrigger)) {
     locationSelectTrigger.addEventListener('click', openLocationsList)
 }
 
-
 hasSubMenu.forEach((link) => {
-    link.addEventListener('mouseover', function() {
+    link.addEventListener('mouseover', () => {
         link.classList.add('active')
         const activeLink = document.querySelector('.active')
         const activeSubMenu = activeLink.querySelector('.sub-menu')
         const activeSubMenuContainer = activeSubMenu.querySelector('.sub-menu__inner').getBoundingClientRect().height
         activeSubMenu.style.height = activeSubMenuContainer + 'px'
     })
-    link.addEventListener('mouseout', function() {
+    link.addEventListener('mouseout', () => {
         link.classList.remove('active')
         const subMenuToHide = link.querySelector('.sub-menu')
         subMenuToHide.removeAttribute('style')
