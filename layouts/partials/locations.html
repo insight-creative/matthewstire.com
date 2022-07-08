@@ -27,7 +27,7 @@
                     <div class="location-card__contact-info">
                         <span class="flex flex-center">
                             {{ partialCached "svg-icons/locations-icon.svg" . }}
-                            <a href="{{ .googlemaps }}" target="_blank" rel="noopener noreferrer"><address>{{ .street }} {{ .city }}, {{ .state }}</address></a>
+                            <address><a href="{{ .googlemaps }}" target="_blank" rel="noopener noreferrer">{{ .street }} {{ .city }}, {{ .state }}</a></address>
                         </span>
                         <span class="flex flex-center">
                             {{ partialCached "svg-icons/phone.svg" . }}

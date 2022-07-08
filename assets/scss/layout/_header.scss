@@ -311,9 +311,15 @@
     }
   }
 
+  &__sidebar {
+    padding-left: $ic-100;
+    border-left: 1px solid $light-gray;
+  }
+
   &__item {
     list-style-type: none;
     margin: 0;
+    padding: .25rem 0;
 
     svg {
       height: 10px;
@@ -321,6 +327,21 @@
       fill: $primary-color;
       margin-left: 5px;
       transition: transform 0.3s ease-out;
+    }
+  }
+
+  &__icon {
+    width: $ic-500;
+    height: $ic-500;
+    border-radius: 50%;
+    display: grid; 
+    place-items: center;
+    background-color: $light-gray;
+
+    img {
+      width: auto;
+      max-width: $ic-300;
+      height: $ic-300;
     }
   }
 
@@ -379,4 +400,16 @@
   opacity: 1;
   overflow: hidden;
   visibility: visible;
+}
+
+.services-sub-menu {
+  .about-menu-desc {
+    display: none;
+  }
+}
+
+.about-sub-menu {
+  .services-menu-desc {
+    display: none;
+  }
 }

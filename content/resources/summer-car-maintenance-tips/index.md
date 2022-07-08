@@ -7,6 +7,8 @@ seo:
   featured_image: matthews-tire-air-conditioning-repair.jpg
   featured_image_alt:
 date: 2022-06-16
+categories:
+  - Maintenance
 ---
 
 ![Auto repair technician checking air conditioning system on vehicle](matthews-tire-air-conditioning-repair.jpg)

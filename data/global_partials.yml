@@ -4,6 +4,12 @@ locations_served_block:
   button: true
   button_url: /locations/
   button_text: See All Locations
+blog_feed_block:
+  heading: Latest News and Resources
+  body: Stay up to date on the latest industry news and tips covered by the auto experts at Matthews Tire.
+  button: true
+  button_url: /resources/
+  button_text: View All Resources
 associations:
   - image_url: /uploads/tire-and-service-network.jpg
     image_alt: Tire and Service Network Logo

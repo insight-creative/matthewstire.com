@@ -31,7 +31,7 @@
             <p>{{ .Site.Data.global_partials.footer_cta.body }}</p>
             <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>
           </div>
-          <div class="footer__col fade-staggered">
+          <div class="footer__col footer__services fade-staggered">
             <h2 class="h6">Services</h3>
             <ul>
               {{ range sort .Site.Menus.services "value" "desc" }}

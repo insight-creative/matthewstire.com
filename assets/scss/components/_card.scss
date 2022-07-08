@@ -41,6 +41,14 @@
     }
   }
 
+  &__meta {
+    position: absolute; 
+    top: $ic--100;
+    left: $ic--100;
+    border-radius: 5px;
+    padding: 4px $ic--200;
+  }
+
   &__body {
     padding: 0 $ic-200;
     margin-bottom: $ic-600;
@@ -67,4 +75,10 @@
     transform: translateY(-5px);
     box-shadow: 6px 6px 6px rgba($primary-color, .35);
   }
+}
+
+.card--blog {
+  .cover-image {
+    height: 300px;
+  } 
 }

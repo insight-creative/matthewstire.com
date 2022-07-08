@@ -67,7 +67,7 @@
                 </div>
                 <div class="card__body flow">
                     <h3 class="text-primary">{{ .heading }}</h3>
-                    <p>{{ .body | markdownify }}</p>
+                    <p class="text-black">{{ .body | markdownify }}</p>
                 </div>
                 <div class="card__arrow bg-primary">
                     {{ partialCached "svg-icons/double-chevron-right.svg" . }}
@@ -129,8 +129,8 @@
 </section>
 <section aria-labelledby="home-blog-feed" class="home-blog-feed block bg-gray">
     <div class="wrapper text-center">
-        <h2 id="home-blog-feed" class="text-primary">Latest News and Resources</h2>
-        <p>Stay up to date on the latest industry news and tips covered by the auto experts at Matthews Tire.</p>
+        <h2 id="home-blog-feed" class="text-primary">{{ .Site.Data.global_partials.blog_feed_block.heading }}</h2>
+        <p>{{ .Site.Data.global_partials.blog_feed_block.body }}</p>
     </div>
     <div class="wrapper-lg">
         <div class="grid-3 block-sm">
@@ -141,5 +141,10 @@
             {{ end }}
         </div>
     </div>
+    {{ if .Site.Data.global_partials.blog_feed_block.button }}
+    <div class="text-center mt-6">
+        <a href="{{ .Site.Data.global_partials.blog_feed_block.button_url }}" class="btn btn-primary">{{ .Site.Data.global_partials.blog_feed_block.button_text }}</a>
+    </div>
+    {{ end }}
 </section>
 {{ end }}

@@ -15,6 +15,8 @@ module.exports = {
         'nav-open',
         'collapse',
         'expand',
+        'services-sub-menu',
+        'about-sub-menu',
         'has-open-modal',
         'show-locations',
         'home-hero',

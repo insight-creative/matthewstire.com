@@ -1,4 +1,4 @@
-<article class="card flow no-decoration shadow-1 fs-100">
+<article class="card card--blog flow no-decoration shadow-1 fs-100">
 	<a href="{{ .Permalink }}" class="no-decoration">
 		<div class="cover-image">
 			<img src="{{ .Permalink }}{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}">
@@ -8,10 +8,17 @@
 					{{ partialCached "svg-icons/oil-changes.svg" . }}
 				</div>
 			</div>
+			{{ if .Params.Categories }}
+			{{ range $index, $elements := .Params.Categories }}
+			<div class="card__meta bg-primary text-white fs-100 fw-700">
+				<span class="categories">{{ if ne $index 0 }}{{ end }}{{ . | title }}</span>
+			</div>
+			{{ end}}
+			{{ end }}				
 		</div>
 		<div class="card__body flow">
-			<h3 class="text-primary">{{ .Title }}</h3>
-			<p>{{ .Params.meta_description | markdownify }}</p>
+			<h3 class="h5 text-primary">{{ .Title }}</h3>
+			<p class="text-black">{{ if .Params.seo.meta_description }}{{ .Params.seo.meta_description | safeHTML }}{{ else }}{{ .Summary  | safeHTML }}{{ end }}</p>
 		</div>
 		<div class="card__arrow bg-primary">
 			{{ partialCached "svg-icons/double-chevron-right.svg" . }}

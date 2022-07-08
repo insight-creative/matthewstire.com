@@ -59,7 +59,7 @@ services_block:
       body: Maintain your suspension with a Matthews Tire alignment, improving the longevity of your tires and the quality of your ride.
       image_url: /uploads/alignment-services.jpg
       image_alt: Alignment equipment on wheel during an alignment service
-      url: /services/alignments/
+      url: /services/suspension-repair/
     - heading: Brakes
       body: Stay safe on the road and ensure your brakes are in the best shape possible with Matthews Tire brake inspections, repairs and replacements.
       image_url: /uploads/brake-repair-services.jpg
@@ -69,7 +69,7 @@ services_block:
       body: Prevent uneven tire wear with a Matthews Tire rotation. Plus, get FREE lifetime tire rotations with a purchase of any set of four new tires!
       image_url: /uploads/tire-rotation-services.jpg
       image_alt: Person torquing down lug nuts while performing a tire rotation service
-      url: /services/tire-rotations/
+      url: /tires/
   button: true
   button_url: /services/
   button_text: View All Services

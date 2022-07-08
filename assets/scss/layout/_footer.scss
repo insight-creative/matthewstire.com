@@ -53,6 +53,10 @@
     }
   }
 
+  &__services ul {
+    columns: 2;
+  }
+
   &__body,
   &__bottom {
     ul {
@@ -65,8 +69,26 @@
       }
 
       a {
+        display: block;
         color: $white;
         text-decoration: none; 
+        transition: color .3s ease-out, transform .3s ease-out; 
+
+        &:hover, 
+        &:focus {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+  &__body {
+    ul {
+      a {
+        &:hover, 
+        &:focus {
+          transform: translateX(8px);
+        }
       }
     }
   }
