@@ -9,6 +9,23 @@ a {
   }
 }
 
+.site-main a:not(.btn):not(.breadcrumbs__link):not(.card) {
+  color: $primary-color;
+  text-decoration: none;
+  background-image: linear-gradient($accent-color, $accent-color),linear-gradient(270deg,$primary-color 0%,$primary-color 100%);
+  background-size: 100% 2px,0 2px;
+  background-position: 100% 100%,0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .3s ease-out,background-position .3s ease-out,color .3s ease-out;
+
+  &:hover,
+  &:focus {
+    background-size: 0 2px,100% 2px;
+    background-position: 100% 100%,0 100%;
+    text-decoration: none;
+  }
+}
+
 .decorated-link {
   text-decoration: none;
   position: relative;

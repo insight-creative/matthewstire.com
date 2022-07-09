@@ -1,0 +1,25 @@
+{{ if eq .Name "Air Conditioning and Heating" }}
+    {{ partialCached "svg-icons/air-conditioning-and-heating.svg" . }}
+{{ else if eq .Name "Brakes" }}
+    {{ partialCached "svg-icons/brakes.svg" . }}
+{{ else if eq .Name "Drivetrain" }}
+    {{ partialCached "svg-icons/drivetrain.svg" . }}
+{{ else if eq .Name "Electrical" }}
+    {{ partialCached "svg-icons/electrical.svg" . }}
+{{ else if eq .Name "Engine" }}
+    {{ partialCached "svg-icons/engine.svg" . }}
+{{ else if eq .Name "Engine Cooling System" }}
+    {{ partialCached "svg-icons/engine-cooling-system.svg" . }}
+{{ else if eq .Name "Exhaust" }}
+    {{ partialCached "svg-icons/exhaust.svg" . }}
+{{ else if eq .Name "Oil Change Services" }}
+    {{ partialCached "svg-icons/oil-change-services.svg" . }}
+{{ else if eq .Name "Suspension" }}
+    {{ partialCached "svg-icons/suspension.svg" . }}
+{{ else if eq .Name "Tire Repair" }}
+    {{ partialCached "svg-icons/tire-repair.svg" . }}
+{{ else if eq .Name "Wheel Repair" }}
+    {{ partialCached "svg-icons/wheel-repair.svg" . }}
+{{ else if eq .Name "Windshield" }}
+    {{ partialCached "svg-icons/windshield.svg" . }}
+{{ end }}

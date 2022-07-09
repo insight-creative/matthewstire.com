@@ -53,10 +53,11 @@
                                 <li class="sub-menu__item flex flex-center">
                                     {{ if eq .Parent "Services" }}
                                     <div class="sub-menu__icon">
-                                      <img src="/uploads/{{ .Name | lower | urlize }}.svg" alt="">
+                                      <!-- <img src="/uploads/{{ .Name | lower | urlize }}.svg" alt=""> -->
+                                      {{ partial "get-mega-menu-icon" . }}
                                     </div>
                                     {{ end }}
-                                    <a class="sub-menu__link" href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Name }}</a>
+                                    <a class="sub-menu__link fs-100 fw-700 no-decoration" href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Name }}</a>
                                 </li>
                               {{ end }}
                             </ul>                            
