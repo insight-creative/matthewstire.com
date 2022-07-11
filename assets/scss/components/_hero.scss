@@ -59,6 +59,10 @@
     min-height: 400px;
   }
 
+&__content {
+  padding-bottom: $ic-900;
+}
+
   &__mt-swoosh {
     position: absolute;
     bottom: -9px;
@@ -67,6 +71,7 @@
 
     svg {
       max-width: 100%;
+      width: 100vw;
     }
   }
 }

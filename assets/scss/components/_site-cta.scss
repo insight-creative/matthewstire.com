@@ -1,0 +1,26 @@
+.cta {
+  position: relative;
+
+  .flex-column-reverse {
+    .w-50-m + .w-50-m  {
+      margin-top: 0;
+    }
+  }
+
+  @include breakpoint(md) {
+    svg {
+      height: 102%;
+      width: auto;
+      position: relative;
+      z-index: 2;
+      top: -2px;
+      left: -100px;
+    }
+  }
+}
+
+.page-contact {
+  .cta-wrapper {
+    padding-top: 0;
+  }
+}

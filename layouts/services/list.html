@@ -1,3 +1,98 @@
 {{ define "main" }}
 {{ partial "hero" . }}
+{{ partial "intro" . }}
+<section aria-labelledby="popular-services-section-heading" class="home-popular-services block">
+  <div class="mt-yellow-swoosh-bg w-100"></div>
+  <div class="wrapper text-center text-white">
+      {{ with .Params.popular_services_block }}
+      {{ if .heading }}
+      <h2 id="popular-services-section-heading">
+          {{ .heading | markdownify }}
+      </h2>
+      {{ end }}
+      {{ if .body }}
+      {{ .body | markdownify }}
+      {{ end }} 
+  </div>
+  <div class="wrapper-xl">
+      <div class="grid-4 pt-6">
+          {{ range .popular_services }}
+          <a href="{{ .url }}" class="card flow no-decoration shadow-1 fs-100">
+              <div class="cover-image">
+                  <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+                  <div class="card__icon-group w-100">
+                      {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
+                      <div class="card__icon bg-primary">
+                          {{ if eq .heading "Oil Changes" }}
+                          {{ partialCached "svg-icons/oil-changes.svg" . }}
+                          {{ else if eq .heading "Alignments" }}
+                          {{ partialCached "svg-icons/alignments.svg" . }}
+                          {{ else if eq .heading "Flat Tire Repair" }}
+                          {{ partialCached "svg-icons/tire-repair.svg" . }}
+                          {{ else if eq .heading "Tire Rotations" }}
+                          {{ partialCached "svg-icons/tire-rotations.svg" . }}
+                          {{ end }}
+                      </div>
+                  </div>
+              </div>
+              <div class="card__body flow">
+                  <h3 class="text-primary">{{ .heading }}</h3>
+                  <p class="text-black">{{ .body | markdownify }}</p>
+              </div>
+              <div class="card__arrow bg-primary">
+                  {{ partialCached "svg-icons/double-chevron-right.svg" . }}
+              </div>
+          </a>            
+          {{ end }}
+      </div>
+      {{ end }}       
+  </div>
+</section>
+<section aria-labelledby="services-section-heading" class="block">
+  <div class="wrapper-md text-center-m">
+      {{ with .Params.services_block }}
+      {{ if .heading }}
+      <h2 id="services-section-heading" class="text-primary">
+          {{ .heading | markdownify }}
+      </h2>
+      {{ end }}
+      {{ if .body }}
+      {{ .body | markdownify }}
+      {{ end }} 
+      {{ end }} 
+  </div>
+  <div class="wrapper-xl">
+      <div class="grid-4 pt-6">
+          {{ range .Pages }}
+          <a href="{{ .Permalink }}" class="card flow no-decoration shadow-1 fs-100">
+              <div class="cover-image">
+                  <img src="{{ .Params.hero.image_url }}" alt="{{ .Params.hero.image_alt }}">
+                  <div class="card__icon-group w-100">
+                      {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
+                      <div class="card__icon bg-primary">
+                          {{ if eq .Params.hero.heading "Oil Changes" }}
+                          {{ partialCached "svg-icons/oil-changes.svg" . }}
+                          {{ else if eq .Params.hero.heading "Alignments" }}
+                          {{ partialCached "svg-icons/alignments.svg" . }}
+                          {{ else if eq .Params.hero.heading "Flat Tire Repair" }}
+                          {{ partialCached "svg-icons/tire-repair.svg" . }}
+                          {{ else if eq .Params.hero.heading "Tire Rotations" }}
+                          {{ partialCached "svg-icons/tire-rotations.svg" . }}
+                          {{ end }}
+                      </div>
+                  </div>
+              </div>
+              <div class="card__body flow">
+                  <h3 class="text-primary">{{ .Params.hero.heading }}</h3>
+                  <p class="text-black">{{ .Params.seo.meta_description | markdownify }}</p>
+              </div>
+              <div class="card__arrow bg-primary">
+                  {{ partialCached "svg-icons/double-chevron-right.svg" . }}
+              </div>
+          </a>            
+          {{ end }}
+      </div>
+  </div>
+</section>
+{{ partialCached "site-cta" . }}
 {{ end }}

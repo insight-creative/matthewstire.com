@@ -51,12 +51,12 @@ services_block:
     No matter what services your vehicle needs, Matthews Tire has a solution. View our popular maintenance and auto repair services to learn more.
   popular_services:
     - heading: Oil Changes
-      body: Keep your car running smoothly with a Matthews Tire oil change, recommended every 3,000 miles.
+      body: Keep your car running smoothly with a top-of-the-line Matthews Tire oil change, recommended every 3,000 – 5,000 miles.
       image_url: /uploads/oil-change-services.jpg
       image_alt: Oil being poured into engine during an oil change service
       url: /services/oil-changes/
     - heading: Alignments
-      body: Maintain your suspension with a Matthews Tire alignment, improving the longevity of your tires and the quality of your ride.
+      body: Maintain your vehicle’s suspension with a Matthews Tire alignment, improving the longevity of your tires and the quality of your ride. 
       image_url: /uploads/alignment-services.jpg
       image_alt: Alignment equipment on wheel during an alignment service
       url: /services/suspension-repair/

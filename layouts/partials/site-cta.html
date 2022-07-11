@@ -1,0 +1,29 @@
+<section class="cta-wrapper page-block block">
+  <div class="wrapper-lg">
+    {{ $ctaClass := lower .Page.Title }}
+    <div class="cta {{ anchorize $ctaClass }}-cta bg-primary fade-up">
+      <div class="flex flex-column-reverse flex-row-m flex-center">
+        <div class="cta__content text-block w-100 w-50-m text-white flow">
+          <div class="cta__content-inner flow">
+            <h2 class="cta__title short-cta__title text-white no-margin">Experience Auto Excellence</h2>
+            <p>Never settle for subpar, overpriced auto services ever again! The ASE master certified technicians at Matthews Tire are here to bring you world-class service, dealer-level auto parts and unbeatable value on every service.</p>
+            <p>From tire installations, oil changes and alignments to full-service brake repairs, engine overhauls and more, we’ll keep you rolling.</p>
+            <a class="btn btn-secondary" href="/schedule-appointment/" target="_blank" rel="noreferrer">Schedule Your Service</a>
+          </div>
+        </div>
+        <div class="cta__image image-block w-100 w-50-m">
+          {{ partialCached "svg-icons/mt-blue-vertical-swoosh.svg" . }}
+          <picture>
+            <source sizes="50vw" srcset="https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?fm=avif&q=85&height=150&width=200&fit=crop 200w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?fm=avif&q=85&height=300&width=400&fit=crop 400w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?fm=avif&q=85&height=400&width=600&fit=crop 600w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?fm=avif&q=85&height=600&width=800&fit=crop 800w" type="image/avif">
+        
+            <source sizes="50vw" srcset="https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?fm=webp&q=85&height=150&width=200&fit=crop 200w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?fm=webp&q=85&height=300&width=400&fit=crop 400w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?fm=webp&q=85&height=400&width=600&fit=crop 600w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?fm=webp&q=85&height=600&width=800&fit=crop 800w" type="image/webp">
+        
+            <source sizes="50vw" srcset="https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?q=85&height=150&width=200&fit=crop 200w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?q=85&height=300&width=400&fit=crop 400w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?q=85&height=400&width=600&fit=crop 600w, https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg?q=85&height=600&width=800&fit=crop 800w" type="image/jpg">
+            <img loading="lazy"
+                src="https://matthewstire.imgix.net/uploads/happy-family-driving-together-in-vehicle.jpg" width="500" height="500" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

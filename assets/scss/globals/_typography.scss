@@ -143,3 +143,13 @@ article {
 .fs-300 {
   font-size: $ic-300;
 }
+
+.text-center {
+  text-align: center;
+}
+
+@include breakpoint(md) {
+  .text-center-m {
+    text-align: center;
+  }
+}
