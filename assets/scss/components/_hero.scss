@@ -53,13 +53,20 @@
 }
 
 .hero {
-  height: 40vh;
+  height: 50vh;
 
   @include breakpoint(sm) {
     min-height: 400px;
   }
 
-  &__content {
-    padding-bottom: 5%;
+  &__mt-swoosh {
+    position: absolute;
+    bottom: -9px;
+    right: -1px;
+    z-index: 1;
+
+    svg {
+      max-width: 100%;
+    }
   }
 }

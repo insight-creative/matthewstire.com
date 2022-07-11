@@ -7,10 +7,10 @@ seo:
   featured_image: 
   featured_image_alt: 
 hero:
-  heading: 
-  subheading:
-  image: 
-  image_alt:
+  heading: Matthews Tire Auto Services
+  subheading: No matter what services your vehicle needs, Matthews Tire has a solution. View our popular maintenance and auto repair services to learn more.
+  image: /uploads/car-driving-down-back-country-road.jpg
+  image_alt: car driving down back country road
 intro:
   heading: 
   subheading: >-

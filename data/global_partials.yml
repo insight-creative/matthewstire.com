@@ -13,16 +13,22 @@ blog_feed_block:
 associations:
   - image_url: /uploads/tire-and-service-network.jpg
     image_alt: Tire and Service Network Logo
+    link: https://www.goodyear.com/
   - image_url: /uploads/ase-certified.svg
     image_alt: ASE Certified Logo
+    link: https://www.ase.com/
   - image_url: /uploads/be-car-care-aware.jpg
     image_alt: Be Car Care Aware Logo
+    link: https://www.carcare.org/
   - image_url: /uploads/motorist-assurance-program.jpg
     image_alt: Motorist Assurance Program Logo
+    link: https://www.motorist.org/
   - image_url: /uploads/tire-industry-assosiation.jpg
     image_alt: Tire Industry Association Logo
+    link: https://tireindustry.org/
   - image_url: /uploads/better-business-bureau.jpg
     image_alt: Better Business Bureau Logo
+    link: https://www.bbb.org/us/wi/appleton/profile/auto-services/matthews-tire-0694-27003661
 footer_cta:
   heading: We keep you rolling!
   body: Providing top-quality, high-value car maintenance and auto repair services in Appleton, Menasha, Waupaca, Fond du Lac and Green Bay.

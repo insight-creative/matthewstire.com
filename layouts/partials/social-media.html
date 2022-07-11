@@ -1,7 +1,7 @@
 <ul class="social flex flex-center">
     {{ range .Site.Data.site_settings.social_media }}
     <li class="social__list-item">
-      <a href="{{ .link }}" class="social__icon {{ .title | lower }}-icon flex flex-center" target="_blank" rel="noopener noreferrer">
+      <a href="{{ .link }}" class="social__icon {{ .title | lower }}-icon flex flex-center dim" target="_blank" rel="noopener noreferrer">
         {{ if eq .title "Facebook" }}
         {{ partial "svg-icons/facebook.svg" . }}
         {{ else if eq .title "LinkedIn"}}

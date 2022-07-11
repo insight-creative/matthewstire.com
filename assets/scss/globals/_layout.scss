@@ -291,23 +291,3 @@
     margin-left: 2rem;
   }
 }
-
-.the-firm,
-.events,
-.press-releases {
-  .w-70-m + .w-30-m {
-    @include breakpoint(md) {
-      margin-left: $ic-400;
-    }
-  }
-}
-
-.bio {
-  .w-60-m + .w-40-m {
-    margin-bottom: $ic-400;
-
-    @include breakpoint(md) {
-      margin-left: $ic-400;
-    }
-  }
-}

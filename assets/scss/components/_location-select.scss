@@ -42,6 +42,12 @@
 
         a {
             font-size: $ic-100;
+            display: block;
+
+            &:hover,
+            &:focus {
+                transform: translateX(8px);
+            }
         }
     }
 }

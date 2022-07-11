@@ -320,6 +320,7 @@
     list-style-type: none;
     margin: 0;
     padding: .25rem 0;
+    break-inside: avoid;
   }
 
   &__icon {

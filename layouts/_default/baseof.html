@@ -8,7 +8,6 @@
   <div class="site-wrap">
     {{ block "header" . }}{{ partialCached "header" . }}{{end}}
     <main id="main-content" class="site-main">
-      {{ partial "breadcrumbs" . }}
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "locations" . }}{{ partialCached "locations" . }}{{ end }}

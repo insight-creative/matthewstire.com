@@ -2,7 +2,9 @@
   <div class="wrapper-lg">
     <div class="associations block-sm border-top-gray">
       {{ range .Site.Data.global_partials.associations }}
-      <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+      <a href="{{ .link }}" class="no-decoration" target="_blank" rel="noopener noreferrer">
+        <img src="{{ .image_url }}" alt="{{ .image_alt }}" class="dim">
+      </a>
       {{ end }}
     </div>
   </div>
