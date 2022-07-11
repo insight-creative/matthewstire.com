@@ -9,7 +9,7 @@ seo:
 hero:
   heading: Engine Repair
   subheading:
-  image:
+  image_url: /uploads/mechanic-workin-on-engine-components.jpg
   image_alt:
 intro:
   heading:

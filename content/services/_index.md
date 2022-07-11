@@ -54,6 +54,27 @@ services_block:
     Looking for a specific auto repair? Select the part of your car experiencing an issue from the categories below to view the auto services we have available. 
 
     If you aren’t sure what’s wrong with your vehicle, our expert technicians can help! Simply schedule an appointment and we will inspect, diagnose and repair your vehicle to get your car back in top condition.
+additional_services_block:
+  heading: Additional Auto Repair Services
+  body: >-
+    Can’t find the auto repair service you’re looking for? Matthews Tire technicians can provide miscellaneous vehicle maintenance and repair services not listed above. Give us a call to schedule an appointment today!
+  button: true
+  button_url: /contact-us/
+  button_text: Contact Us
+auto_parts_block:
+  heading: Top-of-the-Line Auto Parts 
+  body: >-
+    From car batteries and brake pads to specialty automotive parts, Matthews Tire uses only the highest-quality auto parts when repairing and maintaining your vehicle. Click the button below to learn more about the auto parts we carry.
+  button: false
+  button_url: 
+  button_text: 
+need_a_ride_block:
+  heading: Need a Ride? We’ve Got You Covered.
+  body: >-
+    At Matthews Tire, you don’t have to worry about being without a vehicle while you wait for auto repairs. Each of our car repair shops has loaner vehicles and bicycles on-hand to ensure you have a safe and secure ride while your car is in the shop.
+  button: false
+  button_url: 
+  button_text: 
 menu:
   main:
     weight: 3

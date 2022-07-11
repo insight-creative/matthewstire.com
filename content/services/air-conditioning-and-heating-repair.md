@@ -9,7 +9,7 @@ seo:
 hero:
   heading: Air Conditioning and Heating System Repair
   subheading:
-  image:
+  image_url: /uploads/auto-repair-technician-checking-vehicle-air-conditioning.jpg
   image_alt:
 intro:
   heading:

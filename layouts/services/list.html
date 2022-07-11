@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ partial "hero" . }}
+{{ partial "breadcrumbs" . }}
 {{ partial "intro" . }}
 <section aria-labelledby="popular-services-section-heading" class="home-popular-services block">
   <div class="mt-yellow-swoosh-bg w-100"></div>
@@ -93,6 +94,79 @@
           {{ end }}
       </div>
   </div>
+</section>
+<section class="block">
+    <div class="wrapper-lg flex flex-column flex-row-m fade-up">
+        <div class="w-100 w-50-m flow">
+            {{ with .Params.additional_services_block }}
+            {{ if .heading }}
+            <h2 class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            <p>{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            {{ end }}
+            {{ with .Params.auto_parts_block }}
+            {{ if .heading }}
+            <h2 class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            <p>{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            {{ end }}
+            {{ with .Params.need_a_ride_block }}
+            {{ if .heading }}
+            <h2 class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            <p>{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="w-100 w-50-m">
+            <div class="ase-col bg-primary">
+                <div class="ase-col__body text-white flow">
+                    <div class="cover-image">
+                        <picture>
+                            <source srcset="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=avif&q=75&width=325&height=250 400w, https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=avif&q=75&width=800&height=400 800w" type="image/avif">
+                        
+                            <source srcset="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=webp&q=75&width=325&height=250 400w, https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=webp&q=75&width=800&height=400 800w" type="image/webp">
+                        
+                            <source srcset="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=jpg&q=75&width=325&height=250 400w, https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=jpg&q=75&width=800&height=400 800w" type="image/jpg">
+            
+                            <img src="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg" width="800" height="400" alt="{{ .Params.tires_block.image_alt }}">   
+                        </picture>
+                    </div>
+                    <h2 class="h3">Cities We Serve</h2>
+                    <p>Matthews Tire is here to keep you rolling, no matter where you live. For the ultimate convenience, schedule your next auto repair at the location nearest you:</p>
+                    <ul class="no-padding">
+                        {{ range .Site.Data.locations }}
+                        <li class="no-list-style"><a href="{{ .location_url }}" class="no-decoration fw-700 text-white">{{ .name }}</a></li>
+                        {{ end }}
+                    </ul>
+                    <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>
+                </div>
+                <div class="ase-badge">
+                    {{ partialCached "svg-icons/ase-certified.svg" . }}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 {{ partialCached "site-cta" . }}
 {{ end }}
