@@ -346,9 +346,6 @@
   }
 
   &__link {
-    font-size: $ic-100;
-    font-weight: 700;
-    text-decoration: none;
     padding: 0.3rem;
     display: block;
     color: $black;
@@ -356,10 +353,6 @@
     &:hover,
     &:focus {
       transform: translateX(8px);
-
-      svg {
-        fill: $secondary-color;
-      }
     }
   }
 }

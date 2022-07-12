@@ -1,4 +1,28 @@
 {{ define "main" }}
-{{ partial "hero" . }}
+{{ partial "services/hero" . }}
 {{ partial "breadcrumbs" . }}
+{{ partial "services/intro" . }}
+{{ partial "services/conditions-block" . }}
+<section aria-labelledby="experts-heading" class="block">
+    <div class="wrapper-lg flex flex-column flex-row-m">
+        <div class="w-100 w-50-m flow">
+            {{ with .Params.experts_block }}
+            <h2 id="experts-heading" class="text-primary">{{ .heading }}</h2>
+            <p>{{.body }}</p>
+            {{ end }}
+            {{ with .Params.repair_services_block }}
+            <h2 id="experts-heading" class="text-primary">{{ .heading }}</h2>
+            {{ .services | markdownify }}
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="w-100 w-50-m">
+            {{ partial "services/locations-sidebar" . }}
+        </div>
+    </div>
+</section>
+{{ partial "services/recent-posts" . }}
+{{ partialCached "site-cta" . }}
 {{ end }}

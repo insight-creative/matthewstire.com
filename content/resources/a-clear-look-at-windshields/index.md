@@ -8,6 +8,8 @@ seo:
   featured_image: windshields.jpg
   featured_image_alt:
 date: 2017-03-31
+categories:
+  - Windshield
 ---
 
 ![Tires](windshields.jpg)

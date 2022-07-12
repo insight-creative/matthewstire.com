@@ -1,0 +1,30 @@
+<div class="ase-col bg-primary shadow-1">
+    <div class="ase-col__body text-white flow">
+        <div class="cover-image">
+            <picture>
+                <source srcset="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=avif&q=75&width=325&height=250 400w, https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=avif&q=75&width=800&height=400 800w" type="image/avif">
+            
+                <source srcset="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=webp&q=75&width=325&height=250 400w, https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=webp&q=75&width=800&height=400 800w" type="image/webp">
+            
+                <source srcset="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=jpg&q=75&width=325&height=250 400w, https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg?fm=jpg&q=75&width=800&height=400 800w" type="image/jpg">
+
+                <img src="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg" width="800" height="400" alt="{{ .Params.tires_block.image_alt }}">   
+            </picture>
+        </div>
+        <h2 class="h3">Cities We Serve</h2>
+        <p>Matthews Tire is here to keep you rolling, no matter where you live. For the ultimate convenience, schedule your next auto repair at the location nearest you:</p>
+        <ul class="no-padding">
+            {{ range .Site.Data.locations }}
+            <li class="no-list-style"><a href="{{ .location_url }}" class="no-decoration fw-700 text-white">{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+        {{ if eq .Title "Services" }}
+            <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>
+        {{ else }}
+            <a href="/schedule-appointment/" class="btn btn-secondary">Schedule a {{ .Params.hero.heading }} Appointment</a>
+        {{ end }}
+    </div>
+    <div class="ase-badge">
+        {{ partialCached "svg-icons/ase-certified.svg" . }}
+    </div>
+</div>

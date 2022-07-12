@@ -53,15 +53,25 @@
 }
 
 .hero {
-  height: 50vh;
+  height: 60vh;
 
   @include breakpoint(sm) {
-    min-height: 400px;
+    min-height: 600px;
   }
 
-&__content {
-  padding-bottom: $ic-900;
-}
+  &__icon {
+    border-radius: 50%;
+    height: $ic-800;
+    width: $ic-800;
+    display: grid;
+    place-items: center;
+
+    svg {
+      width: $ic-600;
+      height: auto;
+      fill: $white;
+    }
+  }
 
   &__mt-swoosh {
     position: absolute;

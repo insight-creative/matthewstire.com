@@ -1,0 +1,13 @@
+.intro {
+    &__sidebar {
+        padding: $ic-200;
+
+        @include breakpoint(md) {
+            margin-left: $ic-300;
+        }
+
+        ul {
+            columns: 2;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{{ $heroClass := lower .Page.Title }}
+<div class="{{ anchorize $heroClass }}-hero hero">
+  {{ partial "hero-image" . }}
+  <div class="hero__overlay flex flex-center">
+    <div class="wrapper-lg">
+      <div class="hero__content flow">
+        <div class="hero__icon bg-primary">
+          {{ partial "functions/get-service-icon" . }}
+        </div>
+        <h1 class="text-white text-shadow max-width-none">{{ .Params.hero.heading }}</h1>
+        <p class="text-white text-shadow fw-500">{{ .Params.hero.body }}</p>
+        <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__mt-swoosh">
+    {{ partialCached "svg-icons/mt-hero-swoosh.svg" . }}
+  </div>
+</div>

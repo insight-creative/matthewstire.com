@@ -1,0 +1,24 @@
+{{ $title := .Title }}
+{{ $titleAltered := .Title | lower | urlize }}
+{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+{{ if eq "categories" $taxonomyname }}
+{{ range $key, $value := $taxonomy }}
+{{ if eq $titleAltered $key }}
+<section id="recent-posts" class="block bg-gray">
+  <div class="wrapper-lg">
+    <h3 class="text-primary text-center">Latest {{ $title }} Resources</h3>
+    <div class="recent-posts block-sm grid-3">
+    
+    {{ range first 3 $value.Pages }}
+    {{ .Render "blog-card" }}
+    {{ end }}
+    </div>
+    <div class="text-center">
+      <a href="/blog/" class="btn btn-primary">View all articles</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}

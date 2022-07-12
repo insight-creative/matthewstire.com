@@ -1,4 +1,4 @@
-a {
+a, .simple-link {
   color: $primary-color;
   transition: 0.3s ease;
 
@@ -9,7 +9,7 @@ a {
   }
 }
 
-.site-main a:not(.btn):not(.breadcrumbs__link):not(.card):not(.location-select__list a):not(.mt-location__content a):not(.ase-col__body a) {
+.site-main a:not(.btn):not(.breadcrumbs__link):not(.card):not(.location-select__list a):not(.mt-location__content a):not(.ase-col__body a):not(.bg-primary a) {
   color: $primary-color;
   text-decoration: none;
   background-image: linear-gradient($accent-color, $accent-color),linear-gradient(270deg,$primary-color 0%,$primary-color 100%);
