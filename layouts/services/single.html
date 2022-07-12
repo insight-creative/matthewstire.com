@@ -8,7 +8,7 @@
         <div class="w-100 w-50-m flow">
             {{ with .Params.experts_block }}
             <h2 id="experts-heading" class="text-primary">{{ .heading }}</h2>
-            <p>{{.body }}</p>
+            {{.body | markdownify }}
             {{ end }}
             {{ with .Params.repair_services_block }}
             <h2 id="experts-heading" class="text-primary">{{ .heading }}</h2>

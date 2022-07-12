@@ -42,7 +42,7 @@ conditions_block:
   button_url: /schedule-appointment/
   button_text: Schedule a Repair
 experts_block:
-  heading: Trust Your Engine with the Experts
+  heading: Trust Your Engine With the Experts
   body: >-
     When you need an engine repair for your vehicle, turn to the experts at Matthews Tire. Our ASE master certified technicians have the expertise and dealer-quality tools necessary to run full engine inspections and repairs to get your vehicle back into shape and prolong the life of your engine.
 repair_services_block:
