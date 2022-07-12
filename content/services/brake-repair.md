@@ -22,17 +22,17 @@ conditions_block:
     - heading: Brake Light is On
       body: >-
         There are various reasons your car’s brake light may turn on. If you notice a brake light, first check to make sure that your emergency brake is off. If your brake light is still on, your car may be due for a routine brake inspection, or there may be a more serious brake problem occurring. In either case, it’s essential that you bring your vehicle in for a comprehensive brake inspection.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/brake-light-illuminated-on-dash.jpg
       image_alt:
     - heading: Slow Response When Braking
       body: >-
         As your brake pads wear down over time, your vehicle’s brakes will likely become less responsive. If you notice that your brakes have less tension, respond slower and require more pressure to engage the brake, then it’s time to schedule a brake repair service.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/worn-down-brake-pads.jpg
       image_alt:
     - heading: Vibration When Braking
       body: >-
         Does your steering wheel shake or vibrate when you brake? This is a common sign of a more serious internal problem with your car’s brake and steering system. If you notice vibrations while braking, be sure to bring your car in for an immediate brake repair.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/truck-on-lift-during-brake-repair.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

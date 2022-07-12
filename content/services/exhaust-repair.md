@@ -8,8 +8,7 @@ seo:
   featured_image_alt:
 hero:
   heading: Exhaust Repair
-  subheading:
-  image:
+  image_url: /uploads/exhaust-repair-services.jpg
   image_alt:
 intro:
   heading: Maintain Your Exhaust
@@ -23,17 +22,17 @@ conditions_block:
     - heading: Lower Gas Mileage
       body: >-
         A blocked or leaking exhaust can reduce your gas mileage. If you have noticed that your fuel efficiency has noticeably decreased, it may be a sign that it’s time to bring your car in for an exhaust inspection.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/gas-gauge-low-fuel-light.jpg
       image_alt:
     - heading: Hissing Noises or Loud Engine Sounds
       body: >-
         If your exhaust system has a leak, you may be able to hear a hissing sound when you drive. Other exhaust issues can also cause loud engine sounds that you’ll be able to notice when driving. In either case, these issues can cause damage to your engine and should be addressed immediately.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/rusty-broken-muffler.jpg
       image_alt:
     - heading: Noxious Smell
       body: >-
         Converter malfunctions and exhaust leaks can both release dangerous gases—like carbon monoxide—while driving. These gases have an extremely strong smell, so if you notice a foul smell while driving, it’s a good indication that you’ll need to stop in for an exhaust repair.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/catalytic-converter-taken-off-exhaust-system.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

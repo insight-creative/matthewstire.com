@@ -8,8 +8,7 @@ seo:
   featured_image_alt:
 hero:
   heading: Drivetrain Repair
-  subheading:
-  image:
+  image_url: /uploads/drivetrain-repair.jpg
   image_alt:
 intro:
   heading: Maintain Your Drivetrain
@@ -23,12 +22,12 @@ conditions_block:
     - heading: Unable to Switch Gears
       body: >-
         If your vehicle struggles—or simply refuses—to switch gears, this could be a sign of transmission issues. This can happen when your transmission fluid gets too low. As soon as you notice gear change issues, schedule an appointment to get your drivetrain inspected and to replace your transmission fluids, if necessary.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/manual-shift-knob.jpg
       image_alt:
     - heading: Leaking Transmission Fluid
       body: >-
         Your vehicle can experience different kinds of leaks, but luckily, it’s very easy to identify a transmission leak. If you notice that your car is leaking a red/brown liquid with a sweet smell, it’s very likely leaking transmission fluid. Make an appointment right away to repair the transmission leak and replace fluids as needed.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/automotive-oil-leak.jpg
       image_alt:
     - heading: Burning Smell
       body: >-

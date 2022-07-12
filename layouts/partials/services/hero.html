@@ -2,6 +2,12 @@
 <div class="{{ anchorize $heroClass }}-hero hero">
   {{ partial "hero-image" . }}
   <div class="hero__overlay flex flex-center">
+    <div class="ase-badge flex-center">
+      <div class="ase-badge__icon">
+        {{ partialCached "svg-icons/ase-certified-blue.svg" . }}
+      </div>
+      <a href="/ase-certification/" class="simple-arrow-link text-white no-decoration fs-100">Learn more about the benefits of working with ASE master certified technicians.{{ partialCached "svg-icons/chevron-right.svg" . }}</a>
+    </div>
     <div class="wrapper-lg">
       <div class="hero__content flow">
         <div class="hero__icon bg-primary">

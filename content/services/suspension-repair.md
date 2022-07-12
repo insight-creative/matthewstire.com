@@ -8,8 +8,7 @@ seo:
   featured_image_alt:
 hero:
   heading: Suspension Repair
-  subheading:
-  image:
+  image_url:
   image_alt:
 intro:
   heading: Maintain Your Suspension

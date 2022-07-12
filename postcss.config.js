@@ -30,6 +30,7 @@ module.exports = {
         'mt-location--waupaca',
         'mt-swoosh',
         'marker-active',
+        'services-hero',
       ],
     }),
   ],

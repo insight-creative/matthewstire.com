@@ -55,17 +55,17 @@ conditions_block:
     - heading: Dirty Oil
       body: >-
         Oil burns and gets dirty and discolored over time. You can check your car’s oil by opening the hood and checking the dipstick. If the oil on the stick is dark and/or dirty, it’s time for an oil change.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/mechanic-checking-engine-oil.jpg
       image_alt:
     - heading: Warning Lights
       body: >-
         Many modern cars are now equipped with sensors that let you know it’s time for your next oil change. If your check engine light is on, or if you get an oil change alert on your menu screen, Matthews Tire is here to help get your car back into shape with a top-quality oil change.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/check-oil-light.jpg
       image_alt:
     - heading: Strange Noises or Vibrating
       body: >-
         Oil helps lubricate your engine and keep everything running smoothly. If you notice that your engine is making a knocking sound, or that your car vibrates (especially when idling), then you may be experiencing issues that can be solved with a simple oil change.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/oil-draining-from-oil-pan.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

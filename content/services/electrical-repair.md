@@ -8,8 +8,7 @@ seo:
   featured_image_alt:
 hero:
   heading: Electrical Repair
-  subheading:
-  image:
+  image_url: /uploads/mechanic-testing-auto-battery.jpg
   image_alt:
 intro:
   heading: Maintain Your Engine
@@ -26,17 +25,17 @@ conditions_block:
     - heading: Your Car Won’t Start
       body: >-
         A car that fails to start, even after a jump, is a clear sign of electrical issues. This could be caused by an old car battery in need of replacement or a failing starter. Even if you do get your car to start with a jump, but have to do so frequently because the battery continues to die, this is a strong indicator that it’s time to replace your car battery.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/engine-push-start-power-button.jpg
       image_alt:
     - heading: Interior Component Failures
       body: >-
         Alternators are responsible for recharging your car’s battery and controlling the electrical components within your vehicle. If you notice that your car windows stop working, or that your dash and overhead lights flicker or dim, it could be an indication that your alternator is failing and in need of repair.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/alternator.jpg
       image_alt:
     - heading: Battery or Check Engine Light
       body: >-
         A battery or check engine light on in your dash is a clear indication that something is amiss with your vehicle’s battery or electrical system. The expert team at your local Matthews Tire can quickly inspect your vehicle and determine the cause of this problem, as well as make the repairs and replacements necessary to keep you rolling.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/check-engine-light.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

@@ -8,8 +8,7 @@ seo:
   featured_image_alt:
 hero:
   heading: Engine Cooling System Repair
-  subheading:
-  image:
+  image_url: /uploads/engine-cooling-system-repair.jpg
   image_alt:
 intro:
   heading: Maintain Your Engine Cooling System
@@ -23,12 +22,12 @@ conditions_block:
     - heading: High Reading on the Temperature Gauge
       body: >-
         A quickly rising temperature gauge can signal that your engine is overheating. If the needle reaches the red zone, pull over immediately (whenever safe) to prevent permanent engine damage from overheating. Then, give your local Matthews Tire a call, because you’ll need a cooling system repair.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/engine-overheating.jpg
       image_alt:
     - heading: Leaking Coolant
       body: >-
         A tell-tale sign of coolant system issues, you should bring your car in right away if you notice it’s leaking a green, sweet-smelling liquid. This is a clear indication of a coolant leak, which will deplete your coolant and lead to engine overheating if ignored.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/automotive-oil-leak.jpg
       image_alt:
     - heading: Burning Smell
       body: >-

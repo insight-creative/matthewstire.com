@@ -8,7 +8,6 @@ seo:
   featured_image_alt:
 hero:
   heading: Air Conditioning and Heating System Repair
-  subheading:
   image_url: /uploads/auto-repair-technician-checking-vehicle-air-conditioning.jpg
   image_alt:
 intro:
@@ -23,17 +22,17 @@ conditions_block:
     - heading: Strange Noises
       body: >-
         If you hear unusual noises when you try to turn on your car’s AC or heat, there may be something going on internally. Scheduling an inspection will ensure there are no serious safety concerns or other issues with the heating or cooling system.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/air-conditioning-controls.jpg
       image_alt:
     - heading: Unresponsive Temperature Controls
       body: >-
         Are your vents blowing hot air when you turn on your air conditioning? Or, does your car blow cool air when you try to turn on the heat? These are tell-tale signs that it’s time to bring your car in for a heating/cooling inspection.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/temperature-controls.jpg
       image_alt:
     - heading: Fluid Leaks
       body: >-
         Have you noticed fluid leaking from your car? It may be a leak from your AC. Any time your vehicle starts to leak fluid, it’s a good idea to schedule an inspection.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/air-conditioning-system-recharge.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

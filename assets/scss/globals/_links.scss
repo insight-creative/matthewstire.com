@@ -9,7 +9,7 @@ a, .simple-link {
   }
 }
 
-.site-main a:not(.btn):not(.breadcrumbs__link):not(.card):not(.location-select__list a):not(.mt-location__content a):not(.ase-col__body a):not(.bg-primary a) {
+.site-main a:not(.btn):not(.breadcrumbs__link):not(.card):not(.location-select__list a):not(.mt-location__content a):not(.ase-col__body a):not(.bg-primary a):not(.ase-badge a) {
   color: $primary-color;
   text-decoration: none;
   background-image: linear-gradient($accent-color, $accent-color),linear-gradient(270deg,$primary-color 0%,$primary-color 100%);
@@ -43,4 +43,22 @@ a, .simple-link {
 
 .no-decoration {
   text-decoration: none;
+}
+
+.simple-arrow-link {
+  svg {
+    width: $ic--100;
+    height: $ic--100;
+    fill: $primary-color;
+    transition: transform .3s ease-out, fill .3s ease-out; 
+    margin-left: 8px;
+  }
+
+  &:hover, 
+  &:focus {
+    svg {
+      transform: translateX(8px);
+      fill: $secondary-color;
+    }
+  }
 }

@@ -85,3 +85,46 @@
     }
   }
 }
+
+.ase-badge {
+  display: none;
+}
+
+.services-hero {
+
+  .hero__icon {
+    display: none;
+  }
+
+  .ase-badge {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($black, .7);
+    padding: .5rem $ic-100;
+    max-width: 500px;
+
+    &__icon {
+      svg {
+        height: $ic-700;
+        width: $ic-700;
+      }
+    }
+
+    a {
+      margin: 0 $ic-100;
+
+      svg {
+        fill: $white;
+      }
+
+      &:hover, 
+      &:focus {
+        svg {
+          fill: $secondary-color;
+        }
+      }
+    }
+  }
+}

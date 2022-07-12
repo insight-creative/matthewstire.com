@@ -46,8 +46,8 @@
                         <div class="flex w-100">
                           <div class="w-70 flow">
                             <h3 class="h4 text-primary"><a href="{{ .URL }}" aria-label="{{ .Name }}" class="no-decoration">{{ .Name }}</a></h3>
-                            <p class="services-menu-desc fs-100">Whether your vehicle needs a routine maintenance service like an oil change, tire rotation or battery replacement, or you need a more extensive auto repair service, you can count on the expert technicians at Matthews tire to get the job done and keep you rolling—no excuses guaranteed.</p>
-                            <p class="about-menu-desc fs-100">Matthews Tire has been upholding our mission to provide auto service excellence to drivers throughout Northeast Wisconsin since 1952! Each of our certified technicians is passionate about providing comprehensive auto services and meeting the exemplary standards our customers have come to expect.</p>
+                            <!-- <p class="services-menu-desc fs-100">Whether your vehicle needs a routine maintenance service like an oil change, tire rotation or battery replacement, or you need a more extensive auto repair service, you can count on the expert technicians at Matthews tire to get the job done and keep you rolling—no excuses guaranteed.</p>
+                            <p class="about-menu-desc fs-100">Matthews Tire has been upholding our mission to provide auto service excellence to drivers throughout Northeast Wisconsin since 1952! Each of our certified technicians is passionate about providing comprehensive auto services and meeting the exemplary standards our customers have come to expect.</p> -->
                             <ul class="border-top-gray">
                               {{ range sort .Children "value" "desc" }}
                                 <li class="sub-menu__item flex flex-center">
@@ -65,7 +65,7 @@
                           <div class="sub-menu__sidebar w-30 flow">
                             <h2 class="text-primary h6">ASE Master Certified Technicians</h2>
                             <p class="fs-100">Learn more about the benefits of working with ASE master certified technicians.</p>
-                            <a href="/ase-certification/" class="fs-100 fw-700">Learn About ASE Certification</a>
+                            <a href="/ase-certification/" class="simple-arrow-link fs-100 fw-700">Learn About ASE Certification{{ partialCached "svg-icons/chevron-right.svg" . }}</a>
                             <h2 class="text-primary h6">Need a Ride? We’ve Got You Covered.</h2>
                             <p class="fs-100">At Matthews Tire, you don’t have to worry about being without a vehicle while you wait for auto repairs.</p>
                           </div>
