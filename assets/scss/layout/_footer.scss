@@ -44,7 +44,14 @@
     flex: 1 1 100%;
 
     @include breakpoint(md) {
-      flex: 1;
+      flex: 2;
+     }
+  }
+
+  &__col:nth-of-type(2) {
+
+    @include breakpoint(md) {
+      flex: 2;
      }
   }
 

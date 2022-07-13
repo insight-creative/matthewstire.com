@@ -4,7 +4,7 @@ title = "Matthews Tire"
 enableRobotsTXT = true
 disableAliases = true
 # post pagination
-paginate = "10"
+paginate = "9"
 summaryLength = 20
 googleAnalytics = " " # Your ID# search 
 

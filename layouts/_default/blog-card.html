@@ -18,7 +18,7 @@
 		</div>
 		<div class="card__body flow">
 			<h3 class="h5 text-primary">{{ .Title }}</h3>
-			<p class="text-black">{{ if .Params.seo.meta_description }}{{ .Params.seo.meta_description | safeHTML }}{{ else }}{{ .Summary  | safeHTML }}{{ end }}</p>
+			<p class="text-black">{{ if .Params.seo.meta_description }}{{ .Params.seo.meta_description | safeHTML | truncate 150 }}{{ else }}{{ .Summary  | safeHTML | truncate 150 }}{{ end }}</p>
 		</div>
 		<div class="card__arrow bg-primary">
 			{{ partialCached "svg-icons/double-chevron-right.svg" . }}

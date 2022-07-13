@@ -71,15 +71,7 @@
                   <div class="card__icon-group w-100">
                       {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
                       <div class="card__icon bg-primary">
-                          {{ if eq .Params.hero.heading "Oil Changes" }}
-                          {{ partialCached "svg-icons/oil-changes.svg" . }}
-                          {{ else if eq .Params.hero.heading "Alignments" }}
-                          {{ partialCached "svg-icons/alignments.svg" . }}
-                          {{ else if eq .Params.hero.heading "Flat Tire Repair" }}
-                          {{ partialCached "svg-icons/tire-repair.svg" . }}
-                          {{ else if eq .Params.hero.heading "Tire Rotations" }}
-                          {{ partialCached "svg-icons/tire-rotations.svg" . }}
-                          {{ end }}
+                        {{ partial "functions/get-service-icon" . }}
                       </div>
                   </div>
               </div>
