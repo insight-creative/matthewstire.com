@@ -83,17 +83,6 @@
     }
   }
 
-  &__body {
-    ul {
-      a {
-        &:hover, 
-        &:focus {
-          transform: translateX(8px);
-        }
-      }
-    }
-  }
-
   &__bottom {
     ul {
       margin: $ic-100 0;

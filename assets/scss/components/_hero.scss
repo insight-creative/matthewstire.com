@@ -86,7 +86,7 @@
   }
 }
 
-.ase-badge {
+.hero__ase-badge {
   display: none;
 }
 
@@ -96,7 +96,7 @@
     display: none;
   }
 
-  .ase-badge {
+  .hero__ase-badge {
     display: flex;
     position: absolute;
     top: 0;
@@ -105,7 +105,7 @@
     padding: .5rem $ic-100;
     max-width: 500px;
 
-    &__icon {
+    .hero__ase-badge-icon {
       svg {
         height: $ic-700;
         width: $ic-700;

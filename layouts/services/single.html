@@ -2,6 +2,29 @@
 {{ partial "services/hero" . }}
 {{ partial "breadcrumbs" . }}
 {{ partial "services/intro" . }}
+{{ if eq .Title "Oil Change Services" }}
+<div class="hero oil-change-benefits">
+    {{ partial "hero-image" . }}
+    <div class="hero__overlay flex flex-center">
+        <div class="wrapper-lg">
+        <div class="hero__content flex flex-column flex-row-m">
+            <div class="w-100 w-50-m flow text-white">
+                {{ with .Params.oil_change_benefits_block }}
+                <h2>{{ .heading | markdownify }}</h2>
+                {{ .body | markdownify }}
+                {{ end }}           
+            </div>
+            <div class="w-100 w-50-m flow text-white">
+                {{ with .Params.oil_change_frequency_block }}
+                <h2>{{ .heading | markdownify }}</h2>
+                <p>{{ .body | markdownify }}</p>
+                {{ end }}
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+{{ end }}
 {{ partial "services/conditions-block" . }}
 <section aria-labelledby="experts-heading" class="block">
     <div class="wrapper-lg flex flex-column flex-row-m">
@@ -15,6 +38,21 @@
             {{ .services | markdownify }}
             {{ if .button }}
             <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            {{ end }}
+            {{ if eq .Title "Oil Change Services" }}
+            {{ with .Params.our_oil_block }}
+                <h2 class="text-primary">{{ .heading | markdownify }}</h2>
+                {{ .body | markdownify }}
+            {{ end }}
+            {{ end }}           
+            {{ if eq .Title "Tire Repair" }}
+            {{ with .Params.time_for_tires_block }}
+                <h2 class="text-primary">{{ .heading | markdownify }}</h2>
+                <p>{{ .body | markdownify }}</p>
+                {{ if .button }}
+                <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+                {{ end }}
             {{ end }}
             {{ end }}
         </div>

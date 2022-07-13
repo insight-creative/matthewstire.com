@@ -1,0 +1,12 @@
+.oil-change-benefits {
+    .hero__overlay {
+        background-color: rgba($primary-color, .9);
+    }
+
+    @include breakpoint(md) {
+        .w-50-m + .w-50-m {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+}

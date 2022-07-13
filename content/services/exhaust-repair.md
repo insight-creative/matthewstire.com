@@ -4,7 +4,7 @@ seo:
   page_title: Exhaust Repair
   meta_description: >-
     Having exhaust issues? Bring your car to the expert mechanics at Matthews Tire for the best exhaust repair services in Northeast Wisconsin!
-  featured_image:
+  featured_image: /uploads/exhaust-repair-services.jpg
   featured_image_alt:
 hero:
   heading: Exhaust Repair

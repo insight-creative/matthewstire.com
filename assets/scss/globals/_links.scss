@@ -9,7 +9,11 @@ a, .simple-link {
   }
 }
 
-.site-main a:not(.btn):not(.breadcrumbs__link):not(.card):not(.location-select__list a):not(.mt-location__content a):not(.ase-col__body a):not(.bg-primary a):not(.ase-badge a) {
+.site-main a:not(.breadcrumbs__link):not(.btn) {
+  display: block;
+}
+
+.site-main a:not(.btn):not(.breadcrumbs__link):not(.card):not(.card a):not(.location-select__list a):not(.mt-location__content a):not(.ase-col__body a):not(.bg-primary a):not(.hero__ase-badge a) {
   color: $primary-color;
   text-decoration: none;
   background-image: linear-gradient($accent-color, $accent-color),linear-gradient(270deg,$primary-color 0%,$primary-color 100%);
@@ -60,5 +64,12 @@ a, .simple-link {
       transform: translateX(8px);
       fill: $secondary-color;
     }
+  }
+}
+
+.transform-x-8 {
+  &:hover,
+  &:focus {
+    transform: translateX(8px);
   }
 }

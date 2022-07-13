@@ -4,12 +4,11 @@ seo:
   page_title: Wheel Repair
   meta_description: >-
     Maintain, repair and replace your wheels with top-quality materials and service from the expert mechanics at Matthews Tire!
-  featured_image:
+  featured_image: /uploads/wheel-repair-services.jpg
   featured_image_alt:
 hero:
   heading: Wheel Repair
-  subheading:
-  image:
+  image_url: /uploads/wheel-repair-services.jpg
   image_alt:
 intro:
   heading: Maintain Your Wheels
@@ -29,17 +28,17 @@ conditions_block:
     - heading: Uneven Tire Wear
       body: >-
         If you notice the tread on one or some of your tires is much worse than others, it’s a sign that your vehicle’s alignment is off and in need of repair. A Matthews Tire alignment will help keep the wear even on your tires.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/uneven-tire-tread-wear.jpg
       image_alt:
     - heading: Squealing Tires
       body: >-
         If your tires are squealing or making strange noises, there could be a variety of issues with the wheels, suspension, alignment or more. Schedule a wheel inspection with Matthews Tire to diagnose and repair the issue.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/tire-being-taken-off-wheel.jpg
       image_alt:
     - heading: Drifting
       body: >-
         If your car pulls toward one direction, the wheels are likely misaligned, or another issue with your tires or suspension could be going on. This can quickly progress and get worse, so don’t ignore the problem and instead bring your car in for an inspection.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/alignment-services.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

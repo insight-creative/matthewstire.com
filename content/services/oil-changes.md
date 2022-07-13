@@ -4,7 +4,7 @@ seo:
   page_title: Oil Change Services
   meta_description: >-
     When you need an oil change, bring your car to the expert mechanics you can trust at Matthews Tire for the best service and value!
-  featured_image:
+  featured_image: /uploads/oil-change-services-large.jpg
   featured_image_alt:
 hero:
   heading: Oil Change Services
@@ -14,10 +14,6 @@ intro:
   heading: Matthews Tire Oil Change
   body: >-
     Matthews Tire makes it easy to properly maintain your car with regular oil changes. As one of the most popular services at our auto shops, our expert technicians use top-quality oil and service to quickly get you back on the road with peace of mind.
-our_oil_block:
-  heading: Our Oil
-  body: >-
-    At Matthews Tire, we use only the highest quality oil to complete oil changes for a variety of vehicles. These include:
 why_change_block:
   heading: Why Get an Oil Change?
   body: >-
@@ -77,6 +73,10 @@ experts_block:
 
 
     Visit our community page to learn more, and contact your local Matthews Tire auto shop to get dates for the next _Oil Change for the Better_ event is scheduled.
+our_oil_block:
+  heading: Our Oil
+  body: >-
+    At Matthews Tire, we use only the highest quality oil to complete oil changes for a variety of vehicles. These include:
 menu:
   main:
     parent: "Services"

@@ -4,12 +4,11 @@ seo:
   page_title: Windshield Repair
   meta_description: >-
     Matthews Tire windshield repair: fix small cracks and chips or replace your entire windshield.
-  featured_image:
+  featured_image: /uploads/windshield-repair-services.jpg
   featured_image_alt:
 hero:
   heading: Windshield Repair
-  subheading:
-  image:
+  image_url: /uploads/windshield-repair-services.jpg
   image_alt:
 intro:
   heading: Maintain Your Engine
@@ -26,17 +25,17 @@ conditions_block:
     - heading: Cracks/Chips
       body: >-
         Chips and cracks in your windshield pose a danger, no matter how large they are. Luckily, if they are small enough, Matthews Tire technicians can complete minor repairs to ensure your safety. However, large cracks or chips will require a full windshield replacement, which can also be completed at any of our locations.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/large-windshield-crack.jpg
       image_alt:
     - heading: Discolored Glass
       body: >-
         Yellowing glass—or glass that is slightly swirled or warped—has become damaged, usually over a long period of time exposed to the sun and other elements. This can be a sign that your windshield is no longer safe and in need of a replacement.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/windshield-repair-services-small.jpg
       image_alt:
     - heading: Low Visibility
       body: >-
         If any issue with your windshield is causing low visibility while driving, bring your car in for an inspection and repair as soon as possible. This is extremely important, as anything getting in the way of your visibility can pose a great threat to yourself and other drivers on the road.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/windshield-fogged-over-with-very-low-visibility.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

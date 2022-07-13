@@ -324,8 +324,7 @@
   }
 
   &__icon {
-    width: $ic-500;
-    height: $ic-500;
+    padding: .5rem;
     border-radius: 50%;
     display: grid; 
     place-items: center;
@@ -349,11 +348,6 @@
     padding: 0.3rem;
     display: block;
     color: $black;
-
-    &:hover,
-    &:focus {
-      transform: translateX(8px);
-    }
   }
 }
 

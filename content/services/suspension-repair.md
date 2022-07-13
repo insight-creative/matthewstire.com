@@ -4,11 +4,11 @@ seo:
   page_title: Suspension Repair
   meta_description: >-
     Need an alignment, bearing replacement or another full-service suspension repair? Matthews Tire expert mechanics are here to help!
-  featured_image:
+  featured_image: /uploads/suspension-repair-services.jpg
   featured_image_alt:
 hero:
   heading: Suspension Repair
-  image_url:
+  image_url: /uploads/suspension-repair-services.jpg
   image_alt:
 intro:
   heading: Maintain Your Suspension
@@ -22,17 +22,17 @@ conditions_block:
     - heading: Excessive Bouncing
       body: >-
         You’re bound to experience some bumps and bouncing while driving, but if you notice your vehicle is shaking or bouncing more than usual, it could be a sign that your suspension’s shocks are damaged and in need of repair.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/rear-suspension-of-vehicle.jpg
       image_alt:
     - heading: Difficulty Steering
       body: >-
         If it’s difficult to steer your vehicle, keep it moving in a straight line or make turns, there could be something wrong with your suspension system. Be sure to call a tow truck if steering has become excessively difficult, as it may be too dangerous to drive.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/two-hands-on-steering-wheel.jpg
       image_alt:
     - heading: Drifting
       body: >-
         If your vehicle drifts in one direction while you aren’t pulling the steering wheel or when you’re turning, it’s a clear sign of suspension issues. This could be something as simple as a tire with less air pressure or misaligned tires, which can usually be fixed easily at any Matthews Tire location.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/tire-being-filled-with-air.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

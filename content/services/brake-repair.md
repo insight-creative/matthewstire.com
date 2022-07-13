@@ -4,7 +4,7 @@ seo:
   page_title: Brake Repair
   meta_description: >-
     Expert brake repair services for domestic, foreign, classic, hybrid, and luxury vehicles, as well as trucks, RVs and campers.
-  featured_image:
+  featured_image: /uploads/brake-repair-services-large.jpg
   featured_image_alt:
 hero:
   heading: Brake Repair
@@ -32,7 +32,7 @@ conditions_block:
     - heading: Vibration When Braking
       body: >-
         Does your steering wheel shake or vibrate when you brake? This is a common sign of a more serious internal problem with your car’s brake and steering system. If you notice vibrations while braking, be sure to bring your car in for an immediate brake repair.
-      image_url: /uploads/truck-on-lift-during-brake-repair.jpg
+      image_url: /uploads/foot-on-brake-pedal.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

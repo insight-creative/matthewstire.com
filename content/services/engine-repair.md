@@ -4,7 +4,7 @@ seo:
   page_title: Engine Repair
   meta_description: >-
     Trust the expert technicians at Matthews Tire to handle all of your engine repair and maintenance needs to keep your car running smoothly.
-  featured_image:
+  featured_image: /uploads/mechanic-workin-on-engine-components.jpg
   featured_image_alt:
 hero:
   heading: Engine Repair

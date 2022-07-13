@@ -4,12 +4,11 @@ seo:
   page_title: Tire Repair
   meta_description: >-
     For tire repairs, alignments, rotations, new tire installations and more, bring your car to the experts you can trust at Matthews Tire!
-  featured_image:
+  featured_image: /uploads/tire-repair-services.jpg
   featured_image_alt:
 hero:
   heading: Tire Repair
-  subheading:
-  image:
+  image_url: /uploads/tire-repair-services.jpg
   image_alt:
 intro:
   heading: Maintain Your Tires
@@ -31,17 +30,17 @@ conditions_block:
     - heading: Bulging Tires
       body: >-
         Underinflated tires take more damage than properly inflated tires and can bulge or crack after hitting a pothole or curb. If you notice these cracks or bulges forming on your tires, first get the tire pressure back to normal, and then schedule a tire inspection at your local Matthews Tire.
-      image_url: /uploads/check-engine-light.jpg
+      image_url: /uploads/bulging-tire.jpg
       image_alt:
     - heading: Abnormal Bouncing
       body: >-
         If your car is bouncing more than normal, you could have an alignment problem or a tire wear problem from a lack of regular tire rotations. Schedule a tire inspection to see if a rotation or alignment can solve this issue, or if it’s time to invest in new tires.
-      image_url: /uploads/manual-shift-knob.jpg
+      image_url: /uploads/alignment-services.jpg
       image_alt:
     - heading: Poor Braking
       body: >-
         Something Wisconsin drivers should pay particular attention to is the braking ability of their tires, especially in snowy/icy conditions. If you are sliding to stops and it seems it takes longer for your car to reach a complete stop when braking, your tires likely don’t have enough tread and will need to be replaced.
-      image_url: /uploads/exhaust-smoke.jpg
+      image_url: /uploads/foot-on-brake-pedal.jpg
       image_alt:
   button: true
   button_url: /schedule-appointment/

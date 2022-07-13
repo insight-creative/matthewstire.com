@@ -15,13 +15,13 @@
         <p>Matthews Tire is here to keep you rolling, no matter where you live. For the ultimate convenience, schedule your next auto repair at the location nearest you:</p>
         <ul class="no-padding">
             {{ range .Site.Data.locations }}
-            <li class="no-list-style"><a href="{{ .location_url }}" class="no-decoration fw-700 text-white">{{ .name }}</a></li>
+            <li class="no-list-style"><a href="{{ .location_url }}" class="no-decoration fw-700 text-white transform-x-8">{{ .name }}</a></li>
             {{ end }}
         </ul>
         {{ if eq .Title "Services" }}
             <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>
         {{ else }}
-            <a href="/schedule-appointment/" class="btn btn-secondary">Schedule your {{ .Params.hero.heading }}</a>
+            <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Your {{ .Params.hero.heading }}</a>
         {{ end }}
     </div>
     <div class="ase-badge">
