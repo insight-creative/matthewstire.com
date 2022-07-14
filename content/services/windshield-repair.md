@@ -37,9 +37,6 @@ conditions_block:
         If any issue with your windshield is causing low visibility while driving, bring your car in for an inspection and repair as soon as possible. This is extremely important, as anything getting in the way of your visibility can pose a great threat to yourself and other drivers on the road.
       image_url: /uploads/windshield-fogged-over-with-very-low-visibility.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Windshield with the Experts
   body: >-
@@ -54,9 +51,6 @@ repair_services_block:
     - Windshield removal
 
     - Replacement installation
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

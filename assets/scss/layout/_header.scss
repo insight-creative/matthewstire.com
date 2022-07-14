@@ -303,7 +303,10 @@
 
   &__inner {
     width: 100%;
-    padding: $ic-600 $ic-200;
+
+    .w-70 {
+      padding: $ic-600 $ic-100;
+    }
 
     ul {
       padding: $ic-300 0;
@@ -312,8 +315,19 @@
   }
 
   &__sidebar {
-    padding-left: $ic-100;
+    padding: $ic-600 $ic-100;
     border-left: 1px solid $light-gray;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: $primary-color;
+      height: 100%;
+      width: 500px;
+    }
   }
 
   &__item {
@@ -328,7 +342,7 @@
     border-radius: 50%;
     display: grid; 
     place-items: center;
-    background-color: $light-gray;
+    background-color: $primary-color;
 
     // img {
     //   width: auto;
@@ -339,7 +353,7 @@
     svg {
       height: $ic-300;
       width: $ic-300;
-      fill: $primary-color;
+      fill: $white;
       transition: transform 0.3s ease-out;
     }
   }

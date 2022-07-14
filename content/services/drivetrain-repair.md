@@ -34,9 +34,6 @@ conditions_block:
         If you notice a burning smell while driving, it’s always a good idea to stop in for an inspection, as this could be a very serious safety concern. When it comes to your drivetrain, a burning smell may signal that your transmission fluid is old and getting burnt, or that your transmission is overheating.
       image_url: /uploads/exhaust-smoke.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Drivetrain with the Experts
   body: >-
@@ -57,9 +54,6 @@ repair_services_block:
     - 4x4 service, transfer case, hub and differential
 
     - Transmission flush service
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

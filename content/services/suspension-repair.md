@@ -34,9 +34,6 @@ conditions_block:
         If your vehicle drifts in one direction while you aren’t pulling the steering wheel or when you’re turning, it’s a clear sign of suspension issues. This could be something as simple as a tire with less air pressure or misaligned tires, which can usually be fixed easily at any Matthews Tire location.
       image_url: /uploads/tire-being-filled-with-air.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Suspension with the Experts
   body: >-
@@ -57,9 +54,6 @@ repair_services_block:
     - Rack and pinion service
 
     - Ride control
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

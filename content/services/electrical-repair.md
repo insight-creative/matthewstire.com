@@ -37,9 +37,6 @@ conditions_block:
         A battery or check engine light on in your dash is a clear indication that something is amiss with your vehicle’s battery or electrical system. The expert team at your local Matthews Tire can quickly inspect your vehicle and determine the cause of this problem, as well as make the repairs and replacements necessary to keep you rolling.
       image_url: /uploads/check-engine-light.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Vehicle’s Electrical Repair with the Experts
   body: >-
@@ -56,9 +53,6 @@ repair_services_block:
     - Alternator repair and replacement
 
     - Full line of heavy-duty car batteries
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

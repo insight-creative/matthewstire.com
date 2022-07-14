@@ -34,9 +34,6 @@ conditions_block:
         Converter malfunctions and exhaust leaks can both release dangerous gases—like carbon monoxide—while driving. These gases have an extremely strong smell, so if you notice a foul smell while driving, it’s a good indication that you’ll need to stop in for an exhaust repair.
       image_url: /uploads/catalytic-converter-taken-off-exhaust-system.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Exhaust with the Experts
   body: >-
@@ -49,9 +46,6 @@ repair_services_block:
     - Lifetime warranty mufflers
 
     - Catalytic converters
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

@@ -14,8 +14,14 @@
   background-color: $white;
 }
 
-.bg-concrete {
-  background-image: url("/uploads/rocky-wall.png");
-  background-repeat: repeat;
-  background-color: $light-gray;
+.bg-accent {
+  background-color: $accent-color;
+}
+
+.bg-blue-swoosh {
+  background-color: $primary-color;
+  background-image: url("/uploads/blue-generic-swoosh-background.svg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }

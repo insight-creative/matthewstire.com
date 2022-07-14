@@ -40,9 +40,6 @@ conditions_block:
         If your car pulls toward one direction, the wheels are likely misaligned, or another issue with your tires or suspension could be going on. This can quickly progress and get worse, so don’t ignore the problem and instead bring your car in for an inspection.
       image_url: /uploads/alignment-services.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Wheels with the Experts
   body: >-
@@ -55,9 +52,6 @@ repair_services_block:
     - Alignments
 
     - Custom wheels
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

@@ -1,6 +1,6 @@
-{{ with .Params.conditions_block }}
 <section aria-labelledby="conditions-heading" class="block bg-gray">
     <div class="wrapper-lg">
+        {{ with .Params.conditions_block }}
         <h2 id="conditions-heading" class="text-primary">{{ .heading }}</h2>
         <p>{{.body }}</p>
         <div class="block-sm">
@@ -26,11 +26,9 @@
                 {{ end }}
             </div>
         </div>
+        {{ end }}
         <div class="text-center">
-            {{ if .button }}
-            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
-            {{ end }}
+            <a href="/schedule-appointment/" class="btn btn-primary">Schedule Your {{ .Params.hero.heading }}</a>
         </div>
     </div>
 </section>
-{{ end }}

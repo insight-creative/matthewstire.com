@@ -6,9 +6,8 @@
 {{ if eq $titleAltered $key }}
 <section id="recent-posts" class="block bg-gray">
   <div class="wrapper-lg">
-    <h3 class="text-primary text-center">Latest {{ $title }} Resources</h3>
+    <h2 class="text-primary text-center">Latest {{ $title }} Resources</h2>
     <div class="recent-posts block-sm grid-3">
-    
     {{ range first 3 $value.Pages }}
     {{ .Render "blog-card" }}
     {{ end }}

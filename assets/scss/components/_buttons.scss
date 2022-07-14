@@ -30,9 +30,23 @@
   background-image: $secondary-gradient;
   box-shadow: 6px 6px 6px rgba($accent-color, .15);
 
+  svg {
+    fill: $primary-color;
+    height: $ic-100;
+    width: auto;
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+    transition: fill .3s ease-out;
+  }
+
   &:hover,
   &:focus {
     color: $white;
+
+    svg {
+      fill: $white;
+    }
   }
 }
 

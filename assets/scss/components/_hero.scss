@@ -59,20 +59,6 @@
     min-height: 600px;
   }
 
-  &__icon {
-    border-radius: 50%;
-    height: $ic-800;
-    width: $ic-800;
-    display: grid;
-    place-items: center;
-
-    svg {
-      width: $ic-600;
-      height: auto;
-      fill: $white;
-    }
-  }
-
   &__mt-swoosh {
     position: absolute;
     bottom: -9px;
@@ -86,44 +72,39 @@
   }
 }
 
-.hero__ase-badge {
-  display: none;
-}
-
 .services-hero {
-
-  .hero__icon {
+  .icon-large {
     display: none;
   }
+}
 
-  .hero__ase-badge {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba($black, .7);
-    padding: .5rem $ic-100;
-    max-width: 500px;
+.hero__ase-badge {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba($black, .7);
+  padding: .5rem $ic-100;
+  max-width: 500px;
 
-    .hero__ase-badge-icon {
-      svg {
-        height: $ic-700;
-        width: $ic-700;
-      }
+  .hero__ase-badge-icon {
+    svg {
+      height: $ic-700;
+      width: $ic-700;
+    }
+  }
+
+  a {
+    margin: 0 $ic-100;
+
+    svg {
+      fill: $white;
     }
 
-    a {
-      margin: 0 $ic-100;
-
+    &:hover, 
+    &:focus {
       svg {
-        fill: $white;
-      }
-
-      &:hover, 
-      &:focus {
-        svg {
-          fill: $secondary-color;
-        }
+        fill: $secondary-color;
       }
     }
   }

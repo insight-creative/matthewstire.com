@@ -63,9 +63,6 @@ conditions_block:
         Oil helps lubricate your engine and keep everything running smoothly. If you notice that your engine is making a knocking sound, or that your car vibrates (especially when idling), then you may be experiencing issues that can be solved with a simple oil change.
       image_url: /uploads/oil-draining-from-oil-pan.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Oil Change for the Better
   body: >-
@@ -77,6 +74,13 @@ our_oil_block:
   heading: Our Oil
   body: >-
     At Matthews Tire, we use only the highest quality oil to complete oil changes for a variety of vehicles. These include:
+testimonials:
+  - body: >-
+      I brought my vehicle in for an oil change which was completed within 15 minutes. I received a full report on what was done and the condition of my vehicle. I was impressed and grateful for the excellent service. I will continue to bring my car into Matthews for further maintenance.
+    name: Mary Bechle
+  - body: >-
+      The plan was made to just change out tires.  I brought my vehicle in and they already had a loaner waiting for me. I was treated very well and decided to add an oil change too.  They said no problem and had everything handled by the time I came back to pick up my vehicle.  Great service, friendly staff, would go back again.
+    name: Nick Kordiyak
 menu:
   main:
     parent: "Services"

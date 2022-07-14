@@ -11,12 +11,20 @@
                 <img src="https://matthewstire.imgix.net/uploads/matthews-tire-appleton-west-location.jpg" width="800" height="400" alt="{{ .Params.tires_block.image_alt }}">   
             </picture>
         </div>
-        <h2 class="h3">Cities We Serve</h2>
+        <h2>Cities We Serve</h2>
         <p>Matthews Tire is here to keep you rolling, no matter where you live. For the ultimate convenience, schedule your next auto repair at the location nearest you:</p>
-        <ul class="no-padding">
+        <!-- <ul class="no-padding">
             {{ range .Site.Data.locations }}
             <li class="no-list-style"><a href="{{ .location_url }}" class="no-decoration fw-700 text-white transform-x-8">{{ .name }}</a></li>
             {{ end }}
+        </ul> -->
+        <ul class="two-column-list no-padding">
+            <li class="no-list-style"><a href="/locations/appleton-east/" class="no-decoration fs-100 fw-700 text-white transform-x-8">Appleton East - Darboy</a></li>
+            <li class="no-list-style"><a href="/locations/appleton-west/" class="no-decoration fs-100 fw-700 text-white transform-x-8">Appleton West - Grand Chute</a></li>
+            <li class="no-list-style"><a href="/locations/fond-du-lac/" class="no-decoration fs-100 fw-700 text-white transform-x-8">Fond du Lac</a></li>
+            <li class="no-list-style"><a href="/locations/green-bay/" class="no-decoration fs-100 fw-700 text-white transform-x-8">Green Bay</a></li>
+            <li class="no-list-style"><a href="/locations/menasha/" class="no-decoration fs-100 fw-700 text-white transform-x-8">Menasha</a></li>
+            <li class="no-list-style"><a href="/locations/waupaca/" class="no-decoration fs-100 fw-700 text-white transform-x-8">Waupaca</a></li>
         </ul>
         {{ if eq .Title "Services" }}
             <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>

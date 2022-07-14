@@ -34,9 +34,6 @@ conditions_block:
         In general, a burning smell while driving is never a good sign. If you notice a burning smell, it could be an indication that your engine is overheating and/or burning oil. Again, this is a serious problem that can lead to engine failure if left unrepaired.
       image_url: /uploads/exhaust-smoke.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Engine With the Experts
   body: >-
@@ -51,9 +48,6 @@ repair_services_block:
     - Power flushing
 
     - Belts and hose repair or replacement
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

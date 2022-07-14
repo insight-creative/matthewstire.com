@@ -24,16 +24,11 @@
   }
 
   &__icon {
-    display: grid;
-    place-items: center;
     position: absolute;
     top: 8px;
     left: 50%;
     transform: translateX(-50%);
-    height: $ic-800;
-    width: $ic-800;
-    border-radius: 50%;
-    box-shadow: 0 5px 15px rgba($primary-color, .5);
+    
 
     svg {
       height: $ic-600;

@@ -34,9 +34,6 @@ conditions_block:
         Does your steering wheel shake or vibrate when you brake? This is a common sign of a more serious internal problem with your car’s brake and steering system. If you notice vibrations while braking, be sure to bring your car in for an immediate brake repair.
       image_url: /uploads/foot-on-brake-pedal.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Safety with the Experts
   body: >-
@@ -56,9 +53,6 @@ repair_services_block:
     - Four-wheel disc
 
     - ABS (antilock) diagnosis and repair
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

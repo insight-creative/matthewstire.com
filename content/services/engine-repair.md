@@ -38,9 +38,6 @@ conditions_block:
         Smoke coming from your exhaust can mean a number of engine problems. Blue smoke is a common sign of burnt oil. Black smoke may signal an excess of burning fuel. White or gray smoke could indicate a coolant leak. In any of these situations, it’s important to bring your car in for an immediate engine repair.
       image_url: /uploads/exhaust-smoke.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Engine With the Experts
   body: >-
@@ -61,9 +58,6 @@ repair_services_block:
     - Emissions testing and repair
 
     - Oil and water leak diagnosis and repair
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

@@ -42,9 +42,6 @@ conditions_block:
         Something Wisconsin drivers should pay particular attention to is the braking ability of their tires, especially in snowy/icy conditions. If you are sliding to stops and it seems it takes longer for your car to reach a complete stop when braking, your tires likely don’t have enough tread and will need to be replaced.
       image_url: /uploads/foot-on-brake-pedal.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Car with the Tire Experts
   body: >-
@@ -55,9 +52,6 @@ repair_services_block:
     - Flat repairs
 
     - New tire installation
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 time_for_tires_block:
   heading: Is it Time for New Tires?
   body: >-

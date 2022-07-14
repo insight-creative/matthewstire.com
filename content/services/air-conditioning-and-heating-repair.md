@@ -11,13 +11,13 @@ hero:
   image_url: /uploads/auto-repair-technician-checking-vehicle-air-conditioning.jpg
   image_alt:
 intro:
-  heading: Does Your Vehicle Need Air Conditioning or Heating Repairs?
+  heading: Maintain Your Air Conditioning and Heating System
   body: >-
     It can be difficult to know the specific issues your car is experiencing. Here are some frequent signs that your car’s air conditioning or heating system needs repair:
 conditions_block:
-  heading: Strange Noises
+  heading: Does Your Vehicle Need Air Conditioning or Heating Repairs?
   body: >-
-    If you hear unusual noises when you try to turn on your car’s AC or heat, there may be something going on internally. Scheduling an inspection will ensure there are no serious safety concerns or other issues with the heating or cooling system.
+    It can be difficult to know the specific issues your car is experiencing. Here are some frequent signs that your car’s air conditioning or heating system needs repair:
   conditions:
     - heading: Strange Noises
       body: >-
@@ -34,9 +34,6 @@ conditions_block:
         Have you noticed fluid leaking from your car? It may be a leak from your AC. Any time your vehicle starts to leak fluid, it’s a good idea to schedule an inspection.
       image_url: /uploads/air-conditioning-system-recharge.jpg
       image_alt:
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 experts_block:
   heading: Trust Your Comfort With the Experts
   body: >-
@@ -51,9 +48,6 @@ repair_services_block:
     - Minor and major repairs
 
     - Retrofitting available!
-  button: true
-  button_url: /schedule-appointment/
-  button_text: Schedule a Repair
 menu:
   main:
     parent: "Services"

@@ -2,9 +2,31 @@
     &__sidebar {
         padding: $ic-200;
         height: max-content;
+        position: relative;
+
+        .icon-large {
+            position: absolute;
+            top: -38px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        ul {
+            columns: 2;
+        }
 
         @include breakpoint(md) {
             margin-left: $ic-300;
         }
+    }
+}
+
+// .intro__sidebar + .intro__sidebar {
+//     margin-top: $ic-100;
+// }
+
+.services {
+    .intro__sidebar .icon-large {
+        display: none;
     }
 }

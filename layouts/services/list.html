@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "services/hero" . }}
 {{ partial "breadcrumbs" . }}
-{{ partial "intro" . }}
+{{ partial "services/intro" . }}
 <section aria-labelledby="popular-services-section-heading" class="home-popular-services block">
   <div class="mt-yellow-swoosh-bg w-100"></div>
   <div class="wrapper text-center text-white">
@@ -23,7 +23,7 @@
                   <img src="{{ .image_url }}" alt="{{ .image_alt }}">
                   <div class="card__icon-group w-100">
                       {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
-                      <div class="card__icon bg-primary">
+                      <div class="card__icon icon-large icon-white bg-primary">
                           {{ if eq .heading "Oil Changes" }}
                           {{ partialCached "svg-icons/oil-changes.svg" . }}
                           {{ else if eq .heading "Alignments" }}
@@ -70,7 +70,7 @@
                   <img src="{{ .Params.hero.image_url }}" alt="{{ .Params.hero.image_alt }}">
                   <div class="card__icon-group w-100">
                       {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
-                      <div class="card__icon bg-primary">
+                      <div class="card__icon icon-large icon-white bg-primary">
                         {{ partial "functions/get-service-icon" . }}
                       </div>
                   </div>
