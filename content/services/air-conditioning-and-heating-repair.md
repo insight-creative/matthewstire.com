@@ -48,6 +48,10 @@ repair_services_block:
     - Minor and major repairs
 
     - Retrofitting available!
+testimonials:
+  - body: >-
+      In the past I had new tires installed on the car along with exhaust work.  This time I had to have actuator replaced for the heating/cooling temperature control.  Matthews Tire quickly diagnosed and fixed the issue.  I will definitely used this business for future repairs.  They have always been kind and professional with all of my past and current service.  Thank you!
+    name: Renee Brockman
 menu:
   main:
     parent: "Services"

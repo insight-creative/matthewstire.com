@@ -53,6 +53,10 @@ repair_services_block:
     - Four-wheel disc
 
     - ABS (antilock) diagnosis and repair
+testimonials:
+  - body: >-
+      Had car checked over 06/30/22 for general maintenance,  oil change and brakes and tires inspection.  Needed new brakes..  From the email sent to me stating what inspection found, to the phone call explaining everything to me,, I was EXTREMELY happy with the professionalism and their making sure all details were covered. Highly recommend Matthews Tire! ( 2021- I had an emergency situation with my vehicle.  Although no appt,  they looked at my car and diagnosed the problem between appts. My car did have to stay for 2 days for parts to be delivered, however,  it WAS NOT THEIR FAULT.
+    name: Barbara Spang
 menu:
   main:
     parent: "Services"
