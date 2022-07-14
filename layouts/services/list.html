@@ -23,7 +23,7 @@
                   <img src="{{ .image_url }}" alt="{{ .image_alt }}">
                   <div class="card__icon-group w-100">
                       {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
-                      <div class="card__icon icon-large icon-white bg-primary">
+                      <div class="card__icon icon icon-lg icon-white bg-primary">
                           {{ if eq .heading "Oil Changes" }}
                           {{ partialCached "svg-icons/oil-changes.svg" . }}
                           {{ else if eq .heading "Alignments" }}
@@ -70,7 +70,7 @@
                   <img src="{{ .Params.hero.image_url }}" alt="{{ .Params.hero.image_alt }}">
                   <div class="card__icon-group w-100">
                       {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
-                      <div class="card__icon icon-large icon-white bg-primary">
+                      <div class="card__icon icon icon-lg icon-white bg-primary">
                         {{ partial "functions/get-service-icon" . }}
                       </div>
                   </div>

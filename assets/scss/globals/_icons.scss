@@ -2,15 +2,28 @@
   top: -3px;
 }
 
-.icon-large {
+.icon {
   border-radius: 50%;
-  height: $ic-800;
-  width: $ic-800;
   display: grid;
   place-items: center;
+}
+
+.icon-lg {
+  height: $ic-800;
+  width: $ic-800;
 
   svg {
     width: $ic-600;
+    height: auto;
+  }
+}
+
+.icon-md {
+  height: $ic-600;
+  width: $ic-600;
+
+  svg {
+    width: $ic-300;
     height: auto;
   }
 }

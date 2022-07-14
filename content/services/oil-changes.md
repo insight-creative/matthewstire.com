@@ -81,6 +81,15 @@ testimonials:
   - body: >-
       The plan was made to just change out tires.  I brought my vehicle in and they already had a loaner waiting for me. I was treated very well and decided to add an oil change too.  They said no problem and had everything handled by the time I came back to pick up my vehicle.  Great service, friendly staff, would go back again.
     name: Nick Kordiyak
+  - body: >-
+      I took my SUV in for an oil change and scheduled maintenance. I needed a loaner which was provided at no charge, and they got the work done on time and provided an estimate for additional maintenance that still needs to be done.
+    name: Greg Linnemanstons
+  - body: >-
+      Fast and friendly oil change service. Will definitely recommend to others. Maybe be a little more money than some other places, but you get what you pay for in knowledge and skill and trustworthy people who know what they're doing
+    name: Jess Melland
+  - body: >-
+      Oil change, lube and filter, excellent price, Conscientious showed me parts wearing out and asked me if I wanted to replace today. Will use them again.
+    name: Lee Bahcall
 menu:
   main:
     parent: "Services"

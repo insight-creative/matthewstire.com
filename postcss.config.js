@@ -31,6 +31,8 @@ module.exports = {
         'mt-swoosh',
         'marker-active',
         'services-hero',
+        'swiper-pagination-bullet',
+        'swiper-pagination-bullet-active',
       ],
     }),
   ],

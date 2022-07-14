@@ -1,5 +1,5 @@
 {{ if .Params.testimonials }}
-<div class=" hero">
+<div class="testimonials hero">
     <div class="hero__image">
         <picture>
           <source sizes="100vw" srcset="https://matthewstire.imgix.net/uploads/tires-on-rack.jpg?fm=avif&q=20&height=600&width=360 600w, https://matthewstire.imgix.net/uploads/tires-on-rack.jpg?fm=avif&q=20&height=400&width=800 800w, https://matthewstire.imgix.net/uploads/tires-on-rack.jpg?fm=avif&q=20&height=500&width=1000&fit=crop 1000w, https://matthewstire.imgix.net/uploads/tires-on-rack.jpg?fm=avif&q=20&height=600&width=1200&fit=crop 1200w, https://matthewstire.imgix.net/uploads/tires-on-rack.jpg?fm=avif&q=20&height=700&width=1400&fit=crop 1400w, https://matthewstire.imgix.net/uploads/tires-on-rack.jpg?fm=avif&q=20&height=900&width=1800&fit=crop 1800w, https://matthewstire.imgix.net/uploads/tires-on-rack.jpg?fm=avif&q=20&height=1000&width=2000&fit=crop 2000w" type="image/avif">
@@ -12,10 +12,35 @@
     </div>
   <div class="hero__overlay flex flex-center">
     <div class="wrapper-lg">
-      <div class="hero__content flow">
-        {{ range .Params.testimonials }}
-        <p>{{ .body }}</p>
-        {{ end }}
+      <div class="hero__content">
+        <div class="swiper testimonials-swiper fade-up">
+            <div class="swiper-wrapper">
+              {{ range .Params.testimonials }}
+              <div class="swiper-slide bg-primary">
+                <div class="icon icon-md icon-primary bg-accent">
+                    {{ partialCached "svg-icons/quote.svg" . }}
+                </div>
+                <div class="testimonial flow flex flex-column flex-justify-center text-white">
+
+                    <p class="fs-100">{{ .body }}</p>
+                    {{ if .name }}
+                    <span class="h6 fw-700">— {{ .name }}</span>
+                    {{ end }}
+                    <div class="testimonial__stars">
+                        {{ partialCached "svg-icons/star.svg" . }}
+                        {{ partialCached "svg-icons/star.svg" . }}
+                        {{ partialCached "svg-icons/star.svg" . }}
+                        {{ partialCached "svg-icons/star.svg" . }}
+                        {{ partialCached "svg-icons/star.svg" . }}
+                    </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          <div class="swiper-button-next">{{ partialCached "svg-icons/chevron-right.svg" . }}</div>
+          <div class="swiper-button-prev">{{ partialCached "svg-icons/chevron-left.svg" . }}</div>
+          <div class="testimonials-pagination"></div>
       </div>
     </div>
   </div>

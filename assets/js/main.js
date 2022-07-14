@@ -18,6 +18,35 @@ const locationSelect = document.querySelector('.location-select')
 const mapMarkers = document.querySelectorAll('.mt-location')
 const mapMarker = document.querySelector('.mt-location__btn')
 
+var testimonialsSwiper = new Swiper(".testimonials-swiper", {
+    grabCursor: true,
+    setWrapperSize: true, 
+    
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 32
+      },
+      600: {
+        slidesPerView: 3,
+        spaceBetween: 32
+      },
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".testimonials-pagination",
+      clickable: true,
+      type: 'bullets',
+    },
+    a11y: {
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+    },
+  });
 
 if(document.body.contains(mapMarker)) {
     mapMarkers.forEach((marker) => {
