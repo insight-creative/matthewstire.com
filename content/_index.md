@@ -40,6 +40,16 @@ tires_block:
   heading: Shop for Tires
   body: >-
     At Matthews Tire, we don’t just sell tires … we specialize in them! You can trust our ASE-certified technicians to provide expert consultation and installation to ensure you drive off with the best tires for your vehicle—no excuses guaranteed. Get started today by finding the best tires for your car.
+  popular_brands:
+    - brand: Goodyear
+      image_url: /uploads/goodyear.svg
+      brand_website: https://www.goodyear.com/
+    - brand: Michelin
+      image_url: /uploads/michelin.svg
+      brand_website: https://www.michelinman.com/
+    - brand: Dunlop
+      image_url: /uploads/dunlop.svg
+      brand_website: https://www.dunloptires.com/
   button: true
   button_url: /tires/
   button_text: Find Your Tires
@@ -56,7 +66,7 @@ services_block:
       image_alt: Oil being poured into engine during an oil change service
       url: /services/oil-changes/
     - heading: Alignments
-      body: Maintain your vehicle’s suspension with a Matthews Tire alignment, improving the longevity of your tires and the quality of your ride. 
+      body: Maintain your vehicle’s suspension with a Matthews Tire alignment, improving the longevity of your tires and the quality of your ride.
       image_url: /uploads/alignment-services.jpg
       image_alt: Alignment equipment on wheel during an alignment service
       url: /services/suspension-repair/

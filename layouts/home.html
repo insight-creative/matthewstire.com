@@ -16,6 +16,11 @@
             {{ if .button }}
             <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
             {{ end }}
+            <div class="popular-tire-brands flex flex-justify-between">
+                {{ range .popular_brands }}
+                <img src="{{ .image_url }}" alt="{{ .brand }} logo">
+                {{ end }}
+            </div>
             {{ end }}
         </div>
         <div class="w-100 w-50-m">
