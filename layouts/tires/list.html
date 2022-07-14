@@ -1,0 +1,58 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+{{ partial "breadcrumbs" . }}
+{{ partial "intro" . }}
+<div class="block">
+    <div class="wrapper-lg">
+        <div id="ta-widget-container" class="tasite-bootstrap-styles" data-dealer="09d70ee4-a08a-40f0-bf0a-ae2944c7b755" data-hostUrl="https://ta3.tiresanytime.com" data-parentUsesBootstrapCss="true"></div>
+    </div>
+</div>
+{{ with .Params.why_matthews_block }}
+<div class="block bg-gray">
+    <div class="wrapper-lg">
+        <h2 class="text-primary">{{ .heading }}</h2>
+        <p>{{ .body }}</p>
+        <div class="block-sm">
+            <div class="grid-3">
+                {{ range .reasons }}
+                <div class="image-card bg-white shadow-1 fs-100">
+                    <div class="cover-image">
+                        <picture>
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=avif&q=75&width=500&height=300" type="image/avif">
+                        
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=webp&q=75&width=500&height=300" type="image/webp">
+                        
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=jpg&q=75&width=500&height=300" type="image/jpg">
+    
+                            <img src="https://matthewstire.imgix.net{{ .image_url }}" width="500" height="300" alt="{{ .image_alt }}">   
+                        </picture>
+                    </div>
+                    <div class="image-card__body">
+                        <h3 class="text-primary">{{ .subheading }}</h3>
+                        <p>{{ .body }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div> 
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ with .Params.tire_brands_block }}
+<div class="block">
+    <div class="wrapper-lg">
+        <h2 class="text-primary">{{ .heading }}</h2>
+        <ul class="grid-4 max-width-none no-padding">
+            {{ range .brands }}
+            <li class="no-list-style no-margin">
+                <a href="{{ .brand_website }}" target="_blank" rel="noreferrer noopener" class="brand-card">
+                    <img src="{{ .image_url }}" alt="{{ .brand }} logo">
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}
+{{ partialCached "site-cta" . }}
+{{ end }}

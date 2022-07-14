@@ -1,0 +1,12 @@
+.brand-card {
+    border: 1px solid $light-gray;
+    display: grid;
+    place-items: center;
+    height: 150px;
+
+    img {
+        width: 100%;
+        max-width: 70%;
+        height: auto;
+    }
+}

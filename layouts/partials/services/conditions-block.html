@@ -6,7 +6,7 @@
         <div class="block-sm">
             <div class="grid-3">
                 {{ range .conditions }}
-                <div class="conditions-card bg-white shadow-1 fs-100">
+                <div class="image-card bg-white shadow-1 fs-100">
                     <div class="cover-image">
                         <picture>
                             <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=avif&q=75&width=500&height=300" type="image/avif">
@@ -18,7 +18,7 @@
                             <img src="https://matthewstire.imgix.net{{ .image_url }}" width="500" height="300" alt="{{ .image_alt }}">   
                         </picture>
                     </div>
-                    <div class="conditions-card__body">
+                    <div class="image-card__body">
                         <h3 class="text-primary">{{ .heading }}</h3>
                         <p>{{ .body }}</p>
                     </div>

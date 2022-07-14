@@ -33,6 +33,7 @@ module.exports = {
         'services-hero',
         'swiper-pagination-bullet',
         'swiper-pagination-bullet-active',
+        'find-tires',
       ],
     }),
   ],

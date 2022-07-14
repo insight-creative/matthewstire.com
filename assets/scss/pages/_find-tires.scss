@@ -1,0 +1,5 @@
+.find-tires {
+    .image-card:last-child, .image-card:nth-last-child(2) {
+       transform: translateX(55%);
+    }
+}
