@@ -1,4 +1,4 @@
-.mt-locations {
+.mt-locations-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -176,5 +176,14 @@
 
 .show-locations {
     opacity: 1;
+    pointer-events: all;
+}
+
+.locations .mt-locations {
+    position: relative;
+    opacity: 1;
+    padding-top: 0;
+    box-shadow: none;
+    height: 100%;
     pointer-events: all;
 }

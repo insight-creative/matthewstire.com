@@ -2,8 +2,7 @@
 title: Oil Change Services
 seo:
   page_title: Oil Change Services
-  meta_description: >-
-    When you need an oil change, bring your car to the expert mechanics you can trust at Matthews Tire for the best service and value!
+  meta_description: When you need an oil change, bring your car to the expert mechanics you can trust at Matthews Tire for the best service and value!
   featured_image: /uploads/oil-change-services-large.jpg
   featured_image_alt:
 hero:

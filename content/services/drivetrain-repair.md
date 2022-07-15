@@ -2,8 +2,7 @@
 title: Drivetrain
 seo:
   page_title: Drivetrain Repair
-  meta_description: >-
-    Having transmission issues or problems with your vehicle’s drivetrain? Stop into Matthews Tire to get an expert inspection and drivetrain repair.
+  meta_description: Having transmission issues or problems with your vehicle’s drivetrain? Stop into Matthews Tire to get an expert inspection and drivetrain repair.
   featured_image: /uploads/drivetrain-repair.jpg
   featured_image_alt:
 hero:

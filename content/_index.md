@@ -1,11 +1,10 @@
 ---
 title: Home
 seo:
-  title:
-  description: Matthews Tire is your trusted tire and auto repair shop with locations in Appleton, Menasha, Green Bay, Fond du Lac and Waupaca.
-  featured_image:
-    image: machining.jpg
-    image_alt: machined part
+  page_title:
+  meta_description:: Matthews Tire is your trusted tire and auto repair shop with locations in Appleton, Menasha, Green Bay, Fond du Lac and Waupaca.
+  featured_image: /uploads/matthews-summer-roads-background.jpg
+  featured_image_alt: An empty country road
 hero:
   heading: Your Trusted Tire and Auto Repair Specialists
   body: Matthews Tire is your one-stop shop for the best service and value on high-quality tires, oil changes, general car maintenance and auto repair services, serving Northeast Wisconsin as a locally owned auto shop since 1952.

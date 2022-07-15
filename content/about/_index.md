@@ -2,14 +2,12 @@
 title: About
 seo:
   page_title: About
-  meta_description: >-
-
+  meta_description:
   featured_image:
   featured_image_alt:
 hero:
   heading:
-  subheading:
-  image:
+  image_url:
   image_alt:
 intro:
   heading:

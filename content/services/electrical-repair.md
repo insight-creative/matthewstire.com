@@ -2,8 +2,7 @@
 title: Electrical
 seo:
   page_title: Electrical Repair
-  meta_description: >-
-    Bring your car to the mechanics you can trust at Matthews Tire for replacement car batteries, starters and any other electrical repair service.
+  meta_description: Bring your car to the mechanics you can trust at Matthews Tire for replacement car batteries, starters and any other electrical repair service.
   featured_image: /uploads/mechanic-testing-auto-battery.jpg
   featured_image_alt:
 hero:

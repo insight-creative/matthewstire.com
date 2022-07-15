@@ -2,8 +2,7 @@
 title: Careers
 seo:
   page_title: Matthews Tire Careers
-  meta_description: >-
-    Looking for a rewarding automotive career? View the open positions at Matthews Tire and start your new chapter today!
+  meta_description: Looking for a rewarding automotive career? View the open positions at Matthews Tire and start your new chapter today!
   featured_image: /uploads/auto-repair-services.jpg
   featured_image_alt:
 hero:

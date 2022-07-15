@@ -2,8 +2,7 @@
 title: Find Tires
 seo:
   page_title: Find Your Tires
-  meta_description: >-
-    Which tires are the best for your car? With Matthews Tire fool-proof tire finder tool, you’ll be able to find the perfect tires for any vehicle.
+  meta_description: Which tires are the best for your car? With Matthews Tire fool-proof tire finder tool, you’ll be able to find the perfect tires for any vehicle.
   featured_image: /uploads/tires-stacked-in-warehouse.jpg
   featured_image_alt:
 hero:

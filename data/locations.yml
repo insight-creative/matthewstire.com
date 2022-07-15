@@ -1,4 +1,5 @@
 - name: Appleton East
+  name_long: Appleton East - Darboy
   image_url: /uploads/matthews-tire-appleton-east-location.jpg
   image_alt: Matthews Tire Appleton East Location
   phone: 920-730-2199
@@ -13,6 +14,7 @@
   location_url: /locations/appleton-east/
 
 - name: Appleton West
+  name_long: Appleton West - Grand Chute
   image_url: /uploads/matthews-tire-appleton-west-location.jpg
   image_alt: Matthews Tire Appleton West Location
   phone: 920-734-5701
@@ -27,6 +29,7 @@
   location_url: /locations/appleton-west/
 
 - name: Commercial
+  name_long: Commercial Auto Center
   image_url: /uploads/matthews-tire-commercial-location.jpg
   image_alt: Matthews Tire Commercial Location
   phone: 920-735-0162
@@ -81,6 +84,7 @@
     - day: Monday - Friday
       time: 7:00am - 6:00pm
   location_url: /locations/menasha/
+  facility_notes: "*Zero clearance facility to accommodate low-to-the-ground cars."
 
 - name: Waupaca
   image_url: /uploads/matthews-tire-waupaca-location.jpg
@@ -96,3 +100,4 @@
     - day: Monday - Friday
       time: 7:00am - 6:00pm
   location_url: /locations/waupaca/
+  facility_notes: "*Zero clearance facility to accommodate low-to-the-ground cars."

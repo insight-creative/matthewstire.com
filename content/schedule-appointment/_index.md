@@ -2,18 +2,17 @@
 title: Schedule Appointment
 seo:
   page_title: Schedule Appointment
-  meta_description: >-
-    
-  featured_image: 
-  featured_image_alt: 
+  meta_description:
+  featured_image:
+  featured_image_alt:
 hero:
-  heading: 
+  heading:
   subheading:
-  image: 
+  image_url:
   image_alt:
 intro:
-  heading: 
+  heading:
   subheading: >-
-    
-  body: 
+
+  body:
 ---

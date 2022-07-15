@@ -2,8 +2,7 @@
 title: Windshield
 seo:
   page_title: Windshield Repair
-  meta_description: >-
-    Matthews Tire windshield repair: fix small cracks and chips or replace your entire windshield.
+  meta_description: "Matthews Tire windshield repair: fix small cracks and chips or replace your entire windshield."
   featured_image: /uploads/windshield-repair-services.jpg
   featured_image_alt:
 hero:

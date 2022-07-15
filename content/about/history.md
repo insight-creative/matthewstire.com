@@ -2,14 +2,13 @@
 title: History
 seo:
   page_title: History
-  meta_description: >-
-
+  meta_description:
   featured_image:
   featured_image_alt:
 hero:
   heading:
   subheading:
-  image:
+  image_url:
   image_alt:
 intro:
   heading:

@@ -2,8 +2,7 @@
 title: Brakes
 seo:
   page_title: Brake Repair
-  meta_description: >-
-    Expert brake repair services for domestic, foreign, classic, hybrid, and luxury vehicles, as well as trucks, RVs and campers.
+  meta_description: Expert brake repair services for domestic, foreign, classic, hybrid, and luxury vehicles, as well as trucks, RVs and campers.
   featured_image: /uploads/brake-repair-services-large.jpg
   featured_image_alt:
 hero:

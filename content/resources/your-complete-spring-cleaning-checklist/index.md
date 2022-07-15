@@ -3,8 +3,7 @@ layout: post
 title: "Your Complete Spring-Cleaning Checklist"
 seo:
   page_title: 5 Expert Car Maintenance Tips to Save Your Car from the Heat
-  meta_description: >-
-
+  meta_description:
   featured_image: spring-cleaning.jpg
   featured_image_alt:
 date: 2020-04-08

@@ -7,7 +7,7 @@ seo:
   featured_image_alt:
 hero:
   heading: Auto Repair Services
-  body: >-
+  body:
   image_url: /uploads/car-driving-down-back-country-road.jpg
   image_alt: car driving down back country road
 intro:

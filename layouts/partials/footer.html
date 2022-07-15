@@ -36,7 +36,7 @@
           <div class="footer__col footer__services fade-staggered">
             <h2 class="h6">Services</h3>
             <ul>
-              {{ range sort .Site.Menus.services "value" "desc" }}
+              {{ range .Site.Menus.services }}
               <li><a href="{{ .URL }}" class="transform-x-8">{{ .Name }}</a></li>
               {{ end }}
             </ul>
