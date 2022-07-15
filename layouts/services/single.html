@@ -10,13 +10,13 @@
         <div class="hero__content flex flex-column flex-row-m">
             <div class="w-100 w-50-m flow text-white">
                 {{ with .Params.oil_change_benefits_block }}
-                <h2>{{ .heading | markdownify }}</h2>
+                <h2 class="text-shadow">{{ .heading | markdownify }}</h2>
                 {{ .body | markdownify }}
                 {{ end }}           
             </div>
             <div class="w-100 w-50-m flow text-white">
                 {{ with .Params.oil_change_frequency_block }}
-                <h2>{{ .heading | markdownify }}</h2>
+                <h2 class="text-shadow">{{ .heading | markdownify }}</h2>
                 <p>{{ .body | markdownify }}</p>
                 {{ end }}
             </div>

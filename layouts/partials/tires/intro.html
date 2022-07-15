@@ -1,0 +1,19 @@
+<section class="intro block">
+    <div class="wrapper-lg flex flex-column flex-row-m fade-up">
+        <div class="w-100 w-50-m flow">
+            {{ with .Params.intro }}
+            {{ if .heading }}
+            <h2 class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            <p>{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="w-100 w-50-m">
+            <div id="ta-widget-container" class="tasite-bootstrap-styles" data-dealer="09d70ee4-a08a-40f0-bf0a-ae2944c7b755" data-hostUrl="https://ta3.tiresanytime.com" data-parentUsesBootstrapCss="true"></div>
+        </div>
+    </div>
+</section>

@@ -9,14 +9,14 @@ a, .simple-link {
   }
 }
 
-.site-main a:not(.btn):not(.breadcrumbs__link):not(.card):not(.card a):not(.location-select__list a):not(.mt-location__content a):not(.ase-col__body a):not(.bg-primary a):not(.hero__ase-badge a) {
+.site-main a:not(.btn):not(.breadcrumbs__link):not(.card):not(.card a):not(.location-select__list a):not(.mt-location__content a):not(.ase-col__body a):not(.bg-primary a):not(.hero__ase-badge a):not(.ta-panel-heading a):not(.close-btn):not(.careers-card) {
   color: $primary-color;
   text-decoration: none;
   background-image: linear-gradient($accent-color, $accent-color),linear-gradient(270deg,$primary-color 0%,$primary-color 100%);
   background-size: 100% 2px,0 2px;
   background-position: 100% 100%,0 100%;
   background-repeat: no-repeat;
-  transition: background-size .3s ease-out,background-position .3s ease-out,color .3s ease-out;
+  transition: background-size $transition,background-position $transition,color $transition;
 
   &:hover,
   &:focus {
@@ -50,7 +50,7 @@ a, .simple-link {
     width: $ic--100;
     height: $ic--100;
     fill: $primary-color;
-    transition: transform .3s ease-out, fill .3s ease-out; 
+    transition: transform $transition, fill $transition; 
     margin-left: 8px;
   }
 

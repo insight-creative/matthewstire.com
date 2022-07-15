@@ -1,5 +1,9 @@
 .find-tires {
-    .image-card:last-child, .image-card:nth-last-child(2) {
-       transform: translateX(55%);
+    .icon-card:nth-child(2) {
+       transform: translateY(50%);
+    }
+
+    .icon-card:nth-last-child(2) {
+       transform: translateY(55%);
     }
 }

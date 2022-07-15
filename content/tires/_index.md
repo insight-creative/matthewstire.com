@@ -16,7 +16,7 @@ intro:
     When you’re ready for new tires, you simply can’t beat the quality, service and value at Matthews Tire! Shop from our large inventory of high-quality tires and let our ASE-certified technicians handle the rest.  
 
 
-    Not sure which tires are the best for your vehicle? Use the tire finder tool below, or call your local <a href="/locations/">Matthews Tire location</a> for a free consultation.
+    Not sure which tires are the best for your vehicle? Use our tire finder tool, or call your local <a href="/locations/">Matthews Tire location</a> for a free consultation.
 why_matthews_block:
   heading: Why Matthews Tire?
   body: >-
@@ -40,7 +40,7 @@ why_matthews_block:
     - subheading: Free tire rotations for life!
       body: >-
         Never pay for a tire rotation again! Get FREE tire rotations when you purchase a full set of four tires at any Matthews Tire location.
-      image_url: /uploads/tires-stacked-in-warehouse-2.jpg
+      image_url: /uploads/tire-rotation-services.jpg
       image_alt:
     - subheading: Specialty tires available.
       body: >-

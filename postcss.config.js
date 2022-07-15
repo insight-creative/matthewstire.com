@@ -18,6 +18,7 @@ module.exports = {
         'services-sub-menu',
         'about-sub-menu',
         'has-open-modal',
+        'modal-open',
         'show-locations',
         'home-hero',
         'locations-list-open',

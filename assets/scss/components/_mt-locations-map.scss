@@ -65,7 +65,7 @@
                 height: $ic--100;
                 width: $ic--100;
                 margin-left: 8px;
-                transition: transform .3s ease-out;
+                transition: transform $transition;
             }
 
             &:hover, 

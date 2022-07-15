@@ -1,0 +1,65 @@
+.careers-card {
+  position: relative;
+  transition: $transition;
+  padding: $ic-300 $ic-200;
+
+  &::before {
+    content: "";
+    background: $primary-color;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: $transition;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__content,
+  &__heading,
+  &__details {
+    width: 100%;
+    transition: $transition;
+  }
+
+  &__details {
+    color: $black;
+    opacity: 0.8;
+  }
+
+  .animated__arrow-body {
+    transition-delay: 0.2s;
+  }
+
+  .animated__arrow-body::before,
+  .animated__arrow-body::after {
+    transition-delay: 0.4s;
+  }
+
+  &:hover,
+  &:focus {
+    .careers-card__heading,
+    .careers-card__details {
+      color: $white;
+    }
+
+    &::before {
+      width: 100%;
+    }
+
+    .animated__arrow-body {
+      transform: translateX(-8px);
+      opacity: 1;
+    }
+
+    .animated__arrow-body::before,
+    .animated__arrow-body::after {
+      width: 10px;
+      opacity: 1;
+    }
+  }
+}

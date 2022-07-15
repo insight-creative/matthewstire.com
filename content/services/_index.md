@@ -8,10 +8,6 @@ seo:
 hero:
   heading: Auto Repair Services
   body: >-
-    Whether your vehicle needs a routine maintenance service like an oil change, tire rotation or battery replacement, or you need a more extensive auto repair service, you can count on the expert technicians at Matthews tire to get the job done and keep you rolling—no excuses guaranteed. 
-
-
-    Browse our tire, auto repair and maintenance services below, and don’t forget to give us a call if you have any questions. Our team is here to help!
   image_url: /uploads/car-driving-down-back-country-road.jpg
   image_alt: car driving down back country road
 intro:

@@ -1,7 +1,7 @@
 .card {
   position: relative;
   background-color: $white;
-  transition: .3s ease-out;
+  transition: $transition;
 
   .cover-image {
     height: 250px;

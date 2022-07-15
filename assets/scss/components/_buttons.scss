@@ -6,10 +6,19 @@
   font-weight: 700;
   padding: $ic-100 $ic-400;
   text-decoration: none;
-  transition: 0.3s ease-out;
+  transition: $transition;
   background-size: 400% 100%;
   border-radius: 5px;
   text-align: center;
+
+  svg {
+    height: $ic-100;
+    width: auto;
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+    transition: fill $transition;
+  }
 
   &:hover,
   &:focus {
@@ -23,6 +32,10 @@
   color: $white;
   background-image: $primary-gradient;
   box-shadow: 6px 6px 6px rgba($primary-color, .15);
+
+  svg {
+    fill: $white;
+  }
 }
 
 .btn-secondary {
@@ -37,7 +50,7 @@
     position: relative;
     top: 1px;
     margin-right: 8px;
-    transition: fill .3s ease-out;
+    transition: fill $transition;
   }
 
   &:hover,

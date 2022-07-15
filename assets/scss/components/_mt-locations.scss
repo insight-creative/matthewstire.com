@@ -8,7 +8,7 @@
     padding-top: $mobile-header;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .3s ease-out;
+    transition: opacity $transition;
     overflow-x: hidden;
     overflow-y: auto;
     height: 100vh;
@@ -96,7 +96,7 @@
         text-decoration: none;
 
         h2 {
-            transition: color .3s ease-out;
+            transition: color $transition;
         }
 
         &:hover, 
@@ -116,7 +116,7 @@
             width: auto;
             fill: $primary-color;
             margin-left: $ic-400;
-            transition: transform .3s ease-out;
+            transition: transform $transition;
         }
     }
 
@@ -154,10 +154,24 @@
     }
 }
 
+// .has-open-modal, 
+// .modal-open {
+//     // height: 100vh;
+//     overflow: hidden;
+//     padding-right: 17px;
+//     padding-right: 17px;
+//     // position: fixed;
+// }
+
 .has-open-modal {
-    // height: 100vh;
-    overflow: hidden;
-    padding-right: 17px;
+    position: fixed;
+}
+
+.has-open-modal {
+    .site-wrap {
+        overflow: scroll;
+        height: 100vh;
+    }
 }
 
 .show-locations {

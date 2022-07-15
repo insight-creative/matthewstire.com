@@ -38,7 +38,7 @@
         box-shadow: 0 6px 15px rgba($primary-color, .15);
         transform: scaleY(0);
         transform-origin: top;
-        transition: transform .3s ease-out;
+        transition: transform $transition;
 
         a {
             font-size: $ic-100;

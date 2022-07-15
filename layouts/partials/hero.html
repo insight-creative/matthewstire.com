@@ -6,7 +6,11 @@
       <div class="hero__content flow">
         <h1 class="text-white text-shadow max-width-none">{{ .Params.hero.heading }}</h1>
         <p class="text-white text-shadow fw-500">{{ .Params.hero.body }}</p>
+        {{ if eq .Title "Careers" }}
+        <a href="/careers/#open-positions" class="btn btn-secondary">View Open Positions</a>
+        {{ else }}
         <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>
+        {{ end }}
       </div>
     </div>
   </div>

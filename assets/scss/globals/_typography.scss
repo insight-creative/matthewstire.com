@@ -101,7 +101,7 @@ article {
 
 .text-black {
   color: $black;
-  transition: 0.3s ease-out;
+  transition: $transition;
 }
 
 .text-white {

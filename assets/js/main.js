@@ -141,17 +141,30 @@ function toggleMobileMenu() {
 
 function toggleLocations() {
     if(locations.classList.contains('show-locations')) {
+        const body = document.body;
+        const scrollY = body.style.top;
+        body.style.position = '';
+        body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);     
         this.setAttribute('aria-expanded', 'false')
         this.setAttribute('aria-label', 'open locations search tool')
         locations.classList.remove('show-locations')
-        document.body.classList.remove('has-open-modal')
+        // document.body.classList.remove('has-open-modal')
     } else {
         locations.classList.add('show-locations')
-        document.body.classList.add('has-open-modal')
+        // document.body.classList.add('has-open-modal')
         this.setAttribute('aria-expanded','true')
         this.setAttribute('aria-label', 'close locations search tool')
+        const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+        const body = document.body;
+        body.style.position = 'fixed';
+        body.style.top = `-${scrollY}`;
     }
 }
+
+window.addEventListener('scroll', () => {
+    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+  });
 
 function openLocationsList() {
     if(locationSelect.classList.contains('locations-list-open')) {

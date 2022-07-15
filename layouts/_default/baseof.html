@@ -11,6 +11,10 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "locations" . }}{{ partialCached "locations" . }}{{ end }}
+    {{ if eq .Title "Find Tires" }}
+    <!-- Tires Anytime 3.0 Tire Widget -->
+    <script src="https://ta3.tiresanytime.com/app/widget/searchWidget.js" type="text/javascript"></script>
+    {{ end }}
     {{ block "footer" . }}{{ partialCached "footer" . }}{{end}}
   </div>
 </body>

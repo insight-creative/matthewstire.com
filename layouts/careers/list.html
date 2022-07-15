@@ -1,3 +1,46 @@
 {{ define "main" }}
-
+{{ partial "hero" . }}
+{{ partial "breadcrumbs" . }}
+{{ partial "intro" . }}
+{{ if .Params.open_positions }}
+<div class="block bg-gray flow">
+    <h2 class="text-primary text-center">Open Positions</h2>
+    <p class="h5 text-center max-width-none">Browse our open job opportunities and apply online today!</p>
+    <div id="open-positions" class="wrapper-lg grid-3">
+        {{ range .Params.open_positions }}
+        <a href="{{ .position_url }}" target="_blank" rel="noopener noreferrer" class="careers-card bg-white no-decoration shadow-1">
+            <div class="careers-card__content flex flex-justify-between">
+                <div class="flow">
+                    <h3 class="careers-card__heading h6 text-primary no-margin">{{ .position }}</h3>
+                    <span class="careers-card__details fs-100">Location?</span>
+                </div>
+                <div class="animated__arrow">
+                    <div class="animated__arrow-body"></div>
+                </div>
+            </div>
+        </a>
+        {{ end }}        
+    </div>
+    <h2 class="text-primary text-center">Prefer a Hard Copy Option?</h2>
+    <p class="text-center max-width-none">Physical applications can be mailed or hand-delivered at any of our <a href="/locations/">seven locations</a>.</p>
+    <div class="text-center">
+        <a href="/documents/application.pdf" target="_blank" class="btn btn-primary">Download Application</a>
+    </div>
+</div>
+{{ end }}
+{{ if .Params.benefits }}
+<div class="block bg-primary">
+    <div class="wrapper-lg flow">
+        <h2 class="text-white text-center">Our Benefits</h2>
+        <div class="grid-3">
+            {{ range .Params.benefits }}
+            <div class="benefit flow flex flex-column flex-center">
+                {{ partialCached "svg-icons/satisfaction-guranteed.svg" . }}
+                <p class="h6 fw-700 text-white text-center">{{ .benefit }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
 {{ end }}
