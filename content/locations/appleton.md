@@ -45,12 +45,12 @@ services_block:
       url: /services/oil-changes/
     - heading: Auto Repair in Appleton
       body: Experiencing car troubles in Appleton? Whether you need a tire repair, brake replacement or full engine overhaul, our mechanics in Appleton have the experience and knowledge to repair your car and get you back out on the road.
-      image_url: /uploads/alignment-services.jpg
+      image_url: /uploads/brake-repair-services.jpg
       image_alt: Alignment equipment on wheel during an alignment service
       url: /schedule-appointment/
     - heading: Car Maintenance in Appleton
       body: Drivers in Appleton simply can’t afford to ignore regular car maintenance! When you need a top-quality oil change, alignment, tire rotation or other maintenance services, the auto experts at Matthews Tire are here to help at both of our Appleton auto shops.
-      image_url: /uploads/brake-repair-services.jpg
+      image_url: /uploads/alignment-services.jpg
       image_alt: Brake rotor and brake pads on vehicle while in for a brake repair service
       url: /schedule-appointment/
     - heading: Auto Parts in Appleton
