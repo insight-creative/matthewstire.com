@@ -1,0 +1,30 @@
+.location-col {
+    iframe {
+        height: 300px;
+    }
+
+    svg:not(.ase-certified-icon) {
+        height: 14px;
+        width: auto;
+        fill: $white;
+        margin-right: $ic-100;
+    }
+
+    span:nth-of-type(2) {
+        svg {
+            height: 12px;
+        }
+    }
+
+    span + span {
+        margin-top: 4px;
+    }
+
+    a:not(.location-card__location-url) {
+        display: block;
+    }
+
+    .location-card {
+        border-bottom: none;
+    }
+}

@@ -49,8 +49,15 @@
 
     .flow > * + * {
         margin-top: $ic-100;
-      }
+    }
 
+    .location-card__notes {
+        display: none;
+    }
+}
+
+.mt-locations-modal,
+.mt-locations {
     .directions {
         display: none;
 
@@ -139,10 +146,6 @@
         }
     }
 
-    address {
-        font-style: normal;
-    }
-
     .buttons {
         margin-bottom: $ic-300;
     }
@@ -186,4 +189,18 @@
     box-shadow: none;
     height: 100%;
     pointer-events: all;
+}
+
+.locations .site-main .mt-locations .location-card {
+    position: relative;
+    padding-bottom: $ic-800;
+
+    &__notes {
+        margin-top: $ic-200;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 0;
+    }
 }

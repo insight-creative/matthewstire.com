@@ -1,6 +1,6 @@
 {{ $heroClass := lower .Page.Title }}
-<div class="{{ anchorize $heroClass }}-hero">
-  {{ partial "hero-image" . }}
+<div class="{{ anchorize $heroClass }}-hero hero">
+  {{ partial "home/hero-image" . }}
   <div class="home-hero__overlay flex flex-center flex-justify-center">
     <div class="wrapper-lg">
       <div class="home-hero__content text-center flow">

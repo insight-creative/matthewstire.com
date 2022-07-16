@@ -1,3 +1,174 @@
 {{ define "main" }}
+{{ partial "home/hero" . }}
+{{ partial "locations/intro" . }}
+{{ $currentLocation := .Page.Title }}
+<section aria-labelledby="tire-section-heading" class="block">
+    <div class="wrapper-md flex flex-column flex-row-m flex-center">
+        <div class="w-100 w-50-m flow">
+            {{ with .Params.tires_block }}
+            {{ if .heading }}
+            <h2 id="tire-section-heading" class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            <p>{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            <div class="popular-tire-brands flex flex-justify-between">
+                {{ range .popular_brands }}
+                <img src="{{ .image_url }}" alt="{{ .brand }} logo">
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        <div class="w-100 w-50-m">
+            <picture>
+                <source srcset="https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=avif&q=75&width=325&height=250 400w, https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=avif&q=75&width=600&height=450 800w" type="image/avif">
+            
+                <source srcset="https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=webp&q=75&width=325&height=250 400w, https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=webp&q=75&width=600&height=450 800w" type="image/webp">
+            
+                <source srcset="https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=jpg&q=75&width=325&height=250 400w, https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=jpg&q=75&width=600&height=450 800w" type="image/jpg">
 
+                <img src="https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}" width="600" height="450" alt="{{ .Params.tires_block.image_alt }}">   
+            </picture>     
+        </div>
+    </div>
+</section>
+<section aria-labelledby="services-section-heading" class="home-popular-services block">
+    <div class="mt-yellow-swoosh-bg w-100"></div>
+    <div class="wrapper text-center text-white">
+        {{ with .Params.services_block }}
+        {{ if .heading }}
+        <h2 id="services-section-heading">
+            {{ .heading | markdownify }}
+        </h2>
+        {{ end }}
+        {{ if .body }}
+        {{ .body | markdownify }}
+        {{ end }} 
+    </div>
+    {{ if eq $currentLocation "Commercial" }}
+    <div class="wrapper-lg">
+        <div class="grid-3 pt-6">
+    {{ else }}
+    <div class="wrapper-xl">
+        <div class="grid-4 pt-6">
+    {{ end }}
+            {{ range .popular_services }}
+            <a href="{{ .url }}" class="card flow no-decoration shadow-1 fs-100">
+                <div class="cover-image">
+                    <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+                    <div class="card__icon-group w-100">
+                        {{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
+                    </div>
+                </div>
+                <div class="card__body flow">
+                    <h3 class="h6 text-primary">{{ .heading }}</h3>
+                    <p class="text-black">{{ .body | markdownify }}</p>
+                </div>
+                <div class="card__arrow bg-primary">
+                    {{ partialCached "svg-icons/double-chevron-right.svg" . }}
+                </div>
+            </a>            
+            {{ end }}
+        </div>
+        <div class="text-center mt-6">
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+        </div>
+        {{ end }}       
+    </div>
+</section>
+{{ if eq .Title "Appleton Auto Shops" }}
+<section aria-labelledby="tire-section-heading" class="block bg-gray">
+    <div class="wrapper-md flex flex-column flex-row-m flex-center">
+        <div class="w-100 w-50-m flow">
+            <h2 id="tire-section-heading" class="text-primary">
+                Commercial Tires in Appleton
+            </h2>
+            <p>The expert technicians in our Appleton Commercial Tire Center provide tire expertise, value and convenience to truckers, companies, fleets and municipalities. Contact us to schedule a service!</p>
+            <a href="/schedule-appointment/" class="btn btn-primary">Schedule a Service</a>
+        </div>
+        <div class="w-100 w-50-m">
+            <picture>
+                <source srcset="https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=avif&q=75&width=325&height=250 400w, https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=avif&q=75&width=600&height=450 800w" type="image/avif">
+            
+                <source srcset="https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=webp&q=75&width=325&height=250 400w, https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=webp&q=75&width=600&height=450 800w" type="image/webp">
+            
+                <source srcset="https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=jpg&q=75&width=325&height=250 400w, https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}?fm=jpg&q=75&width=600&height=450 800w" type="image/jpg">
+
+                <img src="https://matthewstire.imgix.net{{ .Params.tires_block.image_url }}" width="600" height="450" alt="{{ .Params.tires_block.image_alt }}">   
+            </picture>     
+        </div>
+    </div>
+</section>
+{{ end }}
+<section aria-labelledby="locations-served-section-heading" class="block">
+    <div class="wrapper-lg flex flex-column flex-row-m flex-center">
+        <div class="w-100 w-40-m flow">
+            {{ with .Site.Data.global_partials.locations_served_block }}
+            {{ if .heading }}
+            <h2 id="locations-served-section-heading" class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            <p>{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ end }}
+            <div class="location-select">
+                <header class="location-select__header flex flex-center">{{ partialCached "svg-icons/locations-icon.svg" . }}<h3 class="text-primary h6">Find a Location Nearest You</h3></header>
+                <button class="location-select__trigger w-100 mt-2 flex flex-center flex-justify-between" aria-label="open locations select tool" aria-expanded="false">Select a Location <span class="sub-menu-indicator"></span></button>
+                <ul class="location-select__list">
+                    {{ range .Site.Data.locations }}
+                    <li class="border-bottom-gray"><a href="{{ .location_url }}" class="no-decoration fw-700">{{ .name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ with .Site.Data.global_partials.locations_served_block }}
+            {{ if .button }}
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="mt-locations-map w-100 w-60-m">
+            <img src="/uploads/map-screenshot-ne.jpg" alt="">
+            {{ partialCached "svg-icons/wi-yellow.svg" . }}
+            <!-- {{ partialCached "svg-icons/wi-blue.svg" . }}
+            {{ partialCached "svg-icons/wi.svg" . }} -->
+            {{ range .Site.Data.locations }}
+            <div class="mt-location mt-location--{{ .name | lower | urlize }}">
+                <button class="mt-location__btn"></button>
+                <div class="mt-location__content bg-primary shadow-1">
+                    <a href="{{ .location_url }}" class="flex flex-center fs-100 fw-700 no-decoration">{{ .name }} {{ partialCached "svg-icons/double-chevron-right.svg" . }}</a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<section aria-labelledby="home-blog-feed" class="home-blog-feed block bg-gray">
+    <div class="wrapper text-center">
+        <h2 id="home-blog-feed" class="text-primary">{{ .Site.Data.global_partials.blog_feed_block.heading }}</h2>
+        <p>{{ .Site.Data.global_partials.blog_feed_block.body }}</p>
+    </div>
+    <div class="wrapper-lg">
+        <div class="grid-3 block-sm">
+            {{ $pages := .Site.RegularPages }}
+            {{ $recentPosts := where $pages "Type" "resources" }}
+            {{ range first 3 $recentPosts }}
+            {{ .Render "blog-card" }}
+            {{ end }}
+        </div>
+    </div>
+    {{ if .Site.Data.global_partials.blog_feed_block.button }}
+    <div class="text-center mt-6">
+        <a href="{{ .Site.Data.global_partials.blog_feed_block.button_url }}" class="btn btn-primary">{{ .Site.Data.global_partials.blog_feed_block.button_text }}</a>
+    </div>
+    {{ end }}
+</section>
 {{ end }}

@@ -7,6 +7,8 @@
   city: Appleton
   state: WI
   googlemaps: https://g.page/Matthews-Tire-Appleton-East?share
+  google_map_embed: >-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d91442.14319166917!2d-88.342628!3d44.257154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7b7a8aabf8a42be!2sMatthews%20Tire!5e0!3m2!1sen!2sus!4v1657947723174!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   shopcritics: "https://www.theshopcritics.com/info/MatthewsTireAppletonEast"
   hours:
     - day: Monday - Friday
@@ -22,6 +24,8 @@
   city: Appleton
   state: WI
   googlemaps: https://g.page/matthews-tire-appleton-West?sharedata=!4m2!3m1!1s0x0:0xb42df95f333dd8a9
+  google_map_embed: >-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11429.22534193169!2d-88.451429!3d44.262517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb42df95f333dd8a9!2sMatthews%20Tire!5e0!3m2!1sen!2sus!4v1657948918620!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   shopcritics: "https://www.theshopcritics.com/info/MatthewsTireAppletonWest"
   hours:
     - day: Monday - Friday
@@ -36,7 +40,9 @@
   street: 600 N. Bluemound Dr.
   city: Appleton
   state: WI
-  googlemaps: https://goo.gl/maps/62F4Fn9BKY4eiBDH7
+  googlemaps: https://goo.gl/maps/FosgLuBaR13eh53S8
+  google_map_embed: >-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1428.5229716944514!2d-88.4555461!3d44.2678744!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x5070eda600ae166d!2sMatthews%20Tire%20Commercial%20Tire%20Center!5e0!3m2!1sen!2sus!4v1657949042835!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   hours:
     - day: Monday - Friday
       time: 7:00am - 5:00pm
@@ -50,6 +56,8 @@
   city: Fond du Lac
   state: WI
   googlemaps: https://g.page/matthews-tire-fond-du-lac?share
+  google_map_embed: >-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11521.838858644041!2d-88.468365!3d43.784073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x728177ce17a90725!2sMatthews%20Tire!5e0!3m2!1sen!2sus!4v1657948987854!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   shopcritics: "https://www.theshopcritics.com/info/MatthewsTireFondDuLac"
   hours:
     - day: Monday - Friday
@@ -64,6 +72,8 @@
   city: Green Bay
   state: WI
   googlemaps: https://g.page/matthews-tire-green-bay?share
+  google_map_embed: >-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11387.554625811592!2d-88.073419!3d44.476455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94b28246792557f8!2sMatthews%20Tire!5e0!3m2!1sen!2sus!4v1657949001138!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   shopcritics: "https://www.theshopcritics.com/info/MatthewsTireGreenBay"
   hours:
     - day: Monday - Friday
@@ -79,6 +89,8 @@
   state: WI
   note: Zero clearance facility to accomodate low ground cars.
   googlemaps: https://g.page/matthews-tire-menasha?share
+  google_map_embed: >-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.7634360578404!2d-88.42476649999999!3d44.232528599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2f4f723b1a39619c!2sMatthews%20Tire!5e0!3m2!1sen!2sus!4v1657949019439!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   shopcritics: "https://www.theshopcritics.com/info/MatthewsTireMenasha"
   hours:
     - day: Monday - Friday
@@ -95,6 +107,8 @@
   state: WI
   note: Zero clearance facility to accomodate low ground cars.
   googlemaps: https://g.page/Matthews-Tire-Waupaca?share
+  google_map_embed: >-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11410.863227951839!2d-89.085667!3d44.356889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30bd6858e9f3d2b2!2sMatthews%20Tire!5e0!3m2!1sen!2sus!4v1657949032297!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   shopcritics: "https://www.theshopcritics.com/info/MatthewsTireWaupaca"
   hours:
     - day: Monday - Friday

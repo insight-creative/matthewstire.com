@@ -35,6 +35,8 @@ module.exports = {
         'swiper-pagination-bullet',
         'swiper-pagination-bullet-active',
         'find-tires',
+        'locations',
+        'appleton-auto-shops',
       ],
     }),
   ],

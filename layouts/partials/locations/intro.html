@@ -1,0 +1,155 @@
+{{ $currentLocation := .Page.Title }}
+<section aria-labelledby="{{ $currentLocation | urlize }}-intro-heading" class="intro home-intro block">
+    <div class="intro-content wrapper-lg flex flex-column flex-row-m fade-up">
+        <div class="w-100 w-50-m flow">
+            {{ with .Params.intro }}
+            {{ if .heading }}
+            <h2 id="{{ $currentLocation | urlize }}-intro-heading" class="text-primary">
+                {{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+            {{ if .body }}
+            <p>{{ .body }}</p>
+            {{ end }}
+            {{ if .subheading }}
+            <h2 class="text-primary">{{ .subheading }}</h2>
+            {{ end }}
+            {{ if eq $currentLocation "Commercial" }}
+            {{ .services | markdownify }}
+            <h2 class="text-primary">Commercial Vehicles We Service</h2>
+            <ul>
+                <li>Semi-trucks</li>
+                <li>Box trucks</li>
+                <li>Cargo/passenger vans</li>
+                <li>Fleet vehicles</li>
+                <li>Tractors and farm vehicles</li>
+                <li>And more!</li>
+            </ul>
+            {{ else }}
+            <ul>
+                <li><a href="/services/oil-changes/">Oil change</a></li>
+                <li><a href="/services/suspension-repair/">Alignment</a></li>
+                <li>Tire rotation</li>
+                <li><a href="/services/tire-repair/">Flat tire repair</a></li>
+                <li>Wheel balance</li>
+                <li>Custom wheels</li>
+                <li><a href="/services/engine-repair/">Engine analysis</a></li>
+                <li>New tire installation</li>
+                <li><a href="/services/electrical-repair/">Battery replacement</a></li>
+                <li>Emissions testing and repair</li>
+                <li>And more!</li>
+            </ul>              
+            {{ end }}
+            <a href="/services/" class="btn btn-primary">View Our Full List of Services</a>
+            {{ end }}
+        </div>
+        <div class="w-100 w-50-m">
+
+
+            {{ range .Site.Data.locations }}
+            {{ if eq .name $currentLocation }}
+            <div class="location-col ase-col bg-primary">
+                <div class="ase-col__body text-white flow">
+                    <div class="cover-image">
+                        <picture>
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=avif&q=75&width=600&height=300&fit=crop" type="image/avif">
+                        
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=webp&q=75&width=600&height=300&fit=crop" type="image/webp">
+                        
+                            <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=jpg&q=75&width=600&height=300&fit=crop" type="image/jpg">
+            
+                            <img src="https://matthewstire.imgix.net{{ .image_url }}" width="400" height="125" alt="{{ .image_alt }}">   
+                        </picture>                    
+                    </div>
+                    {{ .google_map_embed | markdownify }}
+                    <div>
+                        <h3 class="h5 no-margin">Location</h3>
+                        <span class="flex flex-center">
+                            {{ partialCached "svg-icons/locations-icon.svg" . }}
+                            <address><a href="{{ .googlemaps }}" target="_blank" rel="noopener noreferrer" class="fs-100 text-white transform-x-8">{{ .street }} {{ .city }}, {{ .state }}</a></address>
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="h5 no-margin">Phone</h3>
+                        <span class="flex flex-center">
+                            {{ partialCached "svg-icons/phone.svg" . }}
+                            <a href="tel:{{ .phone }}" class="fs-100 text-white transform-x-8">{{ .phone }}</a>
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="h5 no-margin">Hours</h3>
+                        <span class="flex flex-center fs-100 text-white">
+                            {{ partialCached "svg-icons/clock.svg" . }}
+                            {{ range .hours }}
+                                {{ .day }} {{ .time }}
+                            {{ end }}
+                        </span>
+                    </div>
+                </div>
+                <div class="ase-badge">
+                    {{ partialCached "svg-icons/ase-certified.svg" . }}
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+
+            
+            {{ if eq .Title "Appleton Auto Shops" }}
+            <div class="location-col ase-col bg-primary">
+                <div class="ase-col__body text-white flow">
+                    <h3>Locations in Appleton, WI</h3>
+                    <div class="grid-2">
+                        {{ range .Site.Data.locations }}
+                        {{ if (or (eq .name "Appleton East") (eq .name "Appleton West") (eq .name "Commercial")) }}
+                        <div class="location-card flow border-bottom-gray">
+                            <a href="{{ .location_url }}" class="location-card__location-url">
+                                <div class="cover-image">
+                                    <picture>
+                                        <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=avif&q=75&width=600&height=300&fit=crop" type="image/avif">
+                                    
+                                        <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=webp&q=75&width=600&height=300&fit=crop" type="image/webp">
+                                    
+                                        <source srcset="https://matthewstire.imgix.net{{ .image_url }}?fm=jpg&q=75&width=600&height=300&fit=crop" type="image/jpg">
+                        
+                                        <img src="https://matthewstire.imgix.net{{ .image_url }}" width="400" height="125" alt="{{ .image_alt }}">   
+                                    </picture>                    
+                                </div>
+                            </a>
+                            <a href="{{ .location_url }}" class="location-card__location-url flex flex-center"><h2 class="text-white h5">{{ .name }}</h2>{{ partialCached "svg-icons/chevron-right.svg" . }}</a>
+                            <div class="location-card__contact-info">
+                                <span class="flex flex-center">
+                                    {{ partialCached "svg-icons/locations-icon.svg" . }}
+                                    <address><a href="{{ .googlemaps }}" target="_blank" rel="noopener noreferrer" class="fs-100 text-white transform-x-8">{{ .street }} {{ .city }}, {{ .state }}</a></address>
+                                </span>
+                                <span class="flex flex-center">
+                                    {{ partialCached "svg-icons/phone.svg" . }}
+                                    <a href="tel:{{ .phone }}" class="fs-100 text-white transform-x-8">{{ .phone }}</a>
+                                </span>
+                                <span class="flex flex-center fs-100 text-white">
+                                    {{ partialCached "svg-icons/clock.svg" . }}
+                                    {{ range .hours }}
+                                        {{ .day }} {{ .time }}
+                                    {{ end }}
+                                </span>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="ase-badge">
+                    {{ partialCached "svg-icons/ase-certified.svg" . }}
+                </div>
+            </div>
+            {{ end }}
+
+
+            
+            
+            
+            
+
+
+        </div>
+    </div>
+</section>
