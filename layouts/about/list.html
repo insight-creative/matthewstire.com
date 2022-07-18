@@ -1,3 +1,47 @@
 {{ define "main" }}
-
+{{ partial "hero" . }}
+{{ partial "breadcrumbs" . }}
+{{ partial "intro" . }}
+{{  with .Params.why_matthews_block }}
+<div class="block bg-gray">
+    <div class="wrapper-lg">
+        <h2 class="text-primary">{{ .heading }}</h2>
+        <p>{{ .body }}</p>
+        <div class="block-sm">
+            <div class="grid-2">
+                {{ range .reasons_to_chooose }}
+                <!-- <div class="icon-card bg-white shadow-1 fs-100">
+                    <h3 class="text-primary h5">{{ .subheading }}</h3>
+                    <p class="fs-100">{{ .body | markdownify }}</p>
+                </div> -->
+                <div>
+                    <h3 class="text-primary h5">{{ .subheading }}</h3>
+                    <p class="fs-100">{{ .body | markdownify }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ partial "services/testimonials" . }}
+{{ range .Params.page_blocks }}
+<section aria-labelledby="{{ .heading | urlize | lower }}-heading" class="page-block block">
+  <div class="page-block__inner wrapper-lg flex flex-column {{ if .text_column_right }}flex-row-m{{ end }}{{ if .text_column_left }}flex-row-reverse-m{{ end }} flex-center-m">
+    <div class="text-block w-100 w-50-m flow">
+        <h2 class="text-primary">{{ .heading }}</h2>
+        <p>{{ .body }}</p>
+        {{ if .button }}
+        <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+        {{ end }}
+    </div>
+    <div class="image-block w-100 w-50-m">
+        <div class="cover-image">
+            <!-- {{ partial "responsive-image" (dict "Page" . "image" .image.image_url "alt" .image.image_alt ) }} -->
+            <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+        </div>
+    </div>
+  </div>
+</section>
+{{ end }}
 {{ end }}

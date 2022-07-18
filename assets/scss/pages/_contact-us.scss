@@ -1,0 +1,104 @@
+.contact-us {
+  .w-60-m + .w-40-m {
+    margin-top: $ic-400;
+
+    @include breakpoint(md) {
+      margin-left: $ic-400;
+    }
+  }
+}
+
+.contact-form {
+  background-color: $white;
+  box-shadow: 8px 8px 48px rgba($primary-color, 0.25);
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    font-weight: 700;
+    color: $white;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+
+  &__number {
+    font-size: 3rem;
+    line-height: 1;
+
+    a {
+      color: $white !important;
+      text-decoration: none;
+    }
+  }
+
+  &__inner {
+    border: 1px solid $white;
+    padding: $ic-200;
+  }
+
+  &__wrapper {
+    padding: $ic-200;
+
+    @include breakpoint(lg) {
+      padding: $ic-300 $ic-600;
+    }
+
+    @include breakpoint(xl) {
+      padding: $ic-600;
+    }
+  }
+
+  &__netlify-bot-field {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    margin: 0;
+  }
+
+  &__row-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+
+      .contact-form__form-group {
+        flex: 50%;
+      }
+
+      .contact-form__form-group:nth-of-type(2) {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  &__form-group label {
+    flex: 0 0 25%;
+    font-size: $ic-200;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  .contact-form__form-group input,
+  .contact-form__form-group textarea,
+  .contact-form__form-group select {
+    background-color: $white;
+    border: 1px solid $light-gray;
+    width: 100%;
+    padding: $ic-100 $ic-200;
+    margin-bottom: $ic-100;
+    height: $ic-700;
+
+    &:focus {
+      outline: 1px solid $primary-color;
+    }
+  }
+
+  .contact-form__form-group textarea {
+    height: $ic-1000;
+  }
+
+  &__btn {
+    border: none;
+  }
+}

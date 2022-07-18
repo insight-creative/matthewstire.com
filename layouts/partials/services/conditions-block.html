@@ -28,7 +28,7 @@
         </div>
         {{ end }}
         <div class="text-center">
-            <a href="/schedule-appointment/" class="btn btn-primary">Schedule Your {{ .Params.hero.heading }}</a>
+            <a href="/schedule-appointment/" class="btn btn-primary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your {{ .Params.hero.heading }}</a>
         </div>
     </div>
 </section>

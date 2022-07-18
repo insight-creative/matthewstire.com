@@ -13,7 +13,8 @@
   <div class="hero__overlay flex flex-center">
     <div class="wrapper-lg">
       <div class="hero__content">
-        <h2 class="text-white text-shadow text-center">Learn More From our Customers’ Experiences</h2>
+        <h2 class="text-white text-shadow text-center">Customer Testimonials</h2>
+        <p class="text-white text-center max-width-none">Hear from our satisfied customers and learn why so many drivers throughout Northeast Wisconsin trust their vehicles, tires and safety on the road with Matthews Tire.</p>
         <div class="swiper testimonials-swiper fade-up">
             <div class="swiper-wrapper">
               {{ range .Params.testimonials }}
@@ -42,6 +43,10 @@
           <div class="swiper-button-next">{{ partialCached "svg-icons/double-chevron-right.svg" . }}</div>
           <div class="swiper-button-prev">{{ partialCached "svg-icons/double-chevron-left.svg" . }}</div>
           <div class="testimonials-pagination"></div>
+          <div class="mt-6 text-center flow">
+            <p class="text-white max-width-none" style="max-width: 1050px;">Read more testimonials and hear in-depth customer feedback on the customer stories page.</p>
+            <a href="/about/customer-stories/" class="btn btn-secondary">Customer Stories</a>
+          </div>
       </div>
     </div>
   </div>

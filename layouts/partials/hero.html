@@ -8,6 +8,7 @@
         <p class="text-white text-shadow fw-500">{{ .Params.hero.body }}</p>
         {{ if eq .Title "Careers" }}
         <a href="/careers/#open-positions" class="btn btn-secondary">View Open Positions</a>
+        {{ else if eq .Title "About" }}
         {{ else }}
         <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }}Schedule Appointment</a>
         {{ end }}

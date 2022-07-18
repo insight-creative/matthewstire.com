@@ -27,9 +27,9 @@
             <li class="no-list-style"><a href="/locations/waupaca/" class="no-decoration fs-100 fw-700 text-white transform-x-8">Waupaca</a></li>
         </ul>
         {{ if eq .Title "Services" }}
-            <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Appointment</a>
+            <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Appointment</a>
         {{ else }}
-            <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Your {{ .Params.hero.heading }}</a>
+            <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your {{ .Params.hero.heading }}</a>
         {{ end }}
     </div>
     <div class="ase-badge">

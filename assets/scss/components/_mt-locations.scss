@@ -97,6 +97,11 @@
 
     .cover-image {
         height: 125px;
+        overflow: hidden;
+
+        img {
+            transition: $transition;
+        }
     }
 
     &__location-url {
@@ -154,6 +159,13 @@
         font-size: $ic--100;
         padding: $ic--200 $ic-100;
         line-height: 1;
+    }
+
+    &:hover, 
+    &:focus {
+        .cover-image img {
+            transform: scale(1.1);
+        }
     }
 }
 

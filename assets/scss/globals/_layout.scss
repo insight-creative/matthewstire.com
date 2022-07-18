@@ -286,8 +286,22 @@
   margin: 0 10px;
 }
 
-@include breakpoint(md) {
+.w-50-m + .w-50-m {
+  margin-top: $ic-300;
+
+  @include breakpoint(md) {
+    margin-top: 0;
+    margin-left: $ic-300;
+  }
+}
+
+.flex-row-reverse,
+.flex-row-reverse-m {
+  .w-50-m:nth-of-type(1) {
+    margin-left: $ic-300;
+  }
+
   .w-50-m + .w-50-m {
-    margin-left: 2rem;
+    margin-left: 0;
   }
 }

@@ -1,8 +1,12 @@
 .testimonials {
-    min-height: 650px; 
+    min-height: 850px; 
 
     .hero__overlay {
         background-color: rgba($primary-color, .9);
+    }
+
+    .hero__content p {
+        margin: 0 auto;
     }
 }
 

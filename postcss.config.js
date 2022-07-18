@@ -37,6 +37,7 @@ module.exports = {
         'find-tires',
         'locations',
         'appleton-auto-shops',
+        'contact-us',
       ],
     }),
   ],

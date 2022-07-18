@@ -30,9 +30,9 @@
                 <h2>Schedule An Appointment</h2>
                 <p>Providing top-quality, high-value car maintenance and auto repair services in Appleton, Menasha, Waupaca, Fond du Lac and Green Bay.</p>
                 {{ if eq .Title "Air Conditioning and Heating" }}
-                <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Your Repair</a>
+                <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your Repair</a>
                 {{ else }}
-                <a href="/schedule-appointment/" class="btn btn-secondary">Schedule Your {{ .Params.hero.heading }}</a>
+                <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your {{ .Params.hero.heading }}</a>
                 {{ end }}
             </div>
             <!-- <div class="intro__sidebar shadow-1 bg-primary text-white flow">

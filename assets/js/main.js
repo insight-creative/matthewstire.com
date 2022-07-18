@@ -74,7 +74,8 @@ hasSubMenu.forEach((link) => {
         link.classList.add('active')
         const activeLink = document.querySelector('.active')
         const activeSubMenu = activeLink.querySelector('.sub-menu')
-        const activeSubMenuContainer = activeSubMenu.querySelector('.sub-menu__inner').getBoundingClientRect().height
+        // const activeSubMenuContainer = activeSubMenu.querySelector('.sub-menu__inner').getBoundingClientRect().height
+        const activeSubMenuContainer = activeSubMenu.querySelector('.sub-menu__inner').offsetHeight
         activeSubMenu.style.height = activeSubMenuContainer + 'px'
     })
     link.addEventListener('mouseout', () => {
@@ -84,7 +85,8 @@ hasSubMenu.forEach((link) => {
     })
 })
 
-const mobileMenuHeight = mobileMenu.getBoundingClientRect().height
+// const mobileMenuHeight = mobileMenu.getBoundingClientRect().height
+const mobileMenuHeight = mobileMenu.offsetHeight
 
 mobileMenu.style.height = 0
 

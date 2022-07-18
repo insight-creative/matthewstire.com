@@ -59,6 +59,10 @@
     min-height: 600px;
   }
 
+  &__content p {
+    max-width: 900px;
+  }
+
   &__mt-swoosh {
     position: absolute;
     bottom: -9px;

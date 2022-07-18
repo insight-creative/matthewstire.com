@@ -23,25 +23,28 @@
   &:hover,
   &:focus {
     background-position: 100% 0;
-    transition: all 0.4s ease-in-out;
-    color: $white;
+    transform: translateY(-5px);
   }
 }
 
 .btn-primary {
   color: $white;
   background-image: $primary-gradient;
-  box-shadow: 6px 6px 6px rgba($primary-color, .15);
 
   svg {
     fill: $white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    box-shadow: 6px 6px 6px rgba($primary-color, .25);
   }
 }
 
 .btn-secondary {
   color: $primary-color;
   background-image: $secondary-gradient;
-  box-shadow: 6px 6px 6px rgba($accent-color, .15);
 
   svg {
     fill: $primary-color;
@@ -55,10 +58,11 @@
 
   &:hover,
   &:focus {
-    color: $white;
+    color: $primary-color;
+    box-shadow: 6px 6px 6px rgba($accent-color, .25);
 
     svg {
-      fill: $white;
+      fill: $primary-color;
     }
   }
 }
