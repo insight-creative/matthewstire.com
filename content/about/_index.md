@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: About Matthews Tire
+  body: >-
+    Upholding our mission to provide auto service excellence to drivers throughout Northeast Wisconsin since 1952!
   image_url: /uploads/matthews-tire-appleton-west-location.jpg
   image_alt:
 intro:

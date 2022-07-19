@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Find Your Tires
+  body: >-
+    When you purchase tires with Matthews Tire, you can rest assured you’re getting the highest quality service for the best value in Northeast Wisconsin.
   image_url: /uploads/tires-stacked-in-warehouse.jpg
   image_alt:
 intro:

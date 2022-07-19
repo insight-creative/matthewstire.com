@@ -14,7 +14,7 @@
     <div class="wrapper-lg">
       <div class="hero__content">
         <h2 class="text-white text-shadow text-center">Customer Testimonials</h2>
-        <p class="text-white text-center max-width-none">Hear from our satisfied customers and learn why so many drivers throughout Northeast Wisconsin trust their vehicles, tires and safety on the road with Matthews Tire.</p>
+        <p class="text-white text-center max-width-none margin-auto">Hear from our satisfied customers and learn why so many drivers throughout Northeast Wisconsin trust their vehicles, tires and safety on the road with Matthews Tire.</p>
         <div class="swiper testimonials-swiper fade-up">
             <div class="swiper-wrapper">
               {{ range .Params.testimonials }}
@@ -23,18 +23,17 @@
                     {{ partialCached "svg-icons/quote.svg" . }}
                 </div>
                 <div class="testimonial flow flex flex-column flex-justify-center text-white">
-
+                    <div class="testimonial__stars">
+                      {{ partialCached "svg-icons/star.svg" . }}
+                      {{ partialCached "svg-icons/star.svg" . }}
+                      {{ partialCached "svg-icons/star.svg" . }}
+                      {{ partialCached "svg-icons/star.svg" . }}
+                      {{ partialCached "svg-icons/star.svg" . }}
+                    </div>
                     <p class="fs-100">{{ .body }}</p>
                     {{ if .name }}
                     <span class="fs-100 fw-700">— {{ .name }}</span>
                     {{ end }}
-                    <div class="testimonial__stars">
-                        {{ partialCached "svg-icons/star.svg" . }}
-                        {{ partialCached "svg-icons/star.svg" . }}
-                        {{ partialCached "svg-icons/star.svg" . }}
-                        {{ partialCached "svg-icons/star.svg" . }}
-                        {{ partialCached "svg-icons/star.svg" . }}
-                    </div>
                 </div>
               </div>
               {{ end }}
@@ -44,7 +43,7 @@
           <div class="swiper-button-prev">{{ partialCached "svg-icons/double-chevron-left.svg" . }}</div>
           <div class="testimonials-pagination"></div>
           <div class="mt-6 text-center flow">
-            <p class="text-white max-width-none" style="max-width: 1050px;">Read more testimonials and hear in-depth customer feedback on the customer stories page.</p>
+            <p class="text-white max-width-none margin-auto" style="max-width: 1050px;">Read more testimonials and hear in-depth customer feedback on the customer stories page.</p>
             <a href="/about/customer-stories/" class="btn btn-secondary">Customer Stories</a>
           </div>
       </div>

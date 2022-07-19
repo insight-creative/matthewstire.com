@@ -7,7 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Auto Repair Services
-  body:
+  body: >-
+    No matter what services your vehicle needs, Matthews Tire has a solution.
   image_url: /uploads/car-driving-down-back-country-road.jpg
   image_alt: car driving down back country road
 intro:

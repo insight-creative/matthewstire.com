@@ -28,6 +28,8 @@
         </ul>
         {{ if eq .Title "Services" }}
             <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Appointment</a>
+        {{ else if eq .Title "Air Conditioning and Heating" }}
+            <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your Repair</a>
         {{ else }}
             <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your {{ .Params.hero.heading }}</a>
         {{ end }}

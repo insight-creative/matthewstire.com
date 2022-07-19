@@ -1,9 +1,12 @@
-.service-breakdown {
-  &__item {
-    padding-left: $ic-100;
-  }
+.conditions {
+  position: relative; 
 
-  &__item::marker {
-    content: url(/uploads/checkmark.svg);
+  .pseudo-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 500px;
+    width: 100%; 
+    z-index: -1;
   }
 }

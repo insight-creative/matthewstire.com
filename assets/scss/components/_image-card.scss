@@ -1,6 +1,13 @@
 .image-card {
+    border-radius: $radius;
+
     .cover-image {
         height: 250px;
+
+        img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
     }
 
     &__body {

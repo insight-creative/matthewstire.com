@@ -26,8 +26,8 @@
 {{ end }}
 {{ partial "services/testimonials" . }}
 {{ range .Params.page_blocks }}
-<section aria-labelledby="{{ .heading | urlize | lower }}-heading" class="page-block block">
-  <div class="page-block__inner wrapper-lg flex flex-column {{ if .text_column_right }}flex-row-m{{ end }}{{ if .text_column_left }}flex-row-reverse-m{{ end }} flex-center-m">
+<section aria-labelledby="{{ .heading | urlize | lower }}-heading" class="about-page-block block">
+  <div class="wrapper-lg flex flex-column {{ if .text_column_right }}flex-row-m{{ end }}{{ if .text_column_left }}flex-row-reverse-m{{ end }} flex-center-m">
     <div class="text-block w-100 w-50-m flow">
         <h2 class="text-primary">{{ .heading }}</h2>
         <p>{{ .body }}</p>

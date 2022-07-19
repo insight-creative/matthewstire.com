@@ -1,3 +1,37 @@
-.page-block:nth-child(odd) {
+.page-block {
+    &__inner {
+        background-color: $black; 
+        position: relative;
+    }
+
+    .text-block {
+        padding: clamp($ic-500, 10%, $ic-1000) clamp($ic-300, 4%, $ic-600);
+    }
+
+    .image-block {
+        @include breakpoint(md) {
+          position: absolute;
+          right: 0;
+          height: 100%; 
+        }
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .flex-row-reverse-m {
+      background-color: $black;
+
+        .image-block {
+            left: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+.about-page-block:nth-child(odd) {
     background-color: $light-gray;
 }

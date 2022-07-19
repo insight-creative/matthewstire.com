@@ -1,4 +1,5 @@
-<section aria-labelledby="conditions-heading" class="block bg-gray">
+<section aria-labelledby="conditions-heading" class="conditions block">
+    <div class="pseudo-background bg-gray"></div>
     <div class="wrapper-lg">
         {{ with .Params.conditions_block }}
         <h2 id="conditions-heading" class="text-primary">{{ .heading }}</h2>
@@ -28,7 +29,11 @@
         </div>
         {{ end }}
         <div class="text-center">
+            {{ if eq .Title "Air Conditioning and Heating" }}
+                <a href="/schedule-appointment/" class="btn btn-primary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your Repair</a>
+            {{ else }}
             <a href="/schedule-appointment/" class="btn btn-primary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your {{ .Params.hero.heading }}</a>
+            {{ end }}
         </div>
     </div>
 </section>
