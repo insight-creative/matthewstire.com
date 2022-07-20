@@ -7,12 +7,14 @@ seo:
   featured_image_alt:
 hero:
   heading: Air Conditioning and Heating System Repair
+  body: >-
+    When you need an air conditioning or heating system repair for your vehicle, turn to the experts at Matthews Tire.
   image_url: /uploads/auto-repair-technician-checking-vehicle-air-conditioning.jpg
   image_alt:
 intro:
   heading: Maintain Your Air Conditioning and Heating System
   body: >-
-    It can be difficult to know the specific issues your car is experiencing. Here are some frequent signs that your car’s air conditioning or heating system needs repair:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 conditions_block:
   heading: Does Your Vehicle Need Air Conditioning or Heating Repairs?
   body: >-

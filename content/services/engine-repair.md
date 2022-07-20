@@ -7,7 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Engine Repair
-  body:
+  body: >-
+    At Matthews Tire, we offer various engine maintenance services to keep your vehicle in the best condition possible, including oil changes, full engine inspections and more.
   image_url: /uploads/mechanic-workin-on-engine-components.jpg
   image_alt:
 intro:

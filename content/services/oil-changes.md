@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Oil Change Services
+  body: >-
+    As one of the most popular services at our auto shops, our expert technicians use top-quality oil and service to quickly get you back on the road with peace of mind.
   image_url: /uploads/oil-change-services-large.jpg
   image_alt:
 intro:

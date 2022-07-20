@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Electrical Repair
+  body: >-
+    When you need a new car battery, starter or alternator—or a complete electrical inspection and repair services, the expert mechanics at Matthews Tire are here to help.
   image_url: /uploads/mechanic-testing-auto-battery.jpg
   image_alt:
 intro:

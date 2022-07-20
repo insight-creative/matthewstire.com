@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Brake Repair
+  body: >-
+    When it comes time for your regular brake inspection, or when you need to repair broken brakes, bring your car to the experts at Matthews Tire.
   image_url: /uploads/brake-repair-services-large.jpg
   image_alt:
 intro:

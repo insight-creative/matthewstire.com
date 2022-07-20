@@ -7,15 +7,14 @@ seo:
   featured_image_alt:
 hero:
   heading: Windshield Repair
+  body: >-
+    Windshields are a vital safety feature of any vehicle, and it’s essential to your safety that you get it repaired or replaced when necessary.
   image_url: /uploads/windshield-repair-services.jpg
   image_alt:
 intro:
-  heading: Maintain Your Engine
+  heading: Maintain Your Windshield
   body: >-
-    Engine maintenance is necessary to not only keep your engine running efficiently and safely, but also to improve the overall performance and longevity of your vehicle. Keeping up with a proper engine maintenance routine may seem like a daunting task, but you’ll save yourself a lot of headaches and money by avoiding engine failure. 
-
-
-    At Matthews Tire, we offer various engine maintenance services to keep your vehicle in the best condition possible, including oil changes, full engine inspections and more.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 conditions_block:
   heading: Does Your Vehicle Need a Windshield Repair?
   body: >-

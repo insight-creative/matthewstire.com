@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Tire Repair
+  body: >-
+    No tire will last forever, but you can prolong the life of your tires and get the most value out of them by ensuring they are properly installed and maintained.
   image_url: /uploads/tire-repair-services-flipped.jpg
   image_alt:
 intro:

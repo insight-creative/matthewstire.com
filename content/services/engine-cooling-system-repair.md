@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Engine Cooling System Repair
+  body: >-
+    To keep your engine in the best condition, stop into Matthews Tire for regular coolant system inspections, flushes and other maintenance as needed.
   image_url: /uploads/engine-cooling-system-repair.jpg
   image_alt:
 intro:

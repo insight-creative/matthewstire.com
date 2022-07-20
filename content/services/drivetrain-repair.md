@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Drivetrain Repair
+  body: >-
+    Whether you need a transmission flush on a high-mileage vehicle, a full drivetrain inspection or other drivetrain repair services, we’re here to keep you rolling.
   image_url: /uploads/drivetrain-repair.jpg
   image_alt:
 intro:

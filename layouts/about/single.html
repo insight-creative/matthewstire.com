@@ -1,3 +1,24 @@
 {{ define "main" }}
-
+{{ partial "hero" . }}
+{{ partial "breadcrumbs" . }}
+{{ partial "intro" . }}
+{{ if eq .Title "Community" }}
+{{ with .Params.oil_change_for_the_better_block }}
+<div class="block">
+    <div class="wrapper-lg flow">
+        <h2 class="text-primary">{{ .heading }}</h2>
+        {{ .body | markdownify }}
+        <ul class="grid-4 max-width-none no-padding">
+            {{ range .organizations }}
+            <li class="no-list-style no-margin">
+                <a href="{{ .brand_website }}" target="_blank" rel="noreferrer noopener" class="brand-card">
+                    <img src="{{ .image_url }}" alt="{{ .brand }} logo">
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}
+{{ end }}
 {{ end }}

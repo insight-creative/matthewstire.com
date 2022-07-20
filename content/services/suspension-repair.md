@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Suspension Repair
+  body: >-
+    The expert mechanics at Matthews Tire can provide the regular alignments, tire rotations and full suspension inspections you need to keep your vehicle in top shape.
   image_url: /uploads/suspension-repair-services-flipped.jpg
   image_alt:
 intro:

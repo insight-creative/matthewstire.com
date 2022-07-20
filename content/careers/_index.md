@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Matthews Tire Careers
+  body: >-
+    Matthews Tire isn’t just a great place for our customers—we’re also a great place to work!
   image_url: /uploads/auto-repair-services.jpg
   image_alt:
 intro:
@@ -19,18 +21,25 @@ intro:
 open_positions:
   - position: Service Manager
     position_url: https://www.appone.com/MainInfoReq.asp?R_ID=958397
+    location: Location?
   - position: Sales Associate
     position_url: https://www.appone.com/MainInfoReq.asp?R_ID=958407
+    location: Location?
   - position: Auto Tech
     position_url: https://www.appone.com/MainInfoReq.asp?R_ID=958390
+    location: Location?
   - position: Alignment Specialist
     position_url: https://www.appone.com/MainInfoReq.asp?R_ID=958386
+    location: Location?
   - position: General Maintenance Tech
     position_url: https://www.appone.com/MainInfoReq.asp?R_ID=958410
+    location: Location?
   - position: General Service Tech
     position_url: https://www.appone.com/MainInfoReq.asp?R_ID=958417
+    location: Location?
   - position: Commercial Tire Tech
     position_url: https://www.appone.com/MainInfoReq.asp?R_ID=1032962
+    location: Commercial Tire Center
 benefits:
   - benefit: Competitive Wages
   - benefit: Health Insurance Benefits

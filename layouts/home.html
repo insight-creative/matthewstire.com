@@ -41,9 +41,7 @@
     <div class="wrapper text-center text-white">
         {{ with .Params.services_block }}
         {{ if .heading }}
-        <h2 id="services-section-heading">
-            {{ .heading | markdownify }}
-        </h2>
+        <h2 id="services-section-heading">{{ .heading | markdownify }}</h2>
         {{ end }}
         {{ if .body }}
         {{ .body | markdownify }}

@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Wheel Repair
+  body: >-
+    Keeping up with regular wheel maintenance is the best way to ensure your wheels, tires, suspension and vehicle overall are in the best condition possible and safe to drive.
   image_url: /uploads/wheel-repair-services.jpg
   image_alt:
 intro:

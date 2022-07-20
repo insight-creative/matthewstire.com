@@ -7,6 +7,8 @@ seo:
   featured_image_alt:
 hero:
   heading: Exhaust Repair
+  body: >-
+    Our ASE master certified technicians have the expertise and dealer-quality tools necessary to run full exhaust system inspections and repairs to get your vehicle back into top shape.
   image_url: /uploads/exhaust-repair-services.jpg
   image_alt:
 intro:
