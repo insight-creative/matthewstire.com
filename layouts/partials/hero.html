@@ -1,6 +1,8 @@
 {{ $heroClass := lower .Page.Title }}
-<div class="{{ anchorize $heroClass }}-hero hero">
+<div class="{{ anchorize $heroClass }}-hero hero bg-primary">
+  {{ if .Params.hero.image_url }}
   {{ partial "hero-image" . }}
+  {{ end }}
   <div class="hero__overlay flex flex-center">
     <div class="wrapper-lg">
       <div class="hero__content flow">
@@ -8,7 +10,7 @@
         <p class="text-white text-shadow fw-500">{{ .Params.hero.body }}</p>
         {{ if eq .Title "Careers" }}
         <a href="/careers/#open-positions" class="btn btn-secondary">View Open Positions</a>
-        {{ else if eq .Title "About" }}
+        {{ else if (or (eq .Title "About") (eq .Title "Community") (eq .Title "Customer Stories") ) }}
         {{ else }}
         <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }}Schedule Appointment</a>
         {{ end }}

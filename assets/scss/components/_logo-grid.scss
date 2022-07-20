@@ -1,0 +1,36 @@
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include breakpoint(md) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+}
+
+@media (max-width: 62em) {
+    .logo-grid li:nth-child(even) {
+        .brand-card {
+            border-right: none;
+        }
+    }
+}
+
+.logo-grid li:nth-child(n+15):nth-child(-n+16) {
+    .brand-card {
+        border-bottom: none;
+    }
+}
+
+@include breakpoint(md) {
+    .logo-grid li:nth-child(4n) {
+        .brand-card {
+            border-right: none;
+        }
+    }
+    
+    .logo-grid li:nth-child(n+13):nth-child(-n+16) {
+        .brand-card {
+            border-bottom: none;
+        }
+    }
+}

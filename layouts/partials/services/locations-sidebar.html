@@ -12,7 +12,11 @@
             </picture>
         </div>
         <h2>Cities We Serve</h2>
+        {{ if eq .Title "Community" }}
+        <p>The team at Matthews Tire is proud to support the local communities that our auto shops call home. You can find us in the following cities:</p>
+        {{ else }}
         <p>Matthews Tire is here to keep you rolling, no matter where you live. For the ultimate convenience, schedule your next auto repair at the location nearest you:</p>
+        {{ end }}
         <!-- <ul class="no-padding">
             {{ range .Site.Data.locations }}
             <li class="no-list-style"><a href="{{ .location_url }}" class="no-decoration fw-700 text-white transform-x-8">{{ .name }}</a></li>
@@ -30,6 +34,8 @@
             <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Appointment</a>
         {{ else if eq .Title "Air Conditioning and Heating" }}
             <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your Repair</a>
+        {{ else if eq .Title "Community" }}
+            <a href="/locations/" class="btn btn-secondary">See All Locations</a>
         {{ else }}
             <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Your {{ .Params.hero.heading }}</a>
         {{ end }}

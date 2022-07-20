@@ -43,11 +43,11 @@
 <div class="block">
     <div class="wrapper-lg">
         <h2 class="text-primary text-center">{{ .heading }}</h2>
-        <ul class="grid-4 max-width-none no-padding">
+        <ul class="logo-grid max-width-none no-padding">
             {{ range .brands }}
             <li class="no-list-style no-margin">
                 <a href="{{ .brand_website }}" target="_blank" rel="noreferrer noopener" class="brand-card">
-                    <img src="{{ .image_url }}" alt="{{ .brand }} logo">
+                    <img src="{{ .image_url }}" alt="{{ .brand }} logo" class="dim">
                 </a>
             </li>
             {{ end }}

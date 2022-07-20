@@ -1,0 +1,13 @@
+.community {
+    .brand-card {
+        img {
+            max-width: 150px;
+            max-height: 75px;
+
+            @include breakpoint(md) {
+                // max-width: 175px;
+                max-height: 100px;
+            }
+        }
+    }
+}

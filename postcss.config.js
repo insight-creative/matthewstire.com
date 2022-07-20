@@ -38,6 +38,7 @@ module.exports = {
         'locations',
         'appleton-auto-shops',
         'contact-us',
+        'community',
       ],
     }),
   ],

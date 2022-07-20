@@ -2,17 +2,57 @@
 {{ partial "hero" . }}
 {{ partial "breadcrumbs" . }}
 {{ partial "intro" . }}
+
+{{ if eq .Title "Customer Stories" }}
+<div class="block bg-gray">
+    <div class="wrapper-lg">
+        <div class="grid-2">
+            {{ range .Params.stories }}
+            <div class="mt-story bg-white shadow-1 border-radius flow flex flex-column flex-justify-between">
+                <div class="flow">
+                    <h2 class="text-primary">{{ .name }}</h2>
+                    <div>
+                        <h3 class="h5 text-primary no-margin">Matthews Tire Location</h3>
+                        {{ .location | markdownify }}
+                    </div>
+                    <p class="fs-100">{{ .body }}</p>
+                    <blockquote>{{ .quote }}</blockquote>
+                </div>
+                <div class="aspect-ratio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ .youtube_video_id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
 {{ if eq .Title "Community" }}
 {{ with .Params.oil_change_for_the_better_block }}
+<div class="block bg-gray">
+    <div class="wrapper-lg flex flex-column flex-row-m flex-center-m">
+        <div class="text-block w-100 w-50-m flow">
+            <h2 class="text-primary">{{ .heading }}</h2>
+            {{ .body | markdownify }}
+        </div>
+        <div class="image-block w-100 w-50-m">
+            <div class="cover-image">
+                <!-- {{ partial "responsive-image" (dict "Page" . "image" .image.image_url "alt" .image.image_alt ) }} -->
+                <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+            </div>
+        </div>
+      </div>
+</div>
 <div class="block">
     <div class="wrapper-lg flow">
-        <h2 class="text-primary">{{ .heading }}</h2>
-        {{ .body | markdownify }}
-        <ul class="grid-4 max-width-none no-padding">
+        <h2 class="text-primary h4 text-center" style="max-width: 800px;
+        margin: 0 auto;">{{ .subheading }}</h2>
+        <p class="max-width-none text-center">{{ .subbody }}</p>
+        <ul class="logo-grid max-width-none no-padding">
             {{ range .organizations }}
             <li class="no-list-style no-margin">
                 <a href="{{ .brand_website }}" target="_blank" rel="noreferrer noopener" class="brand-card">
-                    <img src="{{ .image_url }}" alt="{{ .brand }} logo">
+                    <img src="{{ .image_url }}" alt="{{ .brand }} logo" class="dim">
                 </a>
             </li>
             {{ end }}
@@ -20,5 +60,18 @@
     </div>
 </div>
 {{ end }}
+<section aria-labelledby="water-bottle-donations-heading" class="block">
+    <div class="wrapper-lg flex flex-column flex-row-m">
+        <div class="w-100 w-50-m flow">
+            {{ with .Params.bottled_water_donations_block }}
+            <h2 id="water-bottle-donations-heading" class="text-primary">{{ .heading }}</h2>
+            {{.body | markdownify }}
+            {{ end }}
+        </div>
+        <div class="w-100 w-50-m">
+            {{ partial "services/locations-sidebar" . }}
+        </div>
+    </div>
+</section>
 {{ end }}
 {{ end }}

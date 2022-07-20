@@ -4,13 +4,13 @@ seo:
   page_title: Community
   meta_description: >-
     Learn about the charitable events Matthews Tire hosts throughout the year to support our local communities throughout Northeast Wisconsin!
-  featured_image:
+  featured_image: /uploads/matthews-tire-appleton-west-location.jpg
   featured_image_alt:
 hero:
   heading: Community Service
   body: >-
     Matthews Tire is proud to support our local communities through various charitable events throughout the year!
-  image_url:
+  image_url: /uploads/matthews-tire-appleton-west-location.jpg
   image_alt:
 intro:
   heading: When Our Community Succeeds, We Succeed!
@@ -28,10 +28,13 @@ oil_change_for_the_better_block:
     For every regular-priced oil change performed at any Matthews Tire location during Oil Change for the Better, a portion of the proceeds will be donated to the recipient organization. In addition to these proceeds, we meet one-on-one with the chosen nonprofit to learn their greatest needs and provide additional ways for customers to give while at any of our auto shops. 
 
 
-    Thanks to the wholehearted support of this event from both Matthews Tire employees and our amazing customers, the participating organizations are able to grow and expand on the essential work they do within the community. 
-
-
-    Since 2012, Oil Change for the Better has raised over $73,000 for various local nonprofits! Past recipient organizations include:
+    Thanks to the wholehearted support of this event from both Matthews Tire employees and our amazing customers, the participating organizations are able to grow and expand on the essential work they do within the community.
+  image_url: /uploads/OCFTB-salvation-army.jpg
+  image_alt:
+  subheading: >-
+    Since 2012, Oil Change for the Better has raised over $73,000 for various local nonprofits!
+  subbody: >-
+    Past recipient organizations include:
   organizations:
     - organization: Hand-N-Hand
       image_url: /uploads/hand-n-hand.jpg
@@ -81,6 +84,36 @@ oil_change_for_the_better_block:
     - organization: Wisconsin Village Association
       image_url: /uploads/wisconsin-veterans-village-association.jpg
       brand_website: https://www.wisvva.org/
+bottled_water_donations_block:
+  heading: Bottled Water Donations
+  body: >-
+    In addition to <em>Oil Change for the Better</em>, Matthews Tire also supports our local community by donating bottled water to causes and organizations throughout the cities we serve. 
+
+
+    On average, Matthews Tire donates <strong>35,000 water bottles</strong> each year!
+
+
+    <strong>Causes we’ve supported through bottled water donations:</strong>
+
+    - Local school sporting events 
+
+    - Local food pantries
+
+    - Sports organizations
+
+    - Car shows
+
+    - VFWs 
+
+    - Lions clubs 
+
+    - Habitat for Humanity 
+
+    - Challenge the Outdoors 
+
+    - Local municipalities for safety days and other events 
+
+    - And more!
 menu:
   main:
     parent: "About"
