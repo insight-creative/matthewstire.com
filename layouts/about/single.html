@@ -85,15 +85,15 @@
             <div class="w-100 w-40-m">
                 <!-- {{ partial "responsive-image" (dict "Page" . "image" .Params.seo.featured_image "alt" .Params.seo.featured_image_alt ) }} -->
                 <picture>
-                    <source sizes="50vw" srcset="https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=85&width=350&height=500&fit=crop 200w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=85&width=500&height=600&fit=crop 600w" type="image/avif">
-                
-                    <source sizes="50vw" srcset="https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=85&height=150&width=200&fit=crop 200w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=85&height=300&width=400&fit=crop 400w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=85&height=400&width=600&fit=crop 600w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=85&height=600&width=800&fit=crop 800w" type="image/webp">
-                
-                    <source sizes="50vw" srcset="https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?q=85&height=150&width=200&fit=crop 200w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?q=85&height=300&width=400&fit=crop 400w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?q=85&height=400&width=600&fit=crop 600w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?q=85&height=600&width=800&fit=crop 800w" type="image/jpg">
+                    <source srcset="https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=70&width=350&height=500&fit=crop 400w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=70&width=500&height=600&fit=crop 600w" type="image/avif">
+
+                    <source srcset="https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=70&width=350&height=500&fit=crop 400w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=70&width=500&height=600&fit=crop 600w" type="image/webp">
+
+                    <source srcset="https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?q=70&width=350&height=500&fit=crop 400w, https://matthewstire.imgix.net{{ .Params.seo.featured_image }}?q=70&width=500&height=600&fit=crop 600w" type="image/jpg">
+
                     <img loading="lazy"
-                        src="https://matthewstire.imgix.net{{ .Params.seo.featured_image }}" width="500" height="500" alt="{{ .Params.seo.featured_image_alt }}" class="mt-leadership-headshot">
+                        src="https://matthewstire.imgix.net{{ .Params.seo.featured_image }}" width="500" height="600" alt="{{ .Params.seo.featured_image_alt }}" class="mt-leadership-headshot">
                 </picture>
-                <img src="{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}">
             </div>
         </div>
     </div>

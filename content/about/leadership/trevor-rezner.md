@@ -7,7 +7,7 @@ seo:
   featured_image: /uploads/matthews-tire-president-trevor-rezner.jpg
   featured_image_alt: Headshot of Trevor Rezner
 job_title: President
-layout: leadership
+weight: 1
 ---
 
 Trevor began his automotive career at Matthews Tire in 1986, doing various jobs and minor repair work. Over time, Trevor worked his way up to general manager in 2000 and has held the position of Matthews Tire President since 2013.
