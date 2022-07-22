@@ -6,13 +6,14 @@
   <div class="hero__overlay flex flex-center">
     <div class="wrapper-lg">
       <div class="hero__content flow">
-        <h1 class="text-white text-shadow max-width-none">{{ .Params.hero.heading }}</h1>
-        <p class="text-white text-shadow fw-500">{{ .Params.hero.body }}</p>
-        {{ if eq .Title "Careers" }}
+        <h1 class="text-white text-shadow">{{ if .Params.hero.heading }}{{ .Params.hero.heading }}{{ else }}{{ .Title }}{{ end }}</h1>
+        <p class="text-white text-shadow fw-500">{{ if .Params.hero.body }}{{ .Params.hero.body }}{{ else }}{{ .Params.job_title }}{{ end }}</p>
+        {{ if (and ( .Params.hero.hero_button ) (eq .Title "Careers") ) }}
         <a href="/careers/#open-positions" class="btn btn-secondary">View Open Positions</a>
-        {{ else if (or (eq .Title "About") (eq .Title "Community") (eq .Title "Customer Stories") ) }}
-        {{ else }}
+        {{ else if .Params.hero.hero_button }}
         <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }}Schedule Appointment</a>
+        {{ else }}
+        
         {{ end }}
       </div>
     </div>

@@ -11,6 +11,7 @@ hero:
     Matthews Tire isn’t just a great place for our customers—we’re also a great place to work!
   image_url: /uploads/auto-repair-services.jpg
   image_alt:
+  hero_button: true
 intro:
   heading: Join the team
   body: >-

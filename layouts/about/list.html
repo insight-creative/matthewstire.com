@@ -1,7 +1,9 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 {{ partial "breadcrumbs" . }}
+{{ if eq .Title "About" }}
 {{ partial "intro" . }}
+{{ end }}
 {{  with .Params.why_matthews_block }}
 <div class="block bg-gray">
     <div class="wrapper-lg">
@@ -43,5 +45,18 @@
     </div>
   </div>
 </section>
+{{ end }}
+{{ if eq .Title "Leadership" }}
+<div class="block">
+    <div class="wrapper-lg grid-4">
+        {{ range .Pages }}
+        <a href="{{ .Permalink }}" class="mt-leadership-card">
+            <h2>{{ .Title }}</h2>
+            <h3>{{ .Params.job_title }}</h3>
+            <img src="{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}">
+        </a>
+        {{ end }}
+    </div>
+</div>
 {{ end }}
 {{ end }}

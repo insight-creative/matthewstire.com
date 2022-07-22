@@ -1,0 +1,9 @@
+.mt-leadership-headshot {
+    @include breakpoint(md) {
+        position: relative;
+        z-index: 2;
+        margin-top: -400px;
+        max-width: 500px;
+        margin-left: auto;
+    }
+}

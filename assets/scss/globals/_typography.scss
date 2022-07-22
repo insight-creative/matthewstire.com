@@ -29,6 +29,7 @@ h6 {
 h1,
 .h1 {
   font-size: clamp($ic-400, 4vw, $ic-700);
+  max-width: 30ch;
 }
 
 h2,

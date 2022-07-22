@@ -13,7 +13,7 @@
         <div class="icon icon-lg icon-white bg-primary">
           {{ partial "functions/get-service-icon" . }}
         </div>
-        <h1 class="text-white text-shadow max-width-none">{{ .Params.hero.heading }}</h1>
+        <h1 class="text-white text-shadow">{{ .Params.hero.heading }}</h1>
         <p class="text-white text-shadow fw-500">{{ .Params.hero.body }}</p>
         <a href="/schedule-appointment/" class="btn btn-secondary">{{ partialCached "svg-icons/calendar-icon.svg" . }} Schedule Appointment</a>
       </div>
