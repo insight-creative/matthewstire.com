@@ -39,6 +39,7 @@ module.exports = {
         'appleton-auto-shops',
         'contact-us',
         'community',
+        'leadership',
       ],
     }),
   ],

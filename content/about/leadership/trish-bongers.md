@@ -4,7 +4,7 @@ seo:
   page_title: Trish Bongers
   meta_description: >-
 
-  featured_image: /uploads/matthews-tire-menasha-manager-sean-brucks.jpg
+  featured_image: /uploads/matthews-tire-commercial-manager-trish-bongers.jpg
   featured_image_alt: Headshot of Trish Bongers
 job_title: Commercial Tire Center Manager
 weight: 11

@@ -1,0 +1,12 @@
+<a href="{{ .Permalink }}" class="card card--blog flow no-decoration shadow-1 fs-100">
+	<div class="cover-image">
+		<img src="{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}">
+		<div class="card__icon-group w-100">
+			{{ partialCached "svg-icons/matthews-partial-swoosh.svg" . }}
+		</div>
+	</div>
+	<div class="card__body">
+		<h3 class="h5 text-primary no-margin">{{ .Title }}</h3>
+		<p class="text-black">{{ .Params.job_title }}</p>
+	</div>
+</a>
